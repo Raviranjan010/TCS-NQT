@@ -1,0 +1,3 @@
+# 08 Averages - 03 Formulas
+
+*Document for TCS NQT preparation.*

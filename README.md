@@ -10,7 +10,8 @@ Welcome to your comprehensive TCS NQT 2026 preparation workspace. This repositor
 ```mermaid
 graph TD
     Start([Start Here]) --> R[README.md: Master Pattern & Rules]
-    R --> S1[01 & 02: Numerical & Reasoning Basics]
+    R --> CS[00_MASTER_CHEATSHEET.md: 3-Min Revision Cheatsheet]
+    CS --> S1[01 & 02: Numerical & Reasoning Basics]
     S1 --> S2[03: Advanced Quant & Reasoning & Cryptarithmetic]
     S2 --> S3[04 & 05: Verbal Sentence Completion, Recall & Email]
     S3 --> S4[06 & 07: Easy & Medium Coding in C++]
@@ -23,6 +24,7 @@ Each file below covers a specific section of the TCS NQT 2026 syllabus with comp
 
 | Part | Resource File | Contents & Topics Covered |
 | :--- | :--- | :--- |
+| **00** | [00_MASTER_CHEATSHEET.md](file:///d:/Temp/TCS-NQT/00_MASTER_CHEATSHEET.md) | 3-Minute Revision Dashboard: all formulas, derivations, shortcuts, and boilerplate codes. |
 | **01** | [01_Numerical_Ability.md](file:///d:/Temp/TCS-NQT/01_Numerical_Ability.md) | Quantitative Aptitude: speed math, formulas, tricks, & solved PYQs. |
 | **02** | [02_Reasoning_Ability.md](file:///d:/Temp/TCS-NQT/02_Reasoning_Ability.md) | Logical Reasoning: seating arrangements, blood relations, diagrams, & logic trees. |
 | **03** | [03_Advanced_Quant_Reasoning.md](file:///d:/Temp/TCS-NQT/03_Advanced_Quant_Reasoning.md) | High-Difficulty Section: AP/GP, functions, coordinate geometry, & Cryptarithmetic. |

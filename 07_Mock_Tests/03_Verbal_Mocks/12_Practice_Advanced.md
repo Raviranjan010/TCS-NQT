@@ -1,0 +1,3 @@
+# 03 Verbal Mocks - 12 Practice Advanced
+
+*Document for TCS NQT preparation.*
