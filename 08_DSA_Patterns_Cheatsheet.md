@@ -173,6 +173,25 @@ int minPathSum(vector<vector<int>>& grid) {
 ```
 
 ### 6. Sliding Window — Fixed Size
+
+```mermaid
+graph LR
+    subgraph Sliding Window (Size K)
+    I0[arr 0] --- I1[arr 1]
+    I1 --- I2[arr 2]
+    I2 --- I3[arr 3]
+    I3 --- I4[arr 4]
+    
+    style I1 fill:#f9f,stroke:#333,stroke-width:2px
+    style I2 fill:#f9f,stroke:#333,stroke-width:2px
+    style I3 fill:#f9f,stroke:#333,stroke-width:2px
+    
+    classDef window fill:#f9f,stroke:#333,stroke-width:2px;
+    end
+    
+    Step1[1. Sum first K elements: arr 1 + arr 2 + arr 3] --> Step2[2. Slide window: Add new right, Subtract old left]
+```
+
 ```cpp
 #include <vector>
 #include <numeric>
@@ -258,6 +277,20 @@ vector<int> topKFrequent(vector<int>& nums, int k) {
 ```
 
 ### 10. Union-Find (DSU)
+
+```mermaid
+graph TD
+    subgraph Without Path Compression (Chain)
+    A[Node 3] --> B[Node 2]
+    B --> C[Node 1 (Root)]
+    end
+    
+    subgraph With Path Compression (Direct)
+    X[Node 3] --> Z[Node 1 (Root)]
+    Y[Node 2] --> Z
+    end
+```
+
 ```cpp
 #include <vector>
 #include <numeric>

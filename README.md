@@ -7,6 +7,18 @@ Welcome to your comprehensive TCS NQT 2026 preparation workspace. This repositor
 
 ## 🗺️ Index of Preparation Resources
 
+```mermaid
+graph TD
+    Start([Start Here]) --> R[README.md: Master Pattern & Rules]
+    R --> S1[01 & 02: Numerical & Reasoning Basics]
+    S1 --> S2[03: Advanced Quant & Reasoning & Cryptarithmetic]
+    S2 --> S3[04 & 05: Verbal Sentence Completion, Recall & Email]
+    S3 --> S4[06 & 07: Easy & Medium Coding in C++]
+    S4 --> S5[08: DSA C++ Patterns Cheatsheet]
+    S5 --> M1[09 & 10: Timed Aptitude & Verbal Mocks]
+    M1 --> Fin[11: June 27/28 Exam Day Strategy Guide]
+```
+
 Each file below covers a specific section of the TCS NQT 2026 syllabus with complete concepts, shortcuts, previous year questions (PYQs), and practice material:
 
 | Part | Resource File | Contents & Topics Covered |
@@ -16,9 +28,9 @@ Each file below covers a specific section of the TCS NQT 2026 syllabus with comp
 | **03** | [03_Advanced_Quant_Reasoning.md](file:///d:/Temp/TCS-NQT/03_Advanced_Quant_Reasoning.md) | High-Difficulty Section: AP/GP, functions, coordinate geometry, & Cryptarithmetic. |
 | **04** | [04_Verbal_Ability_Part1.md](file:///d:/Temp/TCS-NQT/04_Verbal_Ability_Part1.md) | Sentence Completion (20Q / 25s each), Cloze tests, and crucial grammar rules. |
 | **05** | [05_Verbal_Ability_Part2.md](file:///d:/Temp/TCS-NQT/05_Verbal_Ability_Part2.md) | Passage Recall (30s read/90s write) and Email Writing (9-min) templates & guides. |
-| **06** | [06_Coding_Easy.md](file:///d:/Temp/TCS-NQT/06_Coding_Easy.md) | Easy Coding (35 min): Array, string, & math patterns solved in Python & C++. |
-| **07** | [07_Coding_Medium.md](file:///d:/Temp/TCS-NQT/07_Coding_Medium.md) | Medium Coding (55 min): Dynamic Programming, Greedy, and Matrix traversal. |
-| **08** | [08_DSA_Patterns_Cheatsheet.md](file:///d:/Temp/TCS-NQT/08_DSA_Patterns_Cheatsheet.md) | Reusable code templates (Python & C++) for fast implementation under pressure. |
+| **06** | [06_Coding_Easy.md](file:///d:/Temp/TCS-NQT/06_Coding_Easy.md) | Easy Coding (35 min): Array, string, & math patterns solved in C++. |
+| **07** | [07_Coding_Medium.md](file:///d:/Temp/TCS-NQT/07_Coding_Medium.md) | Medium Coding (55 min): Dynamic Programming, Greedy, and Matrix traversal in C++. |
+| **08** | [08_DSA_Patterns_Cheatsheet.md](file:///d:/Temp/TCS-NQT/08_DSA_Patterns_Cheatsheet.md) | Reusable code templates in C++ for fast implementation under pressure. |
 | **09** | [09_Mock_Test_Quant_Reasoning.md](file:///d:/Temp/TCS-NQT/09_Mock_Test_Quant_Reasoning.md) | Timed 40-Question Mock Test (Numerical + Reasoning) with detailed step-by-step answers. |
 | **10** | [10_Mock_Test_Verbal.md](file:///d:/Temp/TCS-NQT/10_Mock_Test_Verbal.md) | Timed Verbal Ability Mock Test (20 Sentence Completion, Passage Recall, & Emails). |
 | **Bonus** | [11_Exam_Day_Strategy.md](file:///d:/Temp/TCS-NQT/11_Exam_Day_Strategy.md) | Night Revision Sheet & Exam Day Strategy (June 27/28 plan). |
@@ -28,6 +40,19 @@ Each file below covers a specific section of the TCS NQT 2026 syllabus with comp
 ## 📊 TCS NQT 2026 Actual Exam Pattern
 
 The test is fully adaptive or sequential (no navigation back to previous questions once submitted). Below is the exact sectional breakdown:
+
+```mermaid
+graph LR
+    subgraph Section 1: Aptitude
+    A["Numerical<br>(20Q / 25m)"] --> B["Reasoning<br>(20Q / 25m)"] --> C["Advanced<br>(14Q / 25m)"]
+    end
+    subgraph Section 2: Verbal
+    C --> D["Verbal Ability<br>(25Q / 26m)"]
+    end
+    subgraph Section 3: Coding
+    D --> E["Easy Coding<br>(1Q / 35m)"] --> F["Break<br>(1m)"] --> G["Medium Coding<br>(1Q / 55m)"]
+    end
+```
 
 ```
 Section                          | Questions | Time Allocation

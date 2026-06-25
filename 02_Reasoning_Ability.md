@@ -183,6 +183,26 @@
   1. Construct a family tree using clear gender symbols ($\square$ for male, $\bigcirc$ for female).
   2. Place different generations on distinct vertical levels.
   3. Connect couples with double horizontal lines and siblings with single lines.
+
+```mermaid
+graph TD
+    subgraph Generation 1 (Grandparents)
+    GF[Grandfather (Square/Box)] <== Married ==> GM[Grandmother (Circle)]
+    end
+    subgraph Generation 2 (Parents & Aunts/Uncles)
+    Father[Father (Square)] <== Married ==> Mother[Mother (Circle)]
+    Uncle[Uncle (Square)] --- Aunt[Aunt (Circle)]
+    GF --> Father
+    GF --> Uncle
+    end
+    subgraph Generation 3 (Self & Siblings/Cousins)
+    Self[Self (Square/Circle)] --- Sibling[Sibling (Circle)]
+    Cousin[Cousin (Square)]
+    Father --> Self
+    Uncle --> Cousin
+    end
+```
+
 * **Shortcut / Trick**: When decoding symbolic relationships (e.g. $A + B \times C$), solve **backwards** from right to left to determine the gender of the target person immediately.
 * **Common trap**: Assuming gender based on names. Unless explicitly stated, a name like "Kiran" or "Raju" can represent either gender in logical puzzles.
 * **PYQ-style Questions**:
@@ -211,6 +231,27 @@
   2. Draw slots with arrows indicating the facing direction.
   3. Start with the **definite clue** (e.g. "A sits at the extreme left end" or "B sits opposite C").
   4. Fill in relative clues and draw parallel configurations to resolve ambiguity.
+
+```mermaid
+graph TD
+    subgraph Circular Seating (Facing Inside)
+    Top[12 o'clock (Facing Down)]
+    Bottom[6 o'clock (Facing Up)]
+    Left[9 o'clock (Facing Right)]
+    Right[3 o'clock (Facing Left)]
+    
+    Top -->|Clockwise / Left| Right
+    Right -->|Clockwise / Left| Bottom
+    Bottom -->|Clockwise / Left| Left
+    Left -->|Clockwise / Left| Top
+    
+    Top -.->|Counter-Clockwise / Right| Left
+    Left -.->|Counter-Clockwise / Right| Bottom
+    Bottom -.->|Counter-Clockwise / Right| Right
+    Right -.->|Counter-Clockwise / Right| Top
+    end
+```
+
 * **Shortcut / Trick (Arrangement Table)**: Set up a quick table to track variables if candidates have multiple attributes (e.g. Name, Color, City).
 * **Common trap**: Putting a person on the wrong side when facing South or facing outside a circle. Always orient yourself in the direction the person is facing.
 * **PYQ-style Questions**:
@@ -236,6 +277,35 @@
   1. Draw a compass rose (N, S, E, W) on your sheet.
   2. Trace the path line-by-line, noting distance scale and left/right turns.
   3. For displacement, use the Pythagorean theorem: $c^2 = a^2 + b^2$.
+
+```mermaid
+graph TD
+    subgraph Compass Directions
+    N[North]
+    S[South]
+    E[East]
+    W[West]
+    NE[North-East]
+    NW[North-West]
+    SE[South-East]
+    SW[South-West]
+    
+    NW --- N
+    N --- NE
+    W --- NW
+    E --- NE
+    W --- SW
+    E --- SE
+    SW --- S
+    S --- SE
+    end
+    
+    subgraph Shadow Rules
+    SunRise[Sunrise: Sun in East] -->|Shadow direction| WestShadow[Shadow is ALWAYS West]
+    SunSet[Sunset: Sun in West] -->|Shadow direction| EastShadow[Shadow is ALWAYS East]
+    end
+```
+
 * **Shortcut / Trick**: In shadow problems:
   * At **sunrise**, shadow is always towards **West**.
   * At **sunset**, shadow is always towards **East**.

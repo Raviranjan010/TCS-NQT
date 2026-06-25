@@ -49,13 +49,13 @@ Spend exactly **90 minutes** reviewing these tables and templates before sleepin
 * **Passage Recall (5-Point Skeleton)**: Mentally extract: **Subject** $\to$ **Trend** $\to$ **Cause** $\to$ **Impact** $\to$ **Metric** ($40\%$, $2030$).
 
 ### 💻 Coding Quick Recall
-* **Circular Array DP**: Run linear DP twice: `max(solve(arr[:-1]), solve(arr[1:]))`.
+* **Circular Array DP**: Run linear DP twice: `max(solve(arr, 0, n - 2), solve(arr, 1, n - 1))`.
 * **Max XOR with K Set Bits**: Count zeros at each bit position $b \in [0, 30]$, sort by gain $\text{zeros} \times 2^b$ descending, set top $K$ bits.
 * **Perfect Square Digit Sum**: small $N$: greedy prefix of "1"s followed by sorted square-sum combinations of remaining digits.
 * **Task Scheduler Priority Queue**:
-  ```python
-  # Push negative values to heapq for max-heap frequency tracking
-  heapq.heappush(max_heap, -frequency)
+  ```cpp
+  // Use std::priority_queue (default max-heap) to track frequencies
+  priority_queue<pair<int, int>> max_heap; // stores {frequency, element}
   ```
 * **Swaps to Center**: Manhattan Distance $= |r - \text{center}| + |c - \text{center}|$. Find the minimum among all maximum values.
 

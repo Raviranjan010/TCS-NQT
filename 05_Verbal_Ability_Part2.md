@@ -16,6 +16,18 @@ During the 30 seconds, actively identify and hold these five elements in your mi
 4. **Impact/Effect**: *What is the outcome or result?* (e.g., reducing pollution, increasing cost).
 5. **Key Metric/Data**: *Are there any numbers, dates, or percentages?* (e.g., $40\%$, $2030$, $5\text{ years}$).
 
+```mermaid
+graph TD
+    Text[Original Paragraph] -->|Identify| Subject[1. Core Subject]
+    Subject -->|Analyze| Trend[2. Action/Trend]
+    Trend -->|Link| Cause[3. Reason/Cause]
+    Cause -->|Identify| Effect[4. Impact/Effect]
+    Effect -->|Capture| Metric[5. Key Metric/Data]
+    
+    Metric -->|Mental Loop| Memory([Working Memory: 4-5 Keywords])
+    Memory -->|90 Seconds| Rewrite[Grammatically Perfect Paraphrase]
+```
+
 #### The Working Memory Trick
 Do not try to memorize the exact wording. Repeat the core nouns and relations mentally: *"AI $\to$ copywriters $\to$ 50% productivity $\to$ editors concern $\to$ drop in quality"*. Reconstruct these keywords into grammatically correct sentences during the 90-second writing phase.
 
