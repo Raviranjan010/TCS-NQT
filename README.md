@@ -21,6 +21,7 @@ Each file below covers a specific section of the TCS NQT 2026 syllabus with comp
 | **08** | [08_DSA_Patterns_Cheatsheet.md](file:///d:/Temp/TCS-NQT/08_DSA_Patterns_Cheatsheet.md) | Reusable code templates (Python & C++) for fast implementation under pressure. |
 | **09** | [09_Mock_Test_Quant_Reasoning.md](file:///d:/Temp/TCS-NQT/09_Mock_Test_Quant_Reasoning.md) | Timed 40-Question Mock Test (Numerical + Reasoning) with detailed step-by-step answers. |
 | **10** | [10_Mock_Test_Verbal.md](file:///d:/Temp/TCS-NQT/10_Mock_Test_Verbal.md) | Timed Verbal Ability Mock Test (20 Sentence Completion, Passage Recall, & Emails). |
+| **Bonus** | [11_Exam_Day_Strategy.md](file:///d:/Temp/TCS-NQT/11_Exam_Day_Strategy.md) | Night Revision Sheet & Exam Day Strategy (June 27/28 plan). |
 
 ---
 
