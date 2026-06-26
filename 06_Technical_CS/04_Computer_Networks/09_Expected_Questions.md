@@ -1,3 +1,5 @@
-# 04 Computer Networks - 09 Expected Questions
+# Computer Networks - Expected Questions
 
-*Document for TCS NQT preparation.*
+### Expected Question 1
+*   **Question:** Predict the next state in the sequence of Computer Networks.
+*   **Solution:** Use the transition relation $S_{t+1} = f(S_t)$ to find the answer.

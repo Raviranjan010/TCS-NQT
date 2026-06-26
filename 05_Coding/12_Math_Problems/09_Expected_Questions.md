@@ -1,3 +1,5 @@
-# 12 Math Problems - 09 Expected Questions
+# Mathematical Coding - Expected Questions
 
-*Document for TCS NQT preparation.*
+### Expected Question 1
+*   **Question:** Predict the next state in the sequence of Mathematical Coding.
+*   **Solution:** Use the transition relation $S_{t+1} = f(S_t)$ to find the answer.

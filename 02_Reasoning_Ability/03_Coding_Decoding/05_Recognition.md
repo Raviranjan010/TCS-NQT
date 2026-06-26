@@ -1,3 +1,5 @@
-# 03 Coding Decoding - 05 Recognition
+# Coding Decoding - Pattern Recognition Guide
 
-*Document for TCS NQT preparation.*
+## 1. Recognition Triggers
+*   **Trigger A:** Look for keywords such as *"shortest path"*, *"cycles"*, or *"relationships"*.
+*   **Strategy:** Immediately select the corresponding tree or graph traversal model.

@@ -1,3 +1,6 @@
-# 05 Surds and Indices - 17 Flashcards
+# Surds & Indices - Flashcards
 
-*Document for TCS NQT preparation.*
+*   **Card 1: What is the main objective of Surds & Indices?**
+    *   *Answer:* To optimize system parameters.
+*   **Card 2: What is the time complexity of the optimal solution?**
+    *   *Answer:* $O(N)$ time and $O(1)$ space.

@@ -1,3 +1,5 @@
-# 01 AP GP Series - 09 Expected Questions
+# AP & GP Series - Expected Questions
 
-*Document for TCS NQT preparation.*
+### Expected Question 1
+*   **Question:** Predict the next state in the sequence of AP & GP Series.
+*   **Solution:** Use the transition relation $S_{t+1} = f(S_t)$ to find the answer.

@@ -1,3 +1,17 @@
-# 07 Two Pointers - 22 Templates
+# Two Pointers Technique - Coding Templates
 
-*Document for TCS NQT preparation.*
+## Standard Template
+Use this template to start coding:
+```cpp
+#include <iostream>
+#include <vector>
+
+using namespace std;
+
+class Solution {
+public:
+    void solve() {
+        // Code goes here
+    }
+};
+```

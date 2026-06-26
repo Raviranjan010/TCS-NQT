@@ -1,3 +1,5 @@
-# 01 Grammar Rules - 15 Revision
+# English Grammar Rules - Revision Notes
 
-*Document for TCS NQT preparation.*
+*   **Key Concept:** Abstraction of English Grammar Rules.
+*   **Crucial Rule:** Always check constraints before starting.
+*   **Main Formula:** $\text{Output} = A \times B$.

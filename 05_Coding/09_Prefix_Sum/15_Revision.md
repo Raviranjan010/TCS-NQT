@@ -1,3 +1,5 @@
-# 09 Prefix Sum - 15 Revision
+# Prefix Sum - Revision Notes
 
-*Document for TCS NQT preparation.*
+*   **Key Concept:** Abstraction of Prefix Sum.
+*   **Crucial Rule:** Always check constraints before starting.
+*   **Main Formula:** $\text{Output} = A \times B$.

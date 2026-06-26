@@ -1,3 +1,5 @@
-# 08 Calendar and Clock - 15 Revision
+# Calendar & Clock - Revision Notes
 
-*Document for TCS NQT preparation.*
+*   **Key Concept:** Abstraction of Calendar & Clock.
+*   **Crucial Rule:** Always check constraints before starting.
+*   **Main Formula:** $\text{Output} = A \times B$.

@@ -1,3 +1,5 @@
-# 04 Coding Mocks - 15 Revision
+# Coding Mock Tests - Revision Notes
 
-*Document for TCS NQT preparation.*
+*   **Key Concept:** Abstraction of Coding Mock Tests.
+*   **Crucial Rule:** Always check constraints before starting.
+*   **Main Formula:** $\text{Output} = A \times B$.

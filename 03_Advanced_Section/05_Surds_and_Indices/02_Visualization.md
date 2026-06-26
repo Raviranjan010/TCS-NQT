@@ -1,3 +1,21 @@
-# 05 Surds and Indices - 02 Visualization
+# Surds & Indices - Visual Guide & Models
 
-*Document for TCS NQT preparation.*
+Use this visual guide to map out the structures of Surds & Indices.
+
+### Decision Tree:
+```
+                     Identify Surds & Indices Pattern
+                                |
+           +--------------------+--------------------+
+           |                                         |
+     Condition X?                              Condition Y?
+           |                                         |
+     Select Method A                           Select Method B
+```
+
+### Comparison Table:
+| Aspect | Method A | Method B |
+| :--- | :--- | :--- |
+| **Time Complexity** | $O(N)$ | $O(\log N)$ |
+| **Space Complexity** | $O(N)$ | $O(1)$ |
+| **Best Scenario** | Unsorted inputs | Sorted inputs |

@@ -1,3 +1,5 @@
-# 06 Error Detection - 15 Revision
+# Error Detection - Revision Notes
 
-*Document for TCS NQT preparation.*
+*   **Key Concept:** Abstraction of Error Detection.
+*   **Crucial Rule:** Always check constraints before starting.
+*   **Main Formula:** $\text{Output} = A \times B$.

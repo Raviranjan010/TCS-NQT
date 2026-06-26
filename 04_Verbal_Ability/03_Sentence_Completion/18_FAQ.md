@@ -1,3 +1,4 @@
-# 03 Sentence Completion - 18 FAQ
+# Sentence Completion - FAQ
 
-*Document for TCS NQT preparation.*
+**Q1. Can this be solved in linear time?**
+*   **Answer:** Yes, by using hashing or two-pointers techniques.

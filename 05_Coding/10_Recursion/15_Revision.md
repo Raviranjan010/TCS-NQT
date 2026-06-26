@@ -1,3 +1,5 @@
-# 10 Recursion - 15 Revision
+# Recursion & Backtracking - Revision Notes
 
-*Document for TCS NQT preparation.*
+*   **Key Concept:** Abstraction of Recursion & Backtracking.
+*   **Crucial Rule:** Always check constraints before starting.
+*   **Main Formula:** $\text{Output} = A \times B$.

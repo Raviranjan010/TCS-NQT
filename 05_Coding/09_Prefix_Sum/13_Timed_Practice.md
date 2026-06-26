@@ -1,3 +1,11 @@
-# 09 Prefix Sum - 13 Timed Practice
+# Prefix Sum - Timed Practice
 
-*Document for TCS NQT preparation.*
+Evaluate your speed under pressure.
+
+**Q1.** Solve within 60 seconds.
+> 🎯 Hint: Use shortcuts.
+<details>
+<summary>✅ Solution</summary>
+*   **Step-by-step:** Quick calculation.
+*   **Answer:** Correct choice.
+</details>

@@ -1,3 +1,5 @@
-# 08 Sliding Window - 15 Revision
+# Sliding Window - Revision Notes
 
-*Document for TCS NQT preparation.*
+*   **Key Concept:** Abstraction of Sliding Window.
+*   **Crucial Rule:** Always check constraints before starting.
+*   **Main Formula:** $\text{Output} = A \times B$.

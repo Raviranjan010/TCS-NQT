@@ -1,3 +1,5 @@
-# 01 OOP - 15 Revision
+# Object-Oriented Programming - Revision Notes
 
-*Document for TCS NQT preparation.*
+*   **Key Concept:** Abstraction of Object-Oriented Programming.
+*   **Crucial Rule:** Always check constraints before starting.
+*   **Main Formula:** $\text{Output} = A \times B$.

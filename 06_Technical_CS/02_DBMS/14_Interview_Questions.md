@@ -1,3 +1,6 @@
-# 02 DBMS - 14 Interview Questions
+# Database Management Systems - Interview Questions
 
-*Document for TCS NQT preparation.*
+Conceptual questions asked in TCS technical interviews.
+
+**Q1. Describe the core purpose of Database Management Systems in real-world software engineering.**
+*   **Answer:** It allows engineers to build highly scalable, modular, and optimized systems by using clean designs and efficient algorithms.

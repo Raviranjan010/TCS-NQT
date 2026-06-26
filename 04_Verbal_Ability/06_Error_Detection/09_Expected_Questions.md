@@ -1,3 +1,5 @@
-# 06 Error Detection - 09 Expected Questions
+# Error Detection - Expected Questions
 
-*Document for TCS NQT preparation.*
+### Expected Question 1
+*   **Question:** Predict the next state in the sequence of Error Detection.
+*   **Solution:** Use the transition relation $S_{t+1} = f(S_t)$ to find the answer.

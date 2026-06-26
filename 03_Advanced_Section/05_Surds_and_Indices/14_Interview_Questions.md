@@ -1,3 +1,6 @@
-# 05 Surds and Indices - 14 Interview Questions
+# Surds & Indices - Interview Questions
 
-*Document for TCS NQT preparation.*
+Conceptual questions asked in TCS technical interviews.
+
+**Q1. Describe the core purpose of Surds & Indices in real-world software engineering.**
+*   **Answer:** It allows engineers to build highly scalable, modular, and optimized systems by using clean designs and efficient algorithms.

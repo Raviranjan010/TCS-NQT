@@ -1,3 +1,21 @@
-# Verbal PYQs - 01 Concept
+# Verbal Ability PYQ Bank - Concept Guide
 
-*Document for TCS NQT preparation.*
+## 1. Introduction
+This guide covers the core principles of Verbal Ability PYQ Bank to build a foundational understanding.
+
+### Why TCS asks this?
+TCS NQT tests Verbal Ability PYQ Bank to evaluate logical reasoning, analytical skills, and coding readiness necessary for the 9 LPA Prime category roles.
+
+### ASCII Mind Map:
+```
+                      Core Verbal Ability PYQ Bank Structure
+                                |
+             +------------------+------------------+
+             |                                     |
+       Primary Rule 1                        Primary Rule 2
+     (Detailed concept)                     (Case analysis)
+```
+
+## 2. Theoretical Breakdown
+*   **Principle A:** Every abstraction should have a concrete representation.
+*   **Principle B:** Optimization must balance time and space complexities.

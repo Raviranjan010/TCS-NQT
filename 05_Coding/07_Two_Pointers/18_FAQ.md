@@ -1,3 +1,4 @@
-# 07 Two Pointers - 18 FAQ
+# Two Pointers Technique - FAQ
 
-*Document for TCS NQT preparation.*
+**Q1. Can this be solved in linear time?**
+*   **Answer:** Yes, by using hashing or two-pointers techniques.

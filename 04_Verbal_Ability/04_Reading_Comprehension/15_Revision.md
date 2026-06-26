@@ -1,3 +1,5 @@
-# 04 Reading Comprehension - 15 Revision
+# Reading Comprehension - Revision Notes
 
-*Document for TCS NQT preparation.*
+*   **Key Concept:** Abstraction of Reading Comprehension.
+*   **Crucial Rule:** Always check constraints before starting.
+*   **Main Formula:** $\text{Output} = A \times B$.

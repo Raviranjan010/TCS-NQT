@@ -1,3 +1,5 @@
-# 05 Para Jumbles - 15 Revision
+# Para Jumbles - Revision Notes
 
-*Document for TCS NQT preparation.*
+*   **Key Concept:** Abstraction of Para Jumbles.
+*   **Crucial Rule:** Always check constraints before starting.
+*   **Main Formula:** $\text{Output} = A \times B$.

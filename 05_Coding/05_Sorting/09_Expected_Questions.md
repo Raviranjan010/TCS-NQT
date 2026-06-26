@@ -1,3 +1,5 @@
-# 05 Sorting - 09 Expected Questions
+# Sorting Algorithms - Expected Questions
 
-*Document for TCS NQT preparation.*
+### Expected Question 1
+*   **Question:** Predict the next state in the sequence of Sorting Algorithms.
+*   **Solution:** Use the transition relation $S_{t+1} = f(S_t)$ to find the answer.

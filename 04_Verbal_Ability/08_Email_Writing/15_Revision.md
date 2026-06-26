@@ -1,3 +1,5 @@
-# 08 Email Writing - 15 Revision
+# Email Writing - Revision Notes
 
-*Document for TCS NQT preparation.*
+*   **Key Concept:** Abstraction of Email Writing.
+*   **Crucial Rule:** Always check constraints before starting.
+*   **Main Formula:** $\text{Output} = A \times B$.

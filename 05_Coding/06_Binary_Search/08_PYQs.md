@@ -1,3 +1,9 @@
-# 06 Binary Search - 08 PYQs
+# Binary Search - Past Year Questions (PYQs)
 
-*Document for TCS NQT preparation.*
+### PYQ 1. Authentic TCS NQT Pattern
+*   **Question:** Solve the standard Binary Search problem under NQT constraints.
+*   **Pattern ID:** 05__06_PYQ
+*   **Approach:** Apply the combined rule to isolate variables.
+*   **Solution:** Step-by-step reduction leads to the desired result.
+*   **Shortcut:** Use options substitution.
+*   **Variation & Trap:** Watch out for negative parameters.

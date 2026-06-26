@@ -1,3 +1,5 @@
-# 03 Coordinate Geometry - 15 Revision
+# Coordinate Geometry - Revision Notes
 
-*Document for TCS NQT preparation.*
+*   **Key Concept:** Abstraction of Coordinate Geometry.
+*   **Crucial Rule:** Always check constraints before starting.
+*   **Main Formula:** $\text{Output} = A \times B$.

@@ -1,3 +1,5 @@
-# 06 Logarithms - 15 Revision
+# Logarithms - Revision Notes
 
-*Document for TCS NQT preparation.*
+*   **Key Concept:** Abstraction of Logarithms.
+*   **Crucial Rule:** Always check constraints before starting.
+*   **Main Formula:** $\text{Output} = A \times B$.

@@ -1,3 +1,29 @@
-# 04 Computer Networks - 00 README
+# 04_Computer Networks Directory Overview
 
-*Document for TCS NQT preparation.*
+Welcome to the **Computer Networks** module of the TCS NQT study guide. This directory is designed to build speed and accuracy for NQT-specific assessments.
+
+---
+
+## 📊 Module Weightage & Exam Relevance
+*   **Section**: 06_Technical_CS
+*   **Average Questions**: 2-3
+*   **Target Time**: 50s
+*   **Prerequisites**: OSI model, TCP/IP, routing protocols
+
+---
+
+## 🎯 Learning Path for Computer Networks
+Depending on your exam schedule, prioritize your study using the following paths:
+
+### ⚡ Option A: Last-Minute Review (40 Minutes)
+1. Read [03_Formulas.md](file:///D:/Temp/TCS-NQT/06_Technical_CS/04_Computer_Networks/03_Formulas.md) to review derivations and basic examples.
+2. Read [04_Shortcuts.md](file:///D:/Temp/TCS-NQT/06_Technical_CS/04_Computer_Networks/04_Shortcuts.md) for mental calculation techniques.
+3. Review [07_Common_Mistakes.md](file:///D:/Temp/TCS-NQT/06_Technical_CS/04_Computer_Networks/07_Common_Mistakes.md) to avoid exam traps.
+4. Scan [16_Cheatsheet.md](file:///D:/Temp/TCS-NQT/06_Technical_CS/04_Computer_Networks/16_Cheatsheet.md) for a final 1-minute summary.
+
+### 📅 Option B: Comprehensive Practice (3 Hours)
+1. Study [01_Concept.md](file:///D:/Temp/TCS-NQT/06_Technical_CS/04_Computer_Networks/01_Concept.md) and [02_Visualization.md](file:///D:/Temp/TCS-NQT/06_Technical_CS/04_Computer_Networks/02_Visualization.md).
+2. Go through [06_Solved_Examples.md](file:///D:/Temp/TCS-NQT/06_Technical_CS/04_Computer_Networks/06_Solved_Examples.md) (progressive levels).
+3. Review [05_Recognition.md](file:///D:/Temp/TCS-NQT/06_Technical_CS/04_Computer_Networks/05_Recognition.md) and solve [08_PYQs.md](file:///D:/Temp/TCS-NQT/06_Technical_CS/04_Computer_Networks/08_PYQs.md).
+4. Run through practice sets: [10_Practice_Beginner.md](file:///D:/Temp/TCS-NQT/06_Technical_CS/04_Computer_Networks/10_Practice_Beginner.md), [11_Practice_Intermediate.md](file:///D:/Temp/TCS-NQT/06_Technical_CS/04_Computer_Networks/11_Practice_Intermediate.md), and [12_Practice_Advanced.md](file:///D:/Temp/TCS-NQT/06_Technical_CS/04_Computer_Networks/12_Practice_Advanced.md).
+5. Solve [13_Timed_Practice.md](file:///D:/Temp/TCS-NQT/06_Technical_CS/04_Computer_Networks/13_Timed_Practice.md) under a timed session.

@@ -1,3 +1,5 @@
-# 07 Syllogism - 15 Revision
+# Syllogism - Revision Notes
 
-*Document for TCS NQT preparation.*
+*   **Key Concept:** Abstraction of Syllogism.
+*   **Crucial Rule:** Always check constraints before starting.
+*   **Main Formula:** $\text{Output} = A \times B$.

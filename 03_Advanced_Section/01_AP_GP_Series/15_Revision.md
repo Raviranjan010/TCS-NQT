@@ -1,3 +1,5 @@
-# 01 AP GP Series - 15 Revision
+# AP & GP Series - Revision Notes
 
-*Document for TCS NQT preparation.*
+*   **Key Concept:** Abstraction of AP & GP Series.
+*   **Crucial Rule:** Always check constraints before starting.
+*   **Main Formula:** $\text{Output} = A \times B$.

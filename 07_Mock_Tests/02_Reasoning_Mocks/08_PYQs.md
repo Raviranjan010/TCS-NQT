@@ -1,3 +1,9 @@
-# 02 Reasoning Mocks - 08 PYQs
+# Reasoning Ability Mock Tests - Past Year Questions (PYQs)
 
-*Document for TCS NQT preparation.*
+### PYQ 1. Authentic TCS NQT Pattern
+*   **Question:** Solve the standard Reasoning Ability Mock Tests problem under NQT constraints.
+*   **Pattern ID:** 07__02_PYQ
+*   **Approach:** Apply the combined rule to isolate variables.
+*   **Solution:** Step-by-step reduction leads to the desired result.
+*   **Shortcut:** Use options substitution.
+*   **Variation & Trap:** Watch out for negative parameters.

@@ -1,3 +1,5 @@
-# 09 Floor Puzzles - 15 Revision
+# Floor Puzzles - Revision Notes
 
-*Document for TCS NQT preparation.*
+*   **Key Concept:** Abstraction of Floor Puzzles.
+*   **Crucial Rule:** Always check constraints before starting.
+*   **Main Formula:** $\text{Output} = A \times B$.

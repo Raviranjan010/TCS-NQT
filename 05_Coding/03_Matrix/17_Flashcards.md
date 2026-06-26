@@ -1,3 +1,6 @@
-# 03 Matrix - 17 Flashcards
+# Matrix Operations - Flashcards
 
-*Document for TCS NQT preparation.*
+*   **Card 1: What is the main objective of Matrix Operations?**
+    *   *Answer:* To optimize system parameters.
+*   **Card 2: What is the time complexity of the optimal solution?**
+    *   *Answer:* $O(N)$ time and $O(1)$ space.

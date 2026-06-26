@@ -1,3 +1,4 @@
-# 04 Cryptarithmetic - 18 FAQ
+# Cryptarithmetic Puzzles - FAQ
 
-*Document for TCS NQT preparation.*
+**Q1. Can this be solved in linear time?**
+*   **Answer:** Yes, by using hashing or two-pointers techniques.

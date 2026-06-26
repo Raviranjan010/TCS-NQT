@@ -1,3 +1,9 @@
-# 01 Grammar Rules - 08 PYQs
+# English Grammar Rules - Past Year Questions (PYQs)
 
-*Document for TCS NQT preparation.*
+### PYQ 1. Authentic TCS NQT Pattern
+*   **Question:** Solve the standard English Grammar Rules problem under NQT constraints.
+*   **Pattern ID:** 04__01_PYQ
+*   **Approach:** Apply the combined rule to isolate variables.
+*   **Solution:** Step-by-step reduction leads to the desired result.
+*   **Shortcut:** Use options substitution.
+*   **Variation & Trap:** Watch out for negative parameters.

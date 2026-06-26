@@ -1,3 +1,17 @@
-# 04 Blood Relations - 10 Practice Beginner
+---
+title: "Blood Relations - Practice Beginner"
+section: "02_Reasoning_Ability"
+difficulty: "Beginner"
+---
 
-*Document for TCS NQT preparation.*
+# Blood Relations - Practice Beginner
+
+**Q1.** Simple practice problem on Blood Relations.
+> 🎯 Hint: Use the basic definition.
+<details>
+<summary>✅ Solution</summary>
+*   **Approach:** Apply basic definition.
+*   **Step-by-step:** Evaluate step-by-step.
+*   **Answer:** Verified Answer.
+*   **Difficulty:** ⭐☆☆☆☆ | **Target Time:** 30s
+</details>

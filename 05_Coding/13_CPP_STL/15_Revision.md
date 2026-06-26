@@ -1,3 +1,5 @@
-# 13 CPP STL - 15 Revision
+# C++ STL & Data Structures - Revision Notes
 
-*Document for TCS NQT preparation.*
+*   **Key Concept:** Abstraction of C++ STL & Data Structures.
+*   **Crucial Rule:** Always check constraints before starting.
+*   **Main Formula:** $\text{Output} = A \times B$.

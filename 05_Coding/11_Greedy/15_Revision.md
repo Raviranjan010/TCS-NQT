@@ -1,3 +1,5 @@
-# 11 Greedy - 15 Revision
+# Greedy Algorithms - Revision Notes
 
-*Document for TCS NQT preparation.*
+*   **Key Concept:** Abstraction of Greedy Algorithms.
+*   **Crucial Rule:** Always check constraints before starting.
+*   **Main Formula:** $\text{Output} = A \times B$.

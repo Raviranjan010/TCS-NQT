@@ -1,3 +1,4 @@
-# 08 Calendar and Clock - 18 FAQ
+# Calendar & Clock - FAQ
 
-*Document for TCS NQT preparation.*
+**Q1. Can this be solved in linear time?**
+*   **Answer:** Yes, by using hashing or two-pointers techniques.

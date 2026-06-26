@@ -1,3 +1,9 @@
-# 04 Computer Networks - 08 PYQs
+# Computer Networks - Past Year Questions (PYQs)
 
-*Document for TCS NQT preparation.*
+### PYQ 1. Authentic TCS NQT Pattern
+*   **Question:** Solve the standard Computer Networks problem under NQT constraints.
+*   **Pattern ID:** 06__04_PYQ
+*   **Approach:** Apply the combined rule to isolate variables.
+*   **Solution:** Step-by-step reduction leads to the desired result.
+*   **Shortcut:** Use options substitution.
+*   **Variation & Trap:** Watch out for negative parameters.

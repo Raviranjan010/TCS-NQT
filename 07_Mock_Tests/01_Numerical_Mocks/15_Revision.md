@@ -1,3 +1,5 @@
-# 01 Numerical Mocks - 15 Revision
+# Numerical Ability Mock Tests - Revision Notes
 
-*Document for TCS NQT preparation.*
+*   **Key Concept:** Abstraction of Numerical Ability Mock Tests.
+*   **Crucial Rule:** Always check constraints before starting.
+*   **Main Formula:** $\text{Output} = A \times B$.

@@ -1,3 +1,5 @@
-# 03 Matrix - 09 Expected Questions
+# Matrix Operations - Expected Questions
 
-*Document for TCS NQT preparation.*
+### Expected Question 1
+*   **Question:** Predict the next state in the sequence of Matrix Operations.
+*   **Solution:** Use the transition relation $S_{t+1} = f(S_t)$ to find the answer.

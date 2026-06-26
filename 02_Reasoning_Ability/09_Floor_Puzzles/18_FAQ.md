@@ -1,3 +1,4 @@
-# 09 Floor Puzzles - 18 FAQ
+# Floor Puzzles - FAQ
 
-*Document for TCS NQT preparation.*
+**Q1. Can this be solved in linear time?**
+*   **Answer:** Yes, by using hashing or two-pointers techniques.

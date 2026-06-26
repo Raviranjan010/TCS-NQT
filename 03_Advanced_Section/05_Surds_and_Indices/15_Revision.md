@@ -1,3 +1,5 @@
-# 05 Surds and Indices - 15 Revision
+# Surds & Indices - Revision Notes
 
-*Document for TCS NQT preparation.*
+*   **Key Concept:** Abstraction of Surds & Indices.
+*   **Crucial Rule:** Always check constraints before starting.
+*   **Main Formula:** $\text{Output} = A \times B$.

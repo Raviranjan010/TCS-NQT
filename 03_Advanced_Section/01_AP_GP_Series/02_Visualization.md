@@ -1,3 +1,21 @@
-# 01 AP GP Series - 02 Visualization
+# AP & GP Series - Visual Guide & Models
 
-*Document for TCS NQT preparation.*
+Use this visual guide to map out the structures of AP & GP Series.
+
+### Decision Tree:
+```
+                     Identify AP & GP Series Pattern
+                                |
+           +--------------------+--------------------+
+           |                                         |
+     Condition X?                              Condition Y?
+           |                                         |
+     Select Method A                           Select Method B
+```
+
+### Comparison Table:
+| Aspect | Method A | Method B |
+| :--- | :--- | :--- |
+| **Time Complexity** | $O(N)$ | $O(\log N)$ |
+| **Space Complexity** | $O(N)$ | $O(1)$ |
+| **Best Scenario** | Unsorted inputs | Sorted inputs |

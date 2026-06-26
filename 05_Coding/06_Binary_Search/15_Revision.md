@@ -1,3 +1,5 @@
-# 06 Binary Search - 15 Revision
+# Binary Search - Revision Notes
 
-*Document for TCS NQT preparation.*
+*   **Key Concept:** Abstraction of Binary Search.
+*   **Crucial Rule:** Always check constraints before starting.
+*   **Main Formula:** $\text{Output} = A \times B$.

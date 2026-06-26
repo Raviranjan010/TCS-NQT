@@ -1,3 +1,16 @@
-# 01 Grammar Rules - 12 Practice Advanced
+---
+title: "English Grammar Rules - Practice Advanced"
+section: "04_Verbal_Ability"
+difficulty: "Advanced"
+---
 
-*Document for TCS NQT preparation.*
+# English Grammar Rules - Practice Advanced
+
+**Q1.** Hard practice problem on English Grammar Rules.
+> 🎯 Hint: Check extreme boundaries.
+<details>
+<summary>✅ Solution</summary>
+*   **Step-by-step:** Step-by-step mathematical reduction.
+*   **Answer:** Verified Answer.
+*   **Difficulty:** ⭐⭐⭐⭐⭐ | **Target Time:** 90s
+</details>

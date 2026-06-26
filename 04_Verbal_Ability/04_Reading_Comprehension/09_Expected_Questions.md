@@ -1,3 +1,5 @@
-# 04 Reading Comprehension - 09 Expected Questions
+# Reading Comprehension - Expected Questions
 
-*Document for TCS NQT preparation.*
+### Expected Question 1
+*   **Question:** Predict the next state in the sequence of Reading Comprehension.
+*   **Solution:** Use the transition relation $S_{t+1} = f(S_t)$ to find the answer.

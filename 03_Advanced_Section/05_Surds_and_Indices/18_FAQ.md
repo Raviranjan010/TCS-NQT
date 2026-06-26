@@ -1,3 +1,4 @@
-# 05 Surds and Indices - 18 FAQ
+# Surds & Indices - FAQ
 
-*Document for TCS NQT preparation.*
+**Q1. Can this be solved in linear time?**
+*   **Answer:** Yes, by using hashing or two-pointers techniques.

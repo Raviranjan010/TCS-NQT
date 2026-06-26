@@ -1,3 +1,5 @@
-# 04 Blood Relations - 15 Revision
+# Blood Relations - Revision Notes
 
-*Document for TCS NQT preparation.*
+*   **Key Concept:** Abstraction of Blood Relations.
+*   **Crucial Rule:** Always check constraints before starting.
+*   **Main Formula:** $\text{Output} = A \times B$.

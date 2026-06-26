@@ -1,3 +1,5 @@
-# 02 Reasoning Mocks - 15 Revision
+# Reasoning Ability Mock Tests - Revision Notes
 
-*Document for TCS NQT preparation.*
+*   **Key Concept:** Abstraction of Reasoning Ability Mock Tests.
+*   **Crucial Rule:** Always check constraints before starting.
+*   **Main Formula:** $\text{Output} = A \times B$.

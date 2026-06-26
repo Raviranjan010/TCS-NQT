@@ -1,3 +1,5 @@
-# 08 Calendar and Clock - 05 Recognition
+# Calendar & Clock - Pattern Recognition Guide
 
-*Document for TCS NQT preparation.*
+## 1. Recognition Triggers
+*   **Trigger A:** Look for keywords such as *"shortest path"*, *"cycles"*, or *"relationships"*.
+*   **Strategy:** Immediately select the corresponding tree or graph traversal model.

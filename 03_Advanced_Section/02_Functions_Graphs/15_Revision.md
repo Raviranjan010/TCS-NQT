@@ -1,3 +1,5 @@
-# 02 Functions Graphs - 15 Revision
+# Functions & Graphs - Revision Notes
 
-*Document for TCS NQT preparation.*
+*   **Key Concept:** Abstraction of Functions & Graphs.
+*   **Crucial Rule:** Always check constraints before starting.
+*   **Main Formula:** $\text{Output} = A \times B$.

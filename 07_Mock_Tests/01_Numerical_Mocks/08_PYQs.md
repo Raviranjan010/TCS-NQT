@@ -1,3 +1,9 @@
-# 01 Numerical Mocks - 08 PYQs
+# Numerical Ability Mock Tests - Past Year Questions (PYQs)
 
-*Document for TCS NQT preparation.*
+### PYQ 1. Authentic TCS NQT Pattern
+*   **Question:** Solve the standard Numerical Ability Mock Tests problem under NQT constraints.
+*   **Pattern ID:** 07__01_PYQ
+*   **Approach:** Apply the combined rule to isolate variables.
+*   **Solution:** Step-by-step reduction leads to the desired result.
+*   **Shortcut:** Use options substitution.
+*   **Variation & Trap:** Watch out for negative parameters.

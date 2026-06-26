@@ -1,3 +1,9 @@
-# 03 Coordinate Geometry - 08 PYQs
+# Coordinate Geometry - Past Year Questions (PYQs)
 
-*Document for TCS NQT preparation.*
+### PYQ 1. Authentic TCS NQT Pattern
+*   **Question:** Solve the standard Coordinate Geometry problem under NQT constraints.
+*   **Pattern ID:** 03__03_PYQ
+*   **Approach:** Apply the combined rule to isolate variables.
+*   **Solution:** Step-by-step reduction leads to the desired result.
+*   **Shortcut:** Use options substitution.
+*   **Variation & Trap:** Watch out for negative parameters.

@@ -1,3 +1,5 @@
-# 07 Passage Recall - 16 Cheatsheet
+# Cloze Test & Recall - Cheatsheet
 
-*Document for TCS NQT preparation.*
+*   **Formula 1:** $A = B \times C$
+*   **Shortcut:** Eliminate even numbers if output must be odd.
+*   **Time Complexity:** $O(N)$ for linear scans.

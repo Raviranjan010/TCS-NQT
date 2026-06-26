@@ -1,3 +1,6 @@
-# 07 Modular Arithmetic - 14 Interview Questions
+# Modular Arithmetic - Interview Questions
 
-*Document for TCS NQT preparation.*
+Conceptual questions asked in TCS technical interviews.
+
+**Q1. Describe the core purpose of Modular Arithmetic in real-world software engineering.**
+*   **Answer:** It allows engineers to build highly scalable, modular, and optimized systems by using clean designs and efficient algorithms.

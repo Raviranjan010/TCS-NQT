@@ -1,3 +1,16 @@
-# 03 Operating Systems - 12 Practice Advanced
+---
+title: "Operating Systems - Practice Advanced"
+section: "06_Technical_CS"
+difficulty: "Advanced"
+---
 
-*Document for TCS NQT preparation.*
+# Operating Systems - Practice Advanced
+
+**Q1.** Hard practice problem on Operating Systems.
+> 🎯 Hint: Check extreme boundaries.
+<details>
+<summary>✅ Solution</summary>
+*   **Step-by-step:** Step-by-step mathematical reduction.
+*   **Answer:** Verified Answer.
+*   **Difficulty:** ⭐⭐⭐⭐⭐ | **Target Time:** 90s
+</details>

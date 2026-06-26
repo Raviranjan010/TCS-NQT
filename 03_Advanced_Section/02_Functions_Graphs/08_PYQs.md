@@ -1,3 +1,9 @@
-# 02 Functions Graphs - 08 PYQs
+# Functions & Graphs - Past Year Questions (PYQs)
 
-*Document for TCS NQT preparation.*
+### PYQ 1. Authentic TCS NQT Pattern
+*   **Question:** Solve the standard Functions & Graphs problem under NQT constraints.
+*   **Pattern ID:** 03__02_PYQ
+*   **Approach:** Apply the combined rule to isolate variables.
+*   **Solution:** Step-by-step reduction leads to the desired result.
+*   **Shortcut:** Use options substitution.
+*   **Variation & Trap:** Watch out for negative parameters.

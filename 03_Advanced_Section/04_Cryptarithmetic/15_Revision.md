@@ -1,3 +1,5 @@
-# 04 Cryptarithmetic - 15 Revision
+# Cryptarithmetic Puzzles - Revision Notes
 
-*Document for TCS NQT preparation.*
+*   **Key Concept:** Abstraction of Cryptarithmetic Puzzles.
+*   **Crucial Rule:** Always check constraints before starting.
+*   **Main Formula:** $\text{Output} = A \times B$.

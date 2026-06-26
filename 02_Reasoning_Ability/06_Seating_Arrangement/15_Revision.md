@@ -1,3 +1,5 @@
-# 06 Seating Arrangement - 15 Revision
+# Seating Arrangement - Revision Notes
 
-*Document for TCS NQT preparation.*
+*   **Key Concept:** Abstraction of Seating Arrangement.
+*   **Crucial Rule:** Always check constraints before starting.
+*   **Main Formula:** $\text{Output} = A \times B$.

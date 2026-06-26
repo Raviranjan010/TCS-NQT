@@ -1,3 +1,5 @@
-# 07 Two Pointers - 16 Cheatsheet
+# Two Pointers Technique - Cheatsheet
 
-*Document for TCS NQT preparation.*
+*   **Formula 1:** $A = B \times C$
+*   **Shortcut:** Eliminate even numbers if output must be odd.
+*   **Time Complexity:** $O(N)$ for linear scans.

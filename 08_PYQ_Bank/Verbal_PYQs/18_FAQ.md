@@ -1,3 +1,4 @@
-# Verbal PYQs - 18 FAQ
+# Verbal Ability PYQ Bank - FAQ
 
-*Document for TCS NQT preparation.*
+**Q1. Can this be solved in linear time?**
+*   **Answer:** Yes, by using hashing or two-pointers techniques.

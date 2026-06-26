@@ -1,3 +1,6 @@
-# 01 OOP - 17 Flashcards
+# Object-Oriented Programming - Flashcards
 
-*Document for TCS NQT preparation.*
+*   **Card 1: What is the main objective of Object-Oriented Programming?**
+    *   *Answer:* To optimize system parameters.
+*   **Card 2: What is the time complexity of the optimal solution?**
+    *   *Answer:* $O(N)$ time and $O(1)$ space.

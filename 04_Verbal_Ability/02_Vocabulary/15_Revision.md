@@ -1,3 +1,5 @@
-# 02 Vocabulary - 15 Revision
+# Synonyms & Antonyms - Revision Notes
 
-*Document for TCS NQT preparation.*
+*   **Key Concept:** Abstraction of Synonyms & Antonyms.
+*   **Crucial Rule:** Always check constraints before starting.
+*   **Main Formula:** $\text{Output} = A \times B$.

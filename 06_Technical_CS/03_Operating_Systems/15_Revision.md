@@ -1,3 +1,5 @@
-# 03 Operating Systems - 15 Revision
+# Operating Systems - Revision Notes
 
-*Document for TCS NQT preparation.*
+*   **Key Concept:** Abstraction of Operating Systems.
+*   **Crucial Rule:** Always check constraints before starting.
+*   **Main Formula:** $\text{Output} = A \times B$.

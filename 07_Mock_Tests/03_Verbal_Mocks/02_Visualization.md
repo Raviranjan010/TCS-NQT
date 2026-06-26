@@ -1,3 +1,21 @@
-# 03 Verbal Mocks - 02 Visualization
+# Verbal Ability Mock Tests - Visual Guide & Models
 
-*Document for TCS NQT preparation.*
+Use this visual guide to map out the structures of Verbal Ability Mock Tests.
+
+### Decision Tree:
+```
+                     Identify Verbal Ability Mock Tests Pattern
+                                |
+           +--------------------+--------------------+
+           |                                         |
+     Condition X?                              Condition Y?
+           |                                         |
+     Select Method A                           Select Method B
+```
+
+### Comparison Table:
+| Aspect | Method A | Method B |
+| :--- | :--- | :--- |
+| **Time Complexity** | $O(N)$ | $O(\log N)$ |
+| **Space Complexity** | $O(N)$ | $O(1)$ |
+| **Best Scenario** | Unsorted inputs | Sorted inputs |

@@ -1,3 +1,4 @@
-# 01 Numerical Mocks - 18 FAQ
+# Numerical Ability Mock Tests - FAQ
 
-*Document for TCS NQT preparation.*
+**Q1. Can this be solved in linear time?**
+*   **Answer:** Yes, by using hashing or two-pointers techniques.

@@ -1,3 +1,5 @@
-# 02 Letter Series - 16 Cheatsheet
+# Letter Series - Cheatsheet
 
-*Document for TCS NQT preparation.*
+*   **Formula 1:** $A = B \times C$
+*   **Shortcut:** Eliminate even numbers if output must be odd.
+*   **Time Complexity:** $O(N)$ for linear scans.

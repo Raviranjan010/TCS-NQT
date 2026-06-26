@@ -1,3 +1,5 @@
-# 05 Sorting - 15 Revision
+# Sorting Algorithms - Revision Notes
 
-*Document for TCS NQT preparation.*
+*   **Key Concept:** Abstraction of Sorting Algorithms.
+*   **Crucial Rule:** Always check constraints before starting.
+*   **Main Formula:** $\text{Output} = A \times B$.

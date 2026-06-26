@@ -1,3 +1,5 @@
-# 05 Para Jumbles - 09 Expected Questions
+# Para Jumbles - Expected Questions
 
-*Document for TCS NQT preparation.*
+### Expected Question 1
+*   **Question:** Predict the next state in the sequence of Para Jumbles.
+*   **Solution:** Use the transition relation $S_{t+1} = f(S_t)$ to find the answer.

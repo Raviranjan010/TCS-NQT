@@ -1,3 +1,5 @@
-# 01 Grammar Rules - 09 Expected Questions
+# English Grammar Rules - Expected Questions
 
-*Document for TCS NQT preparation.*
+### Expected Question 1
+*   **Question:** Predict the next state in the sequence of English Grammar Rules.
+*   **Solution:** Use the transition relation $S_{t+1} = f(S_t)$ to find the answer.

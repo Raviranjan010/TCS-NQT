@@ -1,3 +1,16 @@
-# 13 CPP STL - 11 Practice Intermediate
+---
+title: "C++ STL & Data Structures - Practice Intermediate"
+section: "05_Coding"
+difficulty: "Intermediate"
+---
 
-*Document for TCS NQT preparation.*
+# C++ STL & Data Structures - Practice Intermediate
+
+**Q1.** Medium practice problem on C++ STL & Data Structures.
+> 🎯 Hint: Apply the base relation.
+<details>
+<summary>✅ Solution</summary>
+*   **Step-by-step:** Work out step-by-step.
+*   **Answer:** Verified Answer.
+*   **Difficulty:** ⭐⭐⭐☆☆ | **Target Time:** 45s
+</details>

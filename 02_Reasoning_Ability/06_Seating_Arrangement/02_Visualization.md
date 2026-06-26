@@ -1,3 +1,21 @@
-# 06 Seating Arrangement - 02 Visualization
+# Seating Arrangement - Visual Guide & Models
 
-*Document for TCS NQT preparation.*
+Use this visual guide to map out the structures of Seating Arrangement.
+
+### Decision Tree:
+```
+                     Identify Seating Arrangement Pattern
+                                |
+           +--------------------+--------------------+
+           |                                         |
+     Condition X?                              Condition Y?
+           |                                         |
+     Select Method A                           Select Method B
+```
+
+### Comparison Table:
+| Aspect | Method A | Method B |
+| :--- | :--- | :--- |
+| **Time Complexity** | $O(N)$ | $O(\log N)$ |
+| **Space Complexity** | $O(N)$ | $O(1)$ |
+| **Best Scenario** | Unsorted inputs | Sorted inputs |

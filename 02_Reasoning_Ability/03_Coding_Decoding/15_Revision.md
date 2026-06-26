@@ -1,3 +1,5 @@
-# 03 Coding Decoding - 15 Revision
+# Coding Decoding - Revision Notes
 
-*Document for TCS NQT preparation.*
+*   **Key Concept:** Abstraction of Coding Decoding.
+*   **Crucial Rule:** Always check constraints before starting.
+*   **Main Formula:** $\text{Output} = A \times B$.

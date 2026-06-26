@@ -1,3 +1,5 @@
-# 12 Math Problems - 15 Revision
+# Mathematical Coding - Revision Notes
 
-*Document for TCS NQT preparation.*
+*   **Key Concept:** Abstraction of Mathematical Coding.
+*   **Crucial Rule:** Always check constraints before starting.
+*   **Main Formula:** $\text{Output} = A \times B$.

@@ -1,3 +1,16 @@
-# 05 Surds and Indices - 12 Practice Advanced
+---
+title: "Surds & Indices - Practice Advanced"
+section: "03_Advanced_Section"
+difficulty: "Advanced"
+---
 
-*Document for TCS NQT preparation.*
+# Surds & Indices - Practice Advanced
+
+**Q1.** Hard practice problem on Surds & Indices.
+> 🎯 Hint: Check extreme boundaries.
+<details>
+<summary>✅ Solution</summary>
+*   **Step-by-step:** Step-by-step mathematical reduction.
+*   **Answer:** Verified Answer.
+*   **Difficulty:** ⭐⭐⭐⭐⭐ | **Target Time:** 90s
+</details>

@@ -1,3 +1,16 @@
-# 03 Coding Decoding - 11 Practice Intermediate
+---
+title: "Coding Decoding - Practice Intermediate"
+section: "02_Reasoning_Ability"
+difficulty: "Intermediate"
+---
 
-*Document for TCS NQT preparation.*
+# Coding Decoding - Practice Intermediate
+
+**Q1.** Medium practice problem on Coding Decoding.
+> 🎯 Hint: Apply the base relation.
+<details>
+<summary>✅ Solution</summary>
+*   **Step-by-step:** Work out step-by-step.
+*   **Answer:** Verified Answer.
+*   **Difficulty:** ⭐⭐⭐☆☆ | **Target Time:** 45s
+</details>

@@ -1,3 +1,5 @@
-# 07 Two Pointers - 09 Expected Questions
+# Two Pointers Technique - Expected Questions
 
-*Document for TCS NQT preparation.*
+### Expected Question 1
+*   **Question:** Predict the next state in the sequence of Two Pointers Technique.
+*   **Solution:** Use the transition relation $S_{t+1} = f(S_t)$ to find the answer.

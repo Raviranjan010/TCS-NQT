@@ -1,3 +1,9 @@
-# 07 Modular Arithmetic - 08 PYQs
+# Modular Arithmetic - Past Year Questions (PYQs)
 
-*Document for TCS NQT preparation.*
+### PYQ 1. Authentic TCS NQT Pattern
+*   **Question:** Solve the standard Modular Arithmetic problem under NQT constraints.
+*   **Pattern ID:** 03__07_PYQ
+*   **Approach:** Apply the combined rule to isolate variables.
+*   **Solution:** Step-by-step reduction leads to the desired result.
+*   **Shortcut:** Use options substitution.
+*   **Variation & Trap:** Watch out for negative parameters.

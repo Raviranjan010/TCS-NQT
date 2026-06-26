@@ -1,3 +1,5 @@
-# 10 Recursion - 16 Cheatsheet
+# Recursion & Backtracking - Cheatsheet
 
-*Document for TCS NQT preparation.*
+*   **Formula 1:** $A = B \times C$
+*   **Shortcut:** Eliminate even numbers if output must be odd.
+*   **Time Complexity:** $O(N)$ for linear scans.

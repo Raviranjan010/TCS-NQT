@@ -1,3 +1,5 @@
-# 07 Passage Recall - 15 Revision
+# Cloze Test & Recall - Revision Notes
 
-*Document for TCS NQT preparation.*
+*   **Key Concept:** Abstraction of Cloze Test & Recall.
+*   **Crucial Rule:** Always check constraints before starting.
+*   **Main Formula:** $\text{Output} = A \times B$.

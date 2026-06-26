@@ -1,3 +1,6 @@
-# 04 Coding Mocks - 17 Flashcards
+# Coding Mock Tests - Flashcards
 
-*Document for TCS NQT preparation.*
+*   **Card 1: What is the main objective of Coding Mock Tests?**
+    *   *Answer:* To optimize system parameters.
+*   **Card 2: What is the time complexity of the optimal solution?**
+    *   *Answer:* $O(N)$ time and $O(1)$ space.
