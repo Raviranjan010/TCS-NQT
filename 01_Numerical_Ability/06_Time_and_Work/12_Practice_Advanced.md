@@ -12,10 +12,10 @@ difficulty: "Advanced"
 <summary>✅ Solution</summary>
 *   **Approach:** Efficiency balancing.
 *   **Step-by-step:**
-    $$8(4M + 6W) = 10(3M + 7W) \implies 32M + 48W = 30M + 70W$$
-    $$2M = 22W \implies 1M = 11W$$
-    Total work in W-days $= 8(4(11W) + 6W) = 8(50W) = 400W\text{-days}$.
-    10 women will take: $400 / 10 = 40$ days.
+    *   $8(4M + 6W) = 10(3M + 7W) \implies 32M + 48W = 30M + 70W$
+    *   $2M = 22W \implies 1M = 11W$
+    *   Total work in W-days $= 8(4(11W) + 6W) = 8(50W) = 400W\text{-days}$.
+    *   10 women will take: $400 / 10 = 40$ days.
 *   **Answer:** 40 days
 *   **Difficulty:** ⭐⭐⭐⭐⭐ | **Target Time:** 90s
 </details>

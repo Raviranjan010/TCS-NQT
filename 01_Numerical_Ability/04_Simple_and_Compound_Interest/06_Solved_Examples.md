@@ -10,7 +10,7 @@
 ### Example 2. Difference between CI & SI
 *   **Question:** The difference between CI and SI on a sum for 2 years at $8\%$ is ₹64. Find the principal.
 *   **Solution:**
-    $$\text{Diff} = P\left(\frac{R}{100}ight)^2 \implies 64 = P \left(\frac{8}{100}\right)^2 \implies 64 = P \times \frac{64}{10000} \implies P = ₹10,000$$
+    $$\text{Diff} = P\left(\frac{R}{100}\right)^2 \implies 64 = P \left(\frac{8}{100}\right)^2 \implies 64 = P \times \frac{64}{10000} \implies P = ₹10,000$$
 
 ## 🔴 Hard-Level Examples
 ### Example 3. CI Compounding Installments
