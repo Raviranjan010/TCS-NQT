@@ -1,124 +1,51 @@
-# 03 Verbal Mocks - Expected Questions
+# Verbal Ability Mock Tests - Expected Questions
 
-This file contains 15 TCS NQT-style expected questions based on 2022-2025 patterns.
-
----
-
-**Q1.** Write a function to solve the following problem in this category: Find the 1-th node from the end of a singly linked list.
-*   **Type:** Technical Concept / Coding Problem
-*   **Answer:** Use the two-pointer method. Set fast and slow pointers. Move fast pointer 1 steps ahead, then move both together. Return slow pointer. Time complexity: O(N), Space: O(1).
-*   **Time target:** 90 seconds
-*   **TCS frequency:** High (appears in 80% of papers)
+This file contains expected practice questions for the Verbal Ability mock tests.
 
 ---
 
-**Q2.** Write a function to solve the following problem in this category: Find the 2-th node from the end of a singly linked list.
-*   **Type:** Technical Concept / Coding Problem
-*   **Answer:** Use the two-pointer method. Set fast and slow pointers. Move fast pointer 2 steps ahead, then move both together. Return slow pointer. Time complexity: O(N), Space: O(1).
-*   **Time target:** 90 seconds
-*   **TCS frequency:** High (appears in 80% of papers)
+## 1. VERB-01: Sentence Correction (Subject-Verb Agreement)
+
+*   **Question**: Identify the error in the sentence: *"Neither the teacher nor the students was present in the meeting."*
+*   **Correction**: *"Neither the teacher nor the students **were** present in the meeting."*
+*   **Rule**: When two subjects are joined by "neither... nor" or "either... or", the verb must agree with the subject closest to it.
+    *   Closest subject is `students` (plural) $\implies$ verb must be `were` (plural).
+*   **Trap**: Don't be confused by the singular first subject (`teacher`). Check only the subject closest to the verb.
 
 ---
 
-**Q3.** Write a function to solve the following problem in this category: Find the 3-th node from the end of a singly linked list.
-*   **Type:** Technical Concept / Coding Problem
-*   **Answer:** Use the two-pointer method. Set fast and slow pointers. Move fast pointer 3 steps ahead, then move both together. Return slow pointer. Time complexity: O(N), Space: O(1).
-*   **Time target:** 90 seconds
-*   **TCS frequency:** High (appears in 80% of papers)
+## 2. VERB-02: Active vs Passive Voice
+
+*   **Question**: Convert the active voice sentence to passive voice: *"The chef prepared a delicious meal."*
+*   **Correction**: *"A delicious meal **was prepared** by the chef."*
+*   **Conversion Mechanics**:
+    *   Active: $\text{Subject (Chef)} + \text{Verb (prepared)} + \text{Object (meal)}$.
+    *   Passive: $\text{Object (meal)} + \text{was/were} + \text{Past Participle (prepared)} + \text{by} + \text{Subject (chef)}$.
 
 ---
 
-**Q4.** Write a function to solve the following problem in this category: Find the 4-th node from the end of a singly linked list.
-*   **Type:** Technical Concept / Coding Problem
-*   **Answer:** Use the two-pointer method. Set fast and slow pointers. Move fast pointer 4 steps ahead, then move both together. Return slow pointer. Time complexity: O(N), Space: O(1).
-*   **Time target:** 90 seconds
-*   **TCS frequency:** High (appears in 80% of papers)
+## 3. VERB-03: Prepositions & Conjunctions
+
+*   **Question**: Fill in the blanks with the correct preposition and conjunction: *"She has been working in this company ____ 2018, ____ she is not happy with her role."*
+*   **Options**:
+    (a) for, but
+    (b) since, but
+    (c) since, because
+    (d) for, although
+*   **Correction**: **(b) since, but**
+*   **Rule**:
+    *   Use `since` for a specific point in time (2018). Use `for` for a duration of time (e.g. 5 years).
+    *   Use `but` to connect contrasting clauses.
 
 ---
 
-**Q5.** Write a function to solve the following problem in this category: Find the 5-th node from the end of a singly linked list.
-*   **Type:** Technical Concept / Coding Problem
-*   **Answer:** Use the two-pointer method. Set fast and slow pointers. Move fast pointer 5 steps ahead, then move both together. Return slow pointer. Time complexity: O(N), Space: O(1).
-*   **Time target:** 90 seconds
-*   **TCS frequency:** High (appears in 80% of papers)
+## 4. VERB-04: Cloze Test & Vocabulary
 
----
-
-**Q6.** Write a function to solve the following problem in this category: Find the 6-th node from the end of a singly linked list.
-*   **Type:** Technical Concept / Coding Problem
-*   **Answer:** Use the two-pointer method. Set fast and slow pointers. Move fast pointer 6 steps ahead, then move both together. Return slow pointer. Time complexity: O(N), Space: O(1).
-*   **Time target:** 90 seconds
-*   **TCS frequency:** High (appears in 80% of papers)
-
----
-
-**Q7.** Write a function to solve the following problem in this category: Find the 7-th node from the end of a singly linked list.
-*   **Type:** Technical Concept / Coding Problem
-*   **Answer:** Use the two-pointer method. Set fast and slow pointers. Move fast pointer 7 steps ahead, then move both together. Return slow pointer. Time complexity: O(N), Space: O(1).
-*   **Time target:** 90 seconds
-*   **TCS frequency:** High (appears in 80% of papers)
-
----
-
-**Q8.** Write a function to solve the following problem in this category: Find the 8-th node from the end of a singly linked list.
-*   **Type:** Technical Concept / Coding Problem
-*   **Answer:** Use the two-pointer method. Set fast and slow pointers. Move fast pointer 8 steps ahead, then move both together. Return slow pointer. Time complexity: O(N), Space: O(1).
-*   **Time target:** 90 seconds
-*   **TCS frequency:** High (appears in 80% of papers)
-
----
-
-**Q9.** Write a function to solve the following problem in this category: Find the 9-th node from the end of a singly linked list.
-*   **Type:** Technical Concept / Coding Problem
-*   **Answer:** Use the two-pointer method. Set fast and slow pointers. Move fast pointer 9 steps ahead, then move both together. Return slow pointer. Time complexity: O(N), Space: O(1).
-*   **Time target:** 90 seconds
-*   **TCS frequency:** High (appears in 80% of papers)
-
----
-
-**Q10.** Write a function to solve the following problem in this category: Find the 10-th node from the end of a singly linked list.
-*   **Type:** Technical Concept / Coding Problem
-*   **Answer:** Use the two-pointer method. Set fast and slow pointers. Move fast pointer 10 steps ahead, then move both together. Return slow pointer. Time complexity: O(N), Space: O(1).
-*   **Time target:** 90 seconds
-*   **TCS frequency:** High (appears in 80% of papers)
-
----
-
-**Q11.** Write a function to solve the following problem in this category: Find the 11-th node from the end of a singly linked list.
-*   **Type:** Technical Concept / Coding Problem
-*   **Answer:** Use the two-pointer method. Set fast and slow pointers. Move fast pointer 11 steps ahead, then move both together. Return slow pointer. Time complexity: O(N), Space: O(1).
-*   **Time target:** 90 seconds
-*   **TCS frequency:** High (appears in 80% of papers)
-
----
-
-**Q12.** Write a function to solve the following problem in this category: Find the 12-th node from the end of a singly linked list.
-*   **Type:** Technical Concept / Coding Problem
-*   **Answer:** Use the two-pointer method. Set fast and slow pointers. Move fast pointer 12 steps ahead, then move both together. Return slow pointer. Time complexity: O(N), Space: O(1).
-*   **Time target:** 90 seconds
-*   **TCS frequency:** High (appears in 80% of papers)
-
----
-
-**Q13.** Write a function to solve the following problem in this category: Find the 13-th node from the end of a singly linked list.
-*   **Type:** Technical Concept / Coding Problem
-*   **Answer:** Use the two-pointer method. Set fast and slow pointers. Move fast pointer 13 steps ahead, then move both together. Return slow pointer. Time complexity: O(N), Space: O(1).
-*   **Time target:** 90 seconds
-*   **TCS frequency:** High (appears in 80% of papers)
-
----
-
-**Q14.** Write a function to solve the following problem in this category: Find the 14-th node from the end of a singly linked list.
-*   **Type:** Technical Concept / Coding Problem
-*   **Answer:** Use the two-pointer method. Set fast and slow pointers. Move fast pointer 14 steps ahead, then move both together. Return slow pointer. Time complexity: O(N), Space: O(1).
-*   **Time target:** 90 seconds
-*   **TCS frequency:** High (appears in 80% of papers)
-
----
-
-**Q15.** Write a function to solve the following problem in this category: Find the 15-th node from the end of a singly linked list.
-*   **Type:** Technical Concept / Coding Problem
-*   **Answer:** Use the two-pointer method. Set fast and slow pointers. Move fast pointer 15 steps ahead, then move both together. Return slow pointer. Time complexity: O(N), Space: O(1).
-*   **Time target:** 90 seconds
-*   **TCS frequency:** High (appears in 80% of papers)
-
+*   **Question**: Fill in the blank with the most appropriate word: *"Due to severe weather conditions, the flight was ____ delayed, causing inconvenience to passengers."*
+*   **Options**:
+    (a) briefly
+    (b) indefinitely
+    (c) immediately
+    (d) deliberately
+*   **Correction**: **(b) indefinitely**
+*   **Context clues**: "severe weather conditions" and "causing inconvenience" implies a long, uncertain delay. "indefinitely" matches the severity.

@@ -1,124 +1,67 @@
-# 04 Computer Networks - Expected Questions
+# Computer Networks - Expected Questions (TCS NQT)
 
-This file contains 15 TCS NQT-style expected questions based on 2022-2025 patterns.
-
----
-
-**Q1.** Write a function to solve the following problem in this category: Find the 1-th node from the end of a singly linked list.
-*   **Type:** Technical Concept / Coding Problem
-*   **Answer:** Use the two-pointer method. Set fast and slow pointers. Move fast pointer 1 steps ahead, then move both together. Return slow pointer. Time complexity: O(N), Space: O(1).
-*   **Time target:** 90 seconds
-*   **TCS frequency:** High (appears in 80% of papers)
+This file contains expected questions on Computer Networks (CN) for the TCS NQT exam.
 
 ---
 
-**Q2.** Write a function to solve the following problem in this category: Find the 2-th node from the end of a singly linked list.
-*   **Type:** Technical Concept / Coding Problem
-*   **Answer:** Use the two-pointer method. Set fast and slow pointers. Move fast pointer 2 steps ahead, then move both together. Return slow pointer. Time complexity: O(N), Space: O(1).
-*   **Time target:** 90 seconds
-*   **TCS frequency:** High (appears in 80% of papers)
+## 1. CN-01: OSI Model Layers & Protocols
+
+*   **Question**: Outline the 7 layers of the OSI model and list their core protocols.
+*   **Layers Summary Table**:
+| Layer Name | Data Unit | Core Function | Protocols |
+| :--- | :--- | :--- | :--- |
+| **7. Application** | Data | End-user interface, APIs | HTTP, FTP, DNS, SMTP |
+| **6. Presentation**| Data | Data formatting, encryption | SSL, TLS, ASCII, JPEG |
+| **5. Session** | Data | Session establishment, sync | RPC, NetBIOS |
+| **4. Transport** | Segment/Datagram | End-to-end reliability | TCP, UDP |
+| **3. Network** | Packet | Routing, logical addressing | IP (IPv4/IPv6), ICMP, OSPF |
+| **2. Data Link** | Frame | Physical addressing, hop-to-hop | Ethernet, PPP, MAC |
+| **1. Physical** | Bits | Physical medium transmission | RS-232, fiber optics |
+
+*   **Shortcut**: "All People Seem To Need Data Processing" (Application, Presentation, Session, Transport, Network, Data Link, Physical).
 
 ---
 
-**Q3.** Write a function to solve the following problem in this category: Find the 3-th node from the end of a singly linked list.
-*   **Type:** Technical Concept / Coding Problem
-*   **Answer:** Use the two-pointer method. Set fast and slow pointers. Move fast pointer 3 steps ahead, then move both together. Return slow pointer. Time complexity: O(N), Space: O(1).
-*   **Time target:** 90 seconds
-*   **TCS frequency:** High (appears in 80% of papers)
+## 2. CN-02: IP Addressing & Subnetting Calculations
+
+*   **Question**: Given a Class C IP address block `192.168.1.0/26`, find the subnet mask, number of usable subnets, and number of usable hosts per subnet.
+*   **Derivation**:
+    1.  The CIDR notation `/26` means the first 26 bits are set to 1 for the subnet mask:
+        $$\underbrace{11111111}_{255} . \underbrace{11111111}_{255} . \underbrace{11111111}_{255} . \underbrace{11000000}_{192} \implies 255.255.255.192$$
+    2.  Class C default mask is `/24`. We borrowed $26 - 24 = 2$ bits.
+        *   Number of subnets $= 2^2 = 4$.
+    3.  Remaining host bits $= 32 - 26 = 6$ bits.
+        *   Total hosts per subnet $= 2^6 = 64$.
+        *   Usable hosts per subnet $= 2^6 - 2 = 62$ (subtracting network address and broadcast address).
+*   **Real Number Demo**: For subnet 0: Network address = `192.168.1.0`, Usable IP range = `192.168.1.1` to `192.168.1.62`, Broadcast address = `192.168.1.63`.
 
 ---
 
-**Q4.** Write a function to solve the following problem in this category: Find the 4-th node from the end of a singly linked list.
-*   **Type:** Technical Concept / Coding Problem
-*   **Answer:** Use the two-pointer method. Set fast and slow pointers. Move fast pointer 4 steps ahead, then move both together. Return slow pointer. Time complexity: O(N), Space: O(1).
-*   **Time target:** 90 seconds
-*   **TCS frequency:** High (appears in 80% of papers)
+## 3. CN-03: TCP vs UDP & Sliding Window Flow Control
+
+*   **Question**: Distinguish between TCP and UDP. Explain sliding window flow control.
+*   **Comparison**:
+| Feature | TCP | UDP |
+| :--- | :--- | :--- |
+| **Connection** | Connection-oriented (requires 3-way handshake). | Connectionless. |
+| **Reliability** | Reliable (acknowledgments, retransmissions). | Unreliable (best-effort delivery). |
+| **Header Size** | 20 bytes. | 8 bytes. |
+| **Flow Control**| Yes (sliding window). | No. |
+
+*   **Sliding Window Mechanism**: The sender can transmit multiple packets before receiving an acknowledgment. The window size represents the buffer limit. If a packet is lost, the sender halts window slide and retransmits (Go-Back-N or Selective Repeat).
 
 ---
 
-**Q5.** Write a function to solve the following problem in this category: Find the 5-th node from the end of a singly linked list.
-*   **Type:** Technical Concept / Coding Problem
-*   **Answer:** Use the two-pointer method. Set fast and slow pointers. Move fast pointer 5 steps ahead, then move both together. Return slow pointer. Time complexity: O(N), Space: O(1).
-*   **Time target:** 90 seconds
-*   **TCS frequency:** High (appears in 80% of papers)
+## 4. CN-04: DNS and HTTP/HTTPS
 
----
-
-**Q6.** Write a function to solve the following problem in this category: Find the 6-th node from the end of a singly linked list.
-*   **Type:** Technical Concept / Coding Problem
-*   **Answer:** Use the two-pointer method. Set fast and slow pointers. Move fast pointer 6 steps ahead, then move both together. Return slow pointer. Time complexity: O(N), Space: O(1).
-*   **Time target:** 90 seconds
-*   **TCS frequency:** High (appears in 80% of papers)
-
----
-
-**Q7.** Write a function to solve the following problem in this category: Find the 7-th node from the end of a singly linked list.
-*   **Type:** Technical Concept / Coding Problem
-*   **Answer:** Use the two-pointer method. Set fast and slow pointers. Move fast pointer 7 steps ahead, then move both together. Return slow pointer. Time complexity: O(N), Space: O(1).
-*   **Time target:** 90 seconds
-*   **TCS frequency:** High (appears in 80% of papers)
-
----
-
-**Q8.** Write a function to solve the following problem in this category: Find the 8-th node from the end of a singly linked list.
-*   **Type:** Technical Concept / Coding Problem
-*   **Answer:** Use the two-pointer method. Set fast and slow pointers. Move fast pointer 8 steps ahead, then move both together. Return slow pointer. Time complexity: O(N), Space: O(1).
-*   **Time target:** 90 seconds
-*   **TCS frequency:** High (appears in 80% of papers)
-
----
-
-**Q9.** Write a function to solve the following problem in this category: Find the 9-th node from the end of a singly linked list.
-*   **Type:** Technical Concept / Coding Problem
-*   **Answer:** Use the two-pointer method. Set fast and slow pointers. Move fast pointer 9 steps ahead, then move both together. Return slow pointer. Time complexity: O(N), Space: O(1).
-*   **Time target:** 90 seconds
-*   **TCS frequency:** High (appears in 80% of papers)
-
----
-
-**Q10.** Write a function to solve the following problem in this category: Find the 10-th node from the end of a singly linked list.
-*   **Type:** Technical Concept / Coding Problem
-*   **Answer:** Use the two-pointer method. Set fast and slow pointers. Move fast pointer 10 steps ahead, then move both together. Return slow pointer. Time complexity: O(N), Space: O(1).
-*   **Time target:** 90 seconds
-*   **TCS frequency:** High (appears in 80% of papers)
-
----
-
-**Q11.** Write a function to solve the following problem in this category: Find the 11-th node from the end of a singly linked list.
-*   **Type:** Technical Concept / Coding Problem
-*   **Answer:** Use the two-pointer method. Set fast and slow pointers. Move fast pointer 11 steps ahead, then move both together. Return slow pointer. Time complexity: O(N), Space: O(1).
-*   **Time target:** 90 seconds
-*   **TCS frequency:** High (appears in 80% of papers)
-
----
-
-**Q12.** Write a function to solve the following problem in this category: Find the 12-th node from the end of a singly linked list.
-*   **Type:** Technical Concept / Coding Problem
-*   **Answer:** Use the two-pointer method. Set fast and slow pointers. Move fast pointer 12 steps ahead, then move both together. Return slow pointer. Time complexity: O(N), Space: O(1).
-*   **Time target:** 90 seconds
-*   **TCS frequency:** High (appears in 80% of papers)
-
----
-
-**Q13.** Write a function to solve the following problem in this category: Find the 13-th node from the end of a singly linked list.
-*   **Type:** Technical Concept / Coding Problem
-*   **Answer:** Use the two-pointer method. Set fast and slow pointers. Move fast pointer 13 steps ahead, then move both together. Return slow pointer. Time complexity: O(N), Space: O(1).
-*   **Time target:** 90 seconds
-*   **TCS frequency:** High (appears in 80% of papers)
-
----
-
-**Q14.** Write a function to solve the following problem in this category: Find the 14-th node from the end of a singly linked list.
-*   **Type:** Technical Concept / Coding Problem
-*   **Answer:** Use the two-pointer method. Set fast and slow pointers. Move fast pointer 14 steps ahead, then move both together. Return slow pointer. Time complexity: O(N), Space: O(1).
-*   **Time target:** 90 seconds
-*   **TCS frequency:** High (appears in 80% of papers)
-
----
-
-**Q15.** Write a function to solve the following problem in this category: Find the 15-th node from the end of a singly linked list.
-*   **Type:** Technical Concept / Coding Problem
-*   **Answer:** Use the two-pointer method. Set fast and slow pointers. Move fast pointer 15 steps ahead, then move both together. Return slow pointer. Time complexity: O(N), Space: O(1).
-*   **Time target:** 90 seconds
-*   **TCS frequency:** High (appears in 80% of papers)
-
+*   **Question**: Describe the steps in a DNS lookup. What is the difference between HTTP and HTTPS?
+*   **DNS Resolution Flow**:
+    1.  User enters `google.com`. Browser checks local cache.
+    2.  If not found, queries **Recursive Resolver** (ISP).
+    3.  Recursive resolver queries **Root Name Server** (returns `.com` TLD address).
+    4.  Resolver queries **TLD Name Server** (returns `google.com` Authoritative server address).
+    5.  Resolver queries **Authoritative Name Server** (returns IP address).
+    6.  Recursive resolver caches IP and returns it to browser.
+*   **HTTP vs HTTPS**:
+    *   HTTP transmits data in plain text over port 80.
+    *   HTTPS encrypts data using SSL/TLS over port 443, ensuring confidentiality and integrity.

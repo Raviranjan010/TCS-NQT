@@ -1,124 +1,44 @@
-# Verbal PYQs - Expected Questions
+# Verbal Ability PYQ Bank - Expected Questions
 
-This file contains 15 TCS NQT-style expected questions based on 2022-2025 patterns.
-
----
-
-**Q1.** Write a function to solve the following problem in this category: Find the 1-th node from the end of a singly linked list.
-*   **Type:** Technical Concept / Coding Problem
-*   **Answer:** Use the two-pointer method. Set fast and slow pointers. Move fast pointer 1 steps ahead, then move both together. Return slow pointer. Time complexity: O(N), Space: O(1).
-*   **Time target:** 90 seconds
-*   **TCS frequency:** High (appears in 80% of papers)
+This file contains expected practice questions for the Verbal Ability PYQ Bank.
 
 ---
 
-**Q2.** Write a function to solve the following problem in this category: Find the 2-th node from the end of a singly linked list.
-*   **Type:** Technical Concept / Coding Problem
-*   **Answer:** Use the two-pointer method. Set fast and slow pointers. Move fast pointer 2 steps ahead, then move both together. Return slow pointer. Time complexity: O(N), Space: O(1).
-*   **Time target:** 90 seconds
-*   **TCS frequency:** High (appears in 80% of papers)
+## 1. VERB-01: Sentence Correction (Dangling Modifiers)
+
+*   **Question**: Identify the error in the sentence: *"Walking down the street, the trees looked beautiful."*
+*   **Correction**: *"Walking down the street, **I thought** the trees looked beautiful."* or *"As I was walking down the street, the trees looked beautiful."*
+*   **Rule**: A modifying phrase must clearly modify a specific word in the main clause. In the original sentence, the phrase "Walking down the street" incorrectly modifies "the trees" (implying the trees were walking).
+*   **Trap**: Ensure the subject performing the action in the modifying phrase is the subject of the main clause.
 
 ---
 
-**Q3.** Write a function to solve the following problem in this category: Find the 3-th node from the end of a singly linked list.
-*   **Type:** Technical Concept / Coding Problem
-*   **Answer:** Use the two-pointer method. Set fast and slow pointers. Move fast pointer 3 steps ahead, then move both together. Return slow pointer. Time complexity: O(N), Space: O(1).
-*   **Time target:** 90 seconds
-*   **TCS frequency:** High (appears in 80% of papers)
+## 2. VERB-02: Active vs Passive Voice (Tenses)
+
+*   **Question**: Convert the active voice sentence to passive voice: *"The teacher is grading the exams."*
+*   **Correction**: *"The exams **are being graded** by the teacher."*
+*   **Conversion Mechanics**:
+    *   Active: Present continuous ($\text{is grading}$).
+    *   Passive: $\text{is/are} + \text{being} + \text{graded}$.
 
 ---
 
-**Q4.** Write a function to solve the following problem in this category: Find the 4-th node from the end of a singly linked list.
-*   **Type:** Technical Concept / Coding Problem
-*   **Answer:** Use the two-pointer method. Set fast and slow pointers. Move fast pointer 4 steps ahead, then move both together. Return slow pointer. Time complexity: O(N), Space: O(1).
-*   **Time target:** 90 seconds
-*   **TCS frequency:** High (appears in 80% of papers)
+## 3. VERB-03: Conjunctions and Adverbs
+
+*   **Question**: Fill in the blank: *"He worked hard; ____, he failed to clear the exam."*
+*   **Options**:
+    (a) therefore
+    (b) consequently
+    (c) nevertheless
+    (d) otherwise
+*   **Correction**: **(c) nevertheless**
+*   **Explanation**: "nevertheless" connects two contrasting clauses where the second is unexpected given the first.
 
 ---
 
-**Q5.** Write a function to solve the following problem in this category: Find the 5-th node from the end of a singly linked list.
-*   **Type:** Technical Concept / Coding Problem
-*   **Answer:** Use the two-pointer method. Set fast and slow pointers. Move fast pointer 5 steps ahead, then move both together. Return slow pointer. Time complexity: O(N), Space: O(1).
-*   **Time target:** 90 seconds
-*   **TCS frequency:** High (appears in 80% of papers)
+## 4. VERB-04: Error Detection
 
----
-
-**Q6.** Write a function to solve the following problem in this category: Find the 6-th node from the end of a singly linked list.
-*   **Type:** Technical Concept / Coding Problem
-*   **Answer:** Use the two-pointer method. Set fast and slow pointers. Move fast pointer 6 steps ahead, then move both together. Return slow pointer. Time complexity: O(N), Space: O(1).
-*   **Time target:** 90 seconds
-*   **TCS frequency:** High (appears in 80% of papers)
-
----
-
-**Q7.** Write a function to solve the following problem in this category: Find the 7-th node from the end of a singly linked list.
-*   **Type:** Technical Concept / Coding Problem
-*   **Answer:** Use the two-pointer method. Set fast and slow pointers. Move fast pointer 7 steps ahead, then move both together. Return slow pointer. Time complexity: O(N), Space: O(1).
-*   **Time target:** 90 seconds
-*   **TCS frequency:** High (appears in 80% of papers)
-
----
-
-**Q8.** Write a function to solve the following problem in this category: Find the 8-th node from the end of a singly linked list.
-*   **Type:** Technical Concept / Coding Problem
-*   **Answer:** Use the two-pointer method. Set fast and slow pointers. Move fast pointer 8 steps ahead, then move both together. Return slow pointer. Time complexity: O(N), Space: O(1).
-*   **Time target:** 90 seconds
-*   **TCS frequency:** High (appears in 80% of papers)
-
----
-
-**Q9.** Write a function to solve the following problem in this category: Find the 9-th node from the end of a singly linked list.
-*   **Type:** Technical Concept / Coding Problem
-*   **Answer:** Use the two-pointer method. Set fast and slow pointers. Move fast pointer 9 steps ahead, then move both together. Return slow pointer. Time complexity: O(N), Space: O(1).
-*   **Time target:** 90 seconds
-*   **TCS frequency:** High (appears in 80% of papers)
-
----
-
-**Q10.** Write a function to solve the following problem in this category: Find the 10-th node from the end of a singly linked list.
-*   **Type:** Technical Concept / Coding Problem
-*   **Answer:** Use the two-pointer method. Set fast and slow pointers. Move fast pointer 10 steps ahead, then move both together. Return slow pointer. Time complexity: O(N), Space: O(1).
-*   **Time target:** 90 seconds
-*   **TCS frequency:** High (appears in 80% of papers)
-
----
-
-**Q11.** Write a function to solve the following problem in this category: Find the 11-th node from the end of a singly linked list.
-*   **Type:** Technical Concept / Coding Problem
-*   **Answer:** Use the two-pointer method. Set fast and slow pointers. Move fast pointer 11 steps ahead, then move both together. Return slow pointer. Time complexity: O(N), Space: O(1).
-*   **Time target:** 90 seconds
-*   **TCS frequency:** High (appears in 80% of papers)
-
----
-
-**Q12.** Write a function to solve the following problem in this category: Find the 12-th node from the end of a singly linked list.
-*   **Type:** Technical Concept / Coding Problem
-*   **Answer:** Use the two-pointer method. Set fast and slow pointers. Move fast pointer 12 steps ahead, then move both together. Return slow pointer. Time complexity: O(N), Space: O(1).
-*   **Time target:** 90 seconds
-*   **TCS frequency:** High (appears in 80% of papers)
-
----
-
-**Q13.** Write a function to solve the following problem in this category: Find the 13-th node from the end of a singly linked list.
-*   **Type:** Technical Concept / Coding Problem
-*   **Answer:** Use the two-pointer method. Set fast and slow pointers. Move fast pointer 13 steps ahead, then move both together. Return slow pointer. Time complexity: O(N), Space: O(1).
-*   **Time target:** 90 seconds
-*   **TCS frequency:** High (appears in 80% of papers)
-
----
-
-**Q14.** Write a function to solve the following problem in this category: Find the 14-th node from the end of a singly linked list.
-*   **Type:** Technical Concept / Coding Problem
-*   **Answer:** Use the two-pointer method. Set fast and slow pointers. Move fast pointer 14 steps ahead, then move both together. Return slow pointer. Time complexity: O(N), Space: O(1).
-*   **Time target:** 90 seconds
-*   **TCS frequency:** High (appears in 80% of papers)
-
----
-
-**Q15.** Write a function to solve the following problem in this category: Find the 15-th node from the end of a singly linked list.
-*   **Type:** Technical Concept / Coding Problem
-*   **Answer:** Use the two-pointer method. Set fast and slow pointers. Move fast pointer 15 steps ahead, then move both together. Return slow pointer. Time complexity: O(N), Space: O(1).
-*   **Time target:** 90 seconds
-*   **TCS frequency:** High (appears in 80% of papers)
-
+*   **Question**: Identify the part containing an error:
+    *"Every member of the committee (A) / were asked (B) / to submit their report (C) / by Friday (D)."*
+*   **Correction**: **(B) were asked** should be **was asked**
+*   **Rule**: "Every" is singular and takes a singular verb ("was").
