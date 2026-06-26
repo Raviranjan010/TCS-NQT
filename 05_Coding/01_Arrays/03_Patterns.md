@@ -79,19 +79,23 @@ section: "Coding"
 ---
 
 ## 🌳 2. Pattern Strategy Decision Tree
-Use this tree to match the problem description to the correct coding pattern:
+Use this decision flowchart to determine the most optimal pattern for your array problem:
 
-```
-                            Read the Coding Problem
-                                       |
-                   What is the main question asking for?
-                                       |
-         +-----------------------------+-----------------------------+
-         |                             |                             |
-   Range Sum Queries?          Subarray of size K?            Sorted pair sum?
-         v                             v                             v
-     PREFIX SUM                  SLIDING WINDOW                 TWO POINTERS
-   prefix[R] - prefix[L-1]       add right, subtract left       left=0, right=N-1
+```mermaid
+flowchart TD
+    Start([Read the Coding Problem]) --> Q1{Is it a subarray/contiguous elements?}
+    Q1 -- Yes --> Q2{Is window size fixed?}
+    Q2 -- Yes --> Sl1["Sliding Window (Fixed K)<br/>Template: add right, subtract left"]
+    Q2 -- No --> Sl2["Sliding Window (Variable)<br/>Template: expand right, shrink left"]
+    Q1 -- No --> Q3{Are we searching/moving elements in sorted order?}
+    Q3 -- Yes --> TP1["Two Pointers (Meet in Middle)<br/>Template: left=0, right=N-1"]
+    Q3 -- No --> Q4{Do we need range sum queries?}
+    Q4 -- Yes --> PS["Prefix Sum Array<br/>Formula: Prefix[R] - Prefix[L-1]"]
+    Q4 -- No --> Q5{Do we need element frequency / O(1) lookups?}
+    Q5 -- Yes --> FH["Frequency Hashing<br/>Template: std::unordered_map"]
+    Q5 -- No --> Q6{Is it about shifting/rotation?}
+    Q6 -- Yes --> TR["Triple Reversal<br/>Template: std::reverse thrice"]
+    Q6 -- No --> Traversal["Linear Scan / Kadane / Greedy"]
 ```
 
 ---
