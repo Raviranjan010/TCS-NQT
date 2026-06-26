@@ -1,6 +1,6 @@
 # Para Jumbles - Flashcards
 
-*   **Card 1: What is the main objective of Para Jumbles?**
-    *   *Answer:* To optimize system parameters.
-*   **Card 2: What is the time complexity of the optimal solution?**
-    *   *Answer:* $O(N)$ time and $O(1)$ space.
+*   **Card 1: What is the main objective of studying Para Jumbles?**
+    *   *Answer:* To understand the underlying logical structure and optimize mathematical parameters.
+*   **Card 2: What is the target time complexity for the optimal solution?**
+    *   *Answer:* Usually linear time $O(N)$ and constant space $O(1)$.

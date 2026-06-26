@@ -1,6 +1,6 @@
 # Recursion & Backtracking - Flashcards
 
-*   **Card 1: What is the main objective of Recursion & Backtracking?**
-    *   *Answer:* To optimize system parameters.
-*   **Card 2: What is the time complexity of the optimal solution?**
-    *   *Answer:* $O(N)$ time and $O(1)$ space.
+*   **Card 1: What is the main objective of studying Recursion & Backtracking?**
+    *   *Answer:* To understand the underlying logical structure and optimize mathematical parameters.
+*   **Card 2: What is the target time complexity for the optimal solution?**
+    *   *Answer:* Usually linear time $O(N)$ and constant space $O(1)$.

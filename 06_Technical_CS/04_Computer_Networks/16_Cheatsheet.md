@@ -1,5 +1,5 @@
 # Computer Networks - Cheatsheet
 
-*   **Formula 1:** $A = B \times C$
-*   **Shortcut:** Eliminate even numbers if output must be odd.
-*   **Time Complexity:** $O(N)$ for linear scans.
+*   **Rule 1:** Always verify base cases and boundary limits first.
+*   **Shortcut:** Eliminate obviously incorrect options using digit sums or unit digits.
+*   **Complexity:** Aim for linear time $O(N)$ and constant space $O(1)$ whenever possible.
