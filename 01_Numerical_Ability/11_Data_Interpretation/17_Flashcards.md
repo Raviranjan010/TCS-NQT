@@ -1,3 +1,4 @@
-# 11 Data Interpretation - 17 Flashcards
+# Data Interpretation - Flashcards
 
-*Document for TCS NQT preparation.*
+*   **Card 1: Value of 36 degrees in pie chart percentage?**
+    *   *Answer:* $10\%$.

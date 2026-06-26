@@ -1,3 +1,4 @@
-# 11 Data Interpretation - 18 FAQ
+# Data Interpretation - FAQ
 
-*Document for TCS NQT preparation.*
+**Q1. How can I speed up DI calculations?**
+*   **Answer:** Memorize fraction-to-percentage conversions and use estimation for options elimination rather than doing full long division.

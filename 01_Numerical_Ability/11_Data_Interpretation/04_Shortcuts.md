@@ -1,3 +1,4 @@
-# 11 Data Interpretation - 04 Shortcuts
+# Data Interpretation - Shortcuts & Speed Hacks
 
-*Document for TCS NQT preparation.*
+## ⚡ 1. Visual Estimation in Line Graphs
+*   **Shortcut:** In line graphs, the steepest slope represents the fastest absolute growth rate. Compare rise over run visually to save calculation time.

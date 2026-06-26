@@ -1,3 +1,5 @@
-# 07 Time Speed Distance - 15 Revision
+# Time Speed Distance - Revision Notes
 
-*Document for TCS NQT preparation.*
+*   **Speed:** $S = D/T$
+*   **Conversion:** $1\text{ km/hr} = 5/18\text{ m/s}$
+*   **Avg Speed (Equal distance):** $\frac{2xy}{x+y}$

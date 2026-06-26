@@ -1,3 +1,4 @@
-# 05 Ratio and Proportion - 15 Revision
+# Ratio and Proportion - Revision Notes
 
-*Document for TCS NQT preparation.*
+*   **Continuous Proportion:** $a/b = b/c \implies b = \sqrt{ac}$
+*   **C&D Rule:** If $a/b = c/d \implies (a+b)/(a-b) = (c+d)/(c-d)$

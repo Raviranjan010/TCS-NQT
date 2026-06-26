@@ -1,3 +1,19 @@
-# 10 Probability - 02 Visualization
+# Probability - Visual Guide & Models
 
-*Document for TCS NQT preparation.*
+```
+                          Probability Venn Diagram
+                                 +---------------+
+                                 |  S            |
+                                 |   +---+ +---+ |
+                                 | A |   | |   | |
+                                 |   |   | |   | |
+                                 |   +---+ +---+ |
+                                 |        B      |
+                                 +---------------+
+```
+
+### Comparison Table:
+| Event Type | Relationship | Intersection Formula |
+| :--- | :--- | :--- |
+| **Mutually Exclusive** | Cannot occur together | $P(A \cap B) = 0$ |
+| **Independent** | Occurrence of one doesn't affect other | $P(A \cap B) = P(A) \cdot P(B)$ |

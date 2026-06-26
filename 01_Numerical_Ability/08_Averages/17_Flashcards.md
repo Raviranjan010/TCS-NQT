@@ -1,3 +1,4 @@
-# 08 Averages - 17 Flashcards
+# Averages - Flashcards
 
-*Document for TCS NQT preparation.*
+*   **Card 1: Average of first N odd numbers?**
+    *   *Answer:* $N$.

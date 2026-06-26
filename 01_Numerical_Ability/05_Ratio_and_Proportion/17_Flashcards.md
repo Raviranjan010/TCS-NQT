@@ -1,3 +1,4 @@
-# 05 Ratio and Proportion - 17 Flashcards
+# Ratio and Proportion - Flashcards
 
-*Document for TCS NQT preparation.*
+*   **Card 1: What is a duplicate ratio?**
+    *   *Answer:* The ratio of the squares of two numbers, i.e., $a^2 : b^2$.

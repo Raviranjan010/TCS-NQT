@@ -1,3 +1,4 @@
-# 07 Time Speed Distance - 17 Flashcards
+# Time Speed Distance - Flashcards
 
-*Document for TCS NQT preparation.*
+*   **Card 1: What is relative speed in same direction?**
+    *   *Answer:* The difference of the two speeds ($S_1 - S_2$).

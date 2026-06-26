@@ -1,3 +1,4 @@
-# 06 Time and Work - 17 Flashcards
+# Time and Work - Flashcards
 
-*Document for TCS NQT preparation.*
+*   **Card 1: If efficiency is doubled, what happens to time?**
+    *   *Answer:* Time is halved.

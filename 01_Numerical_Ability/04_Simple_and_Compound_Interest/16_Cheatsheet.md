@@ -1,3 +1,5 @@
-# 04 Simple and Compound Interest - 16 Cheatsheet
+# Simple and Compound Interest - Cheatsheet
 
-*Document for TCS NQT preparation.*
+*   **Compounding Cycles:**
+    *   Half-Yearly: $R' = R/2$, $T' = 2T$
+    *   Quarterly: $R' = R/4$, $T' = 4T$

@@ -1,3 +1,5 @@
-# 11 Data Interpretation - 15 Revision
+# Data Interpretation - Revision Notes
 
-*Document for TCS NQT preparation.*
+*   **Growth Formula:** $(New - Old)/Old \times 100$
+*   **Pie Degrees:** $\% \times 3.6$
+*   **Pie Percent:** $\text{Degrees} / 3.6$

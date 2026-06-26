@@ -1,3 +1,4 @@
-# 06 Time and Work - 16 Cheatsheet
+# Time and Work - Cheatsheet
 
-*Document for TCS NQT preparation.*
+*   **Combined Work (3 people):**
+    *   $T = \frac{xyz}{xy + yz + zx}$

@@ -1,3 +1,4 @@
-# 10 Probability - 17 Flashcards
+# Probability - Flashcards
 
-*Document for TCS NQT preparation.*
+*   **Card 1: Sum of probability of all elementary events?**
+    *   *Answer:* 1.

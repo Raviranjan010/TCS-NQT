@@ -1,3 +1,4 @@
-# 04 Simple and Compound Interest - 17 Flashcards
+# Simple and Compound Interest - Flashcards
 
-*Document for TCS NQT preparation.*
+*   **Card 1: What is the principal in compound interest?**
+    *   *Answer:* The principal changes each compounding period to include the accumulated interest of all previous periods.

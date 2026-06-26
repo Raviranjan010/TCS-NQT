@@ -1,3 +1,5 @@
-# 07 Time Speed Distance - 16 Cheatsheet
+# Time Speed Distance - Cheatsheet
 
-*Document for TCS NQT preparation.*
+*   **Train poles:** $T = L_t / S_t$
+*   **Train platform:** $T = (L_t + L_p) / S_t$
+*   **Boats:** $D = U+V$, $U_{up} = U-V$

@@ -1,3 +1,5 @@
-# 08 Averages - 15 Revision
+# Averages - Revision Notes
 
-*Document for TCS NQT preparation.*
+*   **Average:** Sum / Count
+*   **Arithmetic Progression Average:** (First + Last) / 2
+*   **Replacement:** $Y = X + N \cdot d$
