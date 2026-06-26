@@ -67,51 +67,6 @@ std::vector<int> findLeaders(const std::vector<int>& arr) {
 }
 ```
 
-### Java Solution
-```java
-import java.util.ArrayList;
-import java.util.Collections;
-import java.util.List;
-
-public class Solution {
-    public static List<Integer> findLeaders(int[] arr) {
-        List<Integer> leaders = new ArrayList<>();
-        if (arr == null || arr.length == 0) return leaders;
-        
-        int n = arr.length;
-        int maxFromRight = arr[n - 1];
-        leaders.add(maxFromRight);
-        
-        for (int i = n - 2; i >= 0; i--) {
-            if (arr[i] > maxFromRight) {
-                maxFromRight = arr[i];
-                leaders.add(maxFromRight);
-            }
-        }
-        Collections.reverse(leaders);
-        return leaders;
-    }
-}
-```
-
-### Python 3 Solution
-```python
-def find_leaders(arr):
-    if not arr:
-        return []
-    n = len(arr)
-    leaders = []
-    max_from_right = arr[-1]
-    leaders.append(max_from_right)
-    
-    for i in range(n - 2, -1, -1):
-        if arr[i] > max_from_right:
-            max_from_right = arr[i]
-            leaders.append(max_from_right)
-            
-    return leaders[::-1]
-```
-
 ### Dry Run
 Input: `[16, 17, 4, 3, 5, 2]`. $N = 6$.
 
@@ -169,36 +124,6 @@ int findMissing(const std::vector<int>& arr, int n) {
 }
 ```
 
-### Java Solution
-```java
-public class Solution {
-    public static int findMissing(int[] arr, int n) {
-        int x1 = 0;
-        int x2 = 0;
-        
-        for (int num : arr) {
-            x1 ^= num;
-        }
-        for (int i = 1; i <= n; i++) {
-            x2 ^= i;
-        }
-        return x1 ^ x2;
-    }
-}
-```
-
-### Python 3 Solution
-```python
-def find_missing(arr, n):
-    x1 = 0
-    x2 = 0
-    for num in arr:
-        x1 ^= num
-    for i in range(1, n + 1):
-        x2 ^= i
-    return x1 ^ x2
-```
-
 ### Dry Run
 Input: `[3, 1, 4, 5]`, $N = 5$.
 *   `x1 = 3 ^ 1 ^ 4 ^ 5`
@@ -244,50 +169,6 @@ void rotateLeft(std::vector<int>& arr, int k) {
     std::reverse(arr.begin() + k, arr.end());
     std::reverse(arr.begin(), arr.end());
 }
-```
-
-### Java Solution
-```java
-public class Solution {
-    private static void reverse(int[] arr, int start, int end) {
-        while (start < end) {
-            int temp = arr[start];
-            arr[start] = arr[end];
-            arr[end] = temp;
-            start++;
-            end--;
-        }
-    }
-    
-    public static void rotateLeft(int[] arr, int k) {
-        if (arr == null || arr.length == 0) return;
-        int n = arr.length;
-        k = k % n;
-        
-        reverse(arr, 0, k - 1);
-        reverse(arr, k, n - 1);
-        reverse(arr, 0, n - 1);
-    }
-}
-```
-
-### Python 3 Solution
-```python
-def rotate_left(arr, k):
-    n = len(arr)
-    if n == 0:
-        return
-    k = k % n
-    
-    def reverse(l, r):
-        while l < r:
-            arr[l], arr[r] = arr[r], arr[l]
-            l += 1
-            r -= 1
-            
-    reverse(0, k - 1)
-    reverse(k, n - 1)
-    reverse(0, n - 1)
 ```
 
 ### Dry Run
@@ -342,38 +223,6 @@ std::vector<int> segregateEvenOdd(const std::vector<int>& arr) {
 }
 ```
 
-### Java Solution
-```java
-import java.util.ArrayList;
-
-public class Solution {
-    public static int[] segregateEvenOdd(int[] arr) {
-        int[] result = new int[arr.length];
-        int index = 0;
-        
-        for (int x : arr) {
-            if (x % 2 == 0) {
-                result[index++] = x;
-            }
-        }
-        for (int x : arr) {
-            if (x % 2 != 0) {
-                result[index++] = x;
-            }
-        }
-        return result;
-    }
-}
-```
-
-### Python 3 Solution
-```python
-def segregate_even_odd(arr):
-    evens = [x for x in arr if x % 2 == 0]
-    odds = [x for x in arr if x % 2 != 0]
-    return evens + odds
-```
-
 ### Dry Run
 Input: `[1, 2, 4, 3, 5, 6]`.
 *   Even pass finds: `2, 4, 6`. List is `[2, 4, 6]`.
@@ -415,35 +264,6 @@ void printFrequency(const std::vector<int>& arr) {
         std::cout << pair.first << ": " << pair.second << std::endl;
     }
 }
-```
-
-### Java Solution
-```java
-import java.util.TreeMap;
-import java.util.Map;
-
-public class Solution {
-    public static void printFrequency(int[] arr) {
-        Map<Integer, Integer> freq = new TreeMap<>(); // Sorted map
-        for (int x : arr) {
-            freq.put(x, freq.getOrDefault(x, 0) + 1);
-        }
-        for (Map.Entry<Integer, Integer> entry : freq.entrySet()) {
-            System.out.println(entry.getKey() + ": " + entry.getValue());
-        }
-    }
-}
-```
-
-### Python 3 Solution
-```python
-def print_frequency(arr):
-    freq = {}
-    for x in arr:
-        freq[x] = freq.get(x, 0) + 1
-    # Sorted by keys
-    for key in sorted(freq.keys()):
-        print(f"{key}: {freq[key]}")
 ```
 
 ### Dry Run
@@ -493,37 +313,6 @@ int firstNonRepeating(const std::vector<int>& arr) {
     }
     return -1;
 }
-```
-
-### Java Solution
-```java
-import java.util.HashMap;
-import java.util.Map;
-
-public class Solution {
-    public static int firstNonRepeating(int[] arr) {
-        Map<Integer, Integer> freq = new HashMap<>();
-        for (int x : arr) {
-            freq.put(x, freq.getOrDefault(x, 0) + 1);
-        }
-        for (int x : arr) {
-            if (freq.get(x) == 1) return x;
-        }
-        return -1;
-    }
-}
-```
-
-### Python 3 Solution
-```python
-def first_non_repeating(arr):
-    freq = {}
-    for x in arr:
-        freq[x] = freq.get(x, 0) + 1
-    for x in arr:
-        if freq[x] == 1:
-            return x
-    return -1
 ```
 
 ### Dry Run
@@ -576,39 +365,6 @@ std::vector<int> intersection(const std::vector<int>& arr1, const std::vector<in
 }
 ```
 
-### Java Solution
-```java
-import java.util.HashSet;
-import java.util.ArrayList;
-import java.util.List;
-
-public class Solution {
-    public static int[] intersection(int[] arr1, int[] arr2) {
-        HashSet<Integer> set1 = new HashSet<>();
-        for (int x : arr1) set1.add(x);
-        
-        List<Integer> list = new ArrayList<>();
-        for (int x : arr2) {
-            if (set1.remove(x)) {
-                list.add(x);
-            }
-        }
-        
-        int[] result = new int[list.size()];
-        for (int i = 0; i < list.size(); i++) {
-            result[i] = list.get(i);
-        }
-        return result;
-    }
-}
-```
-
-### Python 3 Solution
-```python
-def intersection(arr1, arr2):
-    return list(set(arr1).intersection(set(arr2)))
-```
-
 ### Dry Run
 Input: `arr1 = [1, 2, 2, 1]`, `arr2 = [2, 2]`.
 *   Set 1 initialized: `{1, 2}`
@@ -653,35 +409,6 @@ int maxProfit(const std::vector<int>& prices) {
     }
     return max_profit;
 }
-```
-
-### Java Solution
-```java
-public class Solution {
-    public static int maxProfit(int[] prices) {
-        int minPrice = Integer.MAX_VALUE;
-        int maxProfit = 0;
-        for (int price : prices) {
-            if (price < minPrice) {
-                minPrice = price;
-            } else if (price - minPrice > maxProfit) {
-                maxProfit = price - minPrice;
-            }
-        }
-        return maxProfit;
-    }
-}
-```
-
-### Python 3 Solution
-```python
-def max_profit(prices):
-    min_price = float('inf')
-    max_profit = 0
-    for price in prices:
-        min_price = min(min_price, price)
-        max_profit = max(max_profit, price - min_price)
-    return max_profit
 ```
 
 ### Dry Run
@@ -738,44 +465,6 @@ void moveNegatives(std::vector<int>& arr) {
         }
     }
 }
-```
-
-### Java Solution
-```java
-public class Solution {
-    public static void moveNegatives(int[] arr) {
-        int left = 0, right = arr.length - 1;
-        while (left < right) {
-            if (arr[left] < 0) {
-                left++;
-            } else if (arr[right] >= 0) {
-                right--;
-            } else {
-                int temp = arr[left];
-                arr[left] = arr[right];
-                arr[right] = temp;
-                left++;
-                right--;
-            }
-        }
-    }
-}
-```
-
-### Python 3 Solution
-```python
-def move_negatives(arr):
-    left = 0
-    right = len(arr) - 1
-    while left < right:
-        if arr[left] < 0:
-            left += 1
-        elif arr[right] >= 0:
-            right -= 1
-        else:
-            arr[left], arr[right] = arr[right], arr[left]
-            left += 1
-            right -= 1
 ```
 
 ### Dry Run
@@ -847,73 +536,6 @@ std::pair<int, int> findSecondMinMax(const std::vector<int>& arr) {
     int finalSecLargest = (secondLargest == INT_MIN) ? -1 : secondLargest;
     return {finalSecSmallest, finalSecLargest};
 }
-```
-
-### Java Solution
-```java
-public class Solution {
-    public static class Result {
-        public int secondSmallest;
-        public int secondLargest;
-        public Result(int ss, int sl) {
-            this.secondSmallest = ss;
-            this.secondLargest = sl;
-        }
-    }
-    
-    public static Result findSecondMinMax(int[] arr) {
-        int smallest = Integer.MAX_VALUE;
-        int secondSmallest = Integer.MAX_VALUE;
-        int largest = Integer.MIN_VALUE;
-        int secondLargest = Integer.MIN_VALUE;
-        
-        for (int num : arr) {
-            if (num < smallest) {
-                secondSmallest = smallest;
-                smallest = num;
-            } else if (num < secondSmallest && num != smallest) {
-                secondSmallest = num;
-            }
-            
-            if (num > largest) {
-                secondLargest = largest;
-                largest = num;
-            } else if (num > secondLargest && num != largest) {
-                secondLargest = num;
-            }
-        }
-        
-        int finalSS = (secondSmallest == Integer.MAX_VALUE) ? -1 : secondSmallest;
-        int finalSL = (secondLargest == Integer.MIN_VALUE) ? -1 : secondLargest;
-        return new Result(finalSS, finalSL);
-    }
-}
-```
-
-### Python 3 Solution
-```python
-def find_second_min_max(arr):
-    smallest = float('inf')
-    second_smallest = float('inf')
-    largest = float('-inf')
-    second_largest = float('-inf')
-    
-    for num in arr:
-        if num < smallest:
-            second_smallest = smallest
-            smallest = num
-        elif num < second_smallest and num != smallest:
-            second_smallest = num
-            
-        if num > largest:
-            second_largest = largest
-            largest = num
-        elif num > second_largest and num != largest:
-            second_largest = num
-            
-    final_ss = -1 if second_smallest == float('inf') else second_smallest
-    final_sl = -1 if second_largest == float('-inf') else second_largest
-    return final_ss, final_sl
 ```
 
 ### Dry Run

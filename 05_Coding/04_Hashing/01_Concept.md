@@ -37,48 +37,60 @@ Step 4: Inspect element 2 (index 3).
 
 ---
 
-## 3. Python Templates
+## 3. C++14 Templates
 
 ### Template A: Frequency Map (Counting Element Occurrences)
-```python
-def count_frequencies(elements: list) -> dict:
-    frequency_map = {}
-    
-    for item in elements:
-        # Get current count, default to 0, and add 1
-        frequency_map[item] = frequency_map.get(item, 0) + 1
-        
-    return frequency_map
+```cpp
+#include <unordered_map>
+#include <vector>
+
+std::unordered_map<int, int> countFrequencies(const std::vector<int>& elements) {
+    std::unordered_map<int, int> frequency_map;
+    for (int item : elements) {
+        frequency_map[item]++;
+    }
+    return frequency_map;
+}
 ```
 
 ### Template B: Hash Set for Uniqueness / Visited Checks
-```python
-def find_duplicates(nums: list[int]) -> list[int]:
-    visited_elements = set()
-    duplicate_elements = []
-    
-    for num in nums:
-        if num in visited_elements:
-            duplicate_elements.append(num)
-        else:
-            visited_elements.add(num)
-            
-    return duplicate_elements
+```cpp
+#include <unordered_set>
+#include <vector>
+
+std::vector<int> findDuplicates(const std::vector<int>& nums) {
+    std::unordered_set<int> visited_elements;
+    std::vector<int> duplicate_elements;
+    for (int num : nums) {
+        if (visited_elements.count(num)) {
+            duplicate_elements.push_back(num);
+        } else {
+            visited_elements.insert(num);
+        }
+    }
+    return duplicate_elements;
+}
 ```
 
 ### Template C: Index Lookup Map (Two Sum)
-```python
-def two_sum_hashmap(nums: list[int], target: int) -> tuple[int, int]:
-    visited_indices = {}  # element -> index
-    
-    for idx, num in enumerate(nums):
-        companion = target - num
-        if companion in visited_indices:
-            return visited_indices[companion], idx
-        visited_indices[num] = idx
-        
-    return -1, -1
+```cpp
+#include <unordered_map>
+#include <vector>
+#include <utility>
+
+std::pair<int, int> twoSumHashMap(const std::vector<int>& nums, int target) {
+    std::unordered_map<int, int> visited_indices; // element -> index
+    for (int idx = 0; idx < nums.size(); idx++) {
+        int companion = target - nums[idx];
+        if (visited_indices.count(companion)) {
+            return {visited_indices[companion], idx};
+        }
+        visited_indices[nums[idx]] = idx;
+    }
+    return {-1, -1};
+}
 ```
+
 
 ---
 

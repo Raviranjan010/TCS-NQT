@@ -59,26 +59,33 @@ In Java, what is the default value of an `int` instance variable?
 
 ---
 
-### Q3. Python List Reference Mutation
-What does the following Python snippet print?
-```python
-a = [1, 2, 3]
-b = a
-b.append(4)
-print(a)
-```
-(a) `[1, 2, 3]`
-(b) `[1, 2, 3, 4]`
-(c) `AttributeError`
-(d) `[1, 2, 3, [4]]`
+### Q3. C++ Vector Reference Mutation
+What is the output of the following C++ code snippet?
+```cpp
+#include <iostream>
+#include <vector>
 
-*   **Pattern ID:** `PL-PY-01` (Object Reference Aliasing)
-*   **Hint:** In Python, assignment statements do not copy objects; they bind names to the same object.
+int main() {
+    std::vector<int> a = {1, 2, 3};
+    std::vector<int>& b = a;
+    b.push_back(4);
+    std::cout << a.size() << " " << b.size() << std::endl;
+    return 0;
+}
+```
+(a) `3 3`
+(b) `3 4`
+(c) `4 4`
+(d) `4 3`
+
+*   **Pattern ID:** `PL-CPP-01` (Reference Mutation)
+*   **Hint:** In C++, reference variables act as aliases for the original variables.
 *   **Approach:**
-    *   `b = a` points both names `a` and `b` to the same list object in memory.
-    *   Modifying `b` directly affects `a` since lists are mutable.
-*   **Solution:** **(b) [1, 2, 3, 4]** — Since `a` and `b` share the same memory reference, appending `4` to `b` alters `a`.
-*   **Shortcut:** To make an independent copy, use explicit copying methods: `b = a.copy()` or `b = list(a)` or `b = a[:]`.
+    *   `std::vector<int>& b = a;` declares `b` as a reference to `a`. They share the same underlying memory.
+    *   Adding `4` to `b` modifies the same container, changing the size of both.
+*   **Solution:** **(c) 4 4** — Because `b` is a reference, any operation on `b` directly affects `a`.
+*   **Shortcut:** If a variable is declared with `&` (e.g. `Type& b = a;`), it is an alias. To make an independent copy, declare it without `&` (e.g. `Type b = a;`).
+
 
 ---
 

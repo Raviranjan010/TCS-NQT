@@ -43,80 +43,109 @@ Step 5: Traverse from left to right along the top boundary (top = 1, bottom = 1,
 
 ---
 
-## 3. Python Templates
+## 3. C++14 Templates
 
 ### Template A: 2D Grid DFS / BFS Neighbor Search
-```python
-def traverse_grid_neighbors(grid: list[list[int]]) -> None:
-    rows = len(grid)
-    cols = len(grid[0]) if rows > 0 else 0
-    visited = [[False] * cols for _ in range(rows)]
+```cpp
+#include <vector>
+
+void dfs(int r, int c, const std::vector<std::vector<int>>& grid, 
+         std::vector<std::vector<bool>>& visited, int rows, int cols) {
+    visited[r][c] = true;
     
-    # Directional vectors for 4-directional search (Up, Down, Left, Right)
-    row_offsets = [-1, 1, 0, 0]
-    col_offsets = [0, 0, -1, 1]
+    // Direction offsets for 4-directional movement (Up, Down, Left, Right)
+    int row_offsets[] = {-1, 1, 0, 0};
+    int col_offsets[] = {0, 0, -1, 1};
     
-    def is_valid(r: int, c: int) -> bool:
-        return 0 <= r < rows and 0 <= c < cols and not visited[r][c]
+    for (int i = 0; i < 4; i++) {
+        int next_row = r + row_offsets[i];
+        int next_col = c + col_offsets[i];
         
-    def dfs(r: int, c: int) -> None:
-        visited[r][c] = True
-        # Visit all valid neighbors
-        for i in range(4):
-            next_row = r + row_offsets[i]
-            next_col = c + col_offsets[i]
-            if is_valid(next_row, next_col):
-                dfs(next_row, next_col)
+        // Boundary and visited check
+        if (next_row >= 0 && next_row < rows && next_col >= 0 && next_col < cols 
+            && !visited[next_row][next_col]) {
+            dfs(next_row, next_col, grid, visited, rows, cols);
+        }
+    }
+}
+
+void traverseGridNeighbors(const std::vector<std::vector<int>>& grid) {
+    int rows = grid.size();
+    if (rows == 0) return;
+    int cols = grid[0].size();
+    std::vector<std::vector<bool>> visited(rows, std::vector<bool>(cols, false));
+    
+    for (int r = 0; r < rows; r++) {
+        for (int c = 0; c < cols; c++) {
+            if (!visited[r][c]) {
+                dfs(r, c, grid, visited, rows, cols);
+            }
+        }
+    }
+}
 ```
 
 ### Template B: In-place Matrix Transpose (for Square Matrices)
-```python
-def transpose_in_place(matrix: list[list[int]]) -> None:
-    n = len(matrix)
-    # Swap element at (r, c) with (c, r) for elements above the main diagonal
-    for row in range(n):
-        for col in range(row + 1, n):
-            matrix[row][col], matrix[col][row] = matrix[col][row], matrix[row][col]
+```cpp
+#include <vector>
+#include <utility>
+
+void transposeInPlace(std::vector<std::vector<int>>& matrix) {
+    int n = matrix.size();
+    for (int row = 0; row < n; row++) {
+        for (int col = row + 1; col < n; col++) {
+            std::swap(matrix[row][col], matrix[col][row]);
+        }
+    }
+}
 ```
 
 ### Template C: Spiral Matrix Traversal
-```python
-def spiral_order(matrix: list[list[int]]) -> list[int]:
-    if not matrix or not matrix[0]:
-        return []
-        
-    top_boundary = 0
-    bottom_boundary = len(matrix) - 1
-    left_boundary = 0
-    right_boundary = len(matrix[0]) - 1
+```cpp
+#include <vector>
+
+std::vector<int> spiralOrder(const std::vector<std::vector<int>>& matrix) {
+    std::vector<int> result;
+    if (matrix.empty() || matrix[0].empty()) return result;
     
-    result = []
+    int top = 0;
+    int bottom = matrix.size() - 1;
+    int left = 0;
+    int right = matrix[0].size() - 1;
     
-    while top_boundary <= bottom_boundary and left_boundary <= right_boundary:
-        # 1. Left to Right
-        for col in range(left_boundary, right_boundary + 1):
-            result.append(matrix[top_boundary][col])
-        top_boundary += 1
+    while (top <= bottom && left <= right) {
+        // 1. Traverse left to right along top boundary
+        for (int col = left; col <= right; col++) {
+            result.push_back(matrix[top][col]);
+        }
+        top++;
         
-        # 2. Top to Bottom
-        for row in range(top_boundary, bottom_boundary + 1):
-            result.append(matrix[row][right_boundary])
-        right_boundary -= 1
+        // 2. Traverse top to bottom along right boundary
+        for (int row = top; row <= bottom; row++) {
+            result.push_back(matrix[row][right]);
+        }
+        right--;
         
-        # 3. Right to Left (only if boundaries haven't crossed)
-        if top_boundary <= bottom_boundary:
-            for col in range(right_boundary, left_boundary - 1, -1):
-                result.append(matrix[bottom_boundary][col])
-            bottom_boundary -= 1
-            
-        # 4. Bottom to Top (only if boundaries haven't crossed)
-        if left_boundary <= right_boundary:
-            for row in range(bottom_boundary, top_boundary - 1, -1):
-                result.append(matrix[row][left_boundary])
-            left_boundary += 1
-            
-    return result
+        // 3. Traverse right to left along bottom boundary
+        if (top <= bottom) {
+            for (int col = right; col >= left; col--) {
+                result.push_back(matrix[bottom][col]);
+            }
+            bottom--;
+        }
+        
+        // 4. Traverse bottom to top along left boundary
+        if (left <= right) {
+            for (int row = bottom; row >= top; row--) {
+                result.push_back(matrix[row][left]);
+            }
+            left++;
+        }
+    }
+    return result;
+}
 ```
+
 
 ---
 

@@ -65,47 +65,6 @@ void sortColors(std::vector<int>& nums) {
 }
 ```
 
-### Java Solution
-```java
-public class Solution {
-    public static void sortColors(int[] nums) {
-        int low = 0, mid = 0, high = nums.length - 1;
-        while (mid <= high) {
-            if (nums[mid] == 0) {
-                int temp = nums[low];
-                nums[low] = nums[mid];
-                nums[mid] = temp;
-                low++;
-                mid++;
-            } else if (nums[mid] == 1) {
-                mid++;
-            } else {
-                int temp = nums[high];
-                nums[high] = nums[mid];
-                nums[mid] = temp;
-                high--;
-            }
-        }
-    }
-}
-```
-
-### Python 3 Solution
-```python
-def sort_colors(nums):
-    low, mid, high = 0, 0, len(nums) - 1
-    while mid <= high:
-        if nums[mid] == 0:
-            nums[low], nums[mid] = nums[mid], nums[low]
-            low += 1
-            mid += 1
-        elif nums[mid] == 1:
-            mid += 1
-        else:
-            nums[mid], nums[high] = nums[high], nums[mid]
-            high -= 1
-```
-
 ### Dry Run
 Input: `[2, 0, 2, 1, 1, 0]`.
 
@@ -168,48 +127,6 @@ std::vector<int> productExceptSelf(const std::vector<int>& nums) {
 }
 ```
 
-### Java Solution
-```java
-public class Solution {
-    public static int[] productExceptSelf(int[] nums) {
-        int n = nums.length;
-        int[] res = new int[n];
-        
-        int prefix = 1;
-        for (int i = 0; i < n; i++) {
-            res[i] = prefix;
-            prefix *= nums[i];
-        }
-        
-        int suffix = 1;
-        for (int i = n - 1; i >= 0; i--) {
-            res[i] *= suffix;
-            suffix *= nums[i];
-        }
-        return res;
-    }
-}
-```
-
-### Python 3 Solution
-```python
-def product_except_self(nums):
-    n = len(nums)
-    res = [1] * n
-    
-    prefix = 1
-    for i in range(n):
-        res[i] = prefix
-        prefix *= nums[i]
-        
-    suffix = 1
-    for i in range(n - 1, -1, -1):
-        res[i] *= suffix
-        suffix *= nums[i]
-        
-    return res
-```
-
 ### Dry Run
 Input: `[1, 2, 3, 4]`.
 *   Prefix Pass:
@@ -264,37 +181,6 @@ int findPeakElement(const std::vector<int>& nums) {
     }
     return low;
 }
-```
-
-### Java Solution
-```java
-public class Solution {
-    public static int findPeakElement(int[] nums) {
-        int low = 0, high = nums.length - 1;
-        while (low < high) {
-            int mid = low + (high - low) / 2;
-            if (nums[mid] < nums[mid + 1]) {
-                low = mid + 1;
-            } else {
-                high = mid;
-            }
-        }
-        return low;
-    }
-}
-```
-
-### Python 3 Solution
-```python
-def find_peak_element(nums):
-    low, high = 0, len(nums) - 1
-    while low < high:
-        mid = low + (high - low) // 2
-        if nums[mid] < nums[mid + 1]:
-            low = mid + 1
-        else:
-            high = mid
-    return low
 ```
 
 ### Dry Run
@@ -356,55 +242,6 @@ void merge(std::vector<int>& nums1, int m, const std::vector<int>& nums2, int n)
 }
 ```
 
-### Java Solution
-```java
-public class Solution {
-    public static void merge(int[] nums1, int m, int[] nums2, int n) {
-        int i = m - 1;
-        int j = n - 1;
-        int k = m + n - 1;
-        
-        while (i >= 0 && j >= 0) {
-            if (nums1[i] > nums2[j]) {
-                nums1[k] = nums1[i];
-                i--;
-            } else {
-                nums1[k] = nums2[j];
-                j--;
-            }
-            k--;
-        }
-        while (j >= 0) {
-            nums1[k] = nums2[j];
-            j--;
-            k--;
-        }
-    }
-}
-```
-
-### Python 3 Solution
-```python
-def merge(nums1, m, nums2, n):
-    i = m - 1
-    j = n - 1
-    k = m + n - 1
-    
-    while i >= 0 and j >= 0:
-        if nums1[i] > nums2[j]:
-            nums1[k] = nums1[i]
-            i -= 1
-        else:
-            nums1[k] = nums2[j]
-            j -= 1
-        k -= 1
-        
-    while j >= 0:
-        nums1[k] = nums2[j]
-        j -= 1
-        k -= 1
-```
-
 ### Dry Run
 Input: `nums1 = [1, 2, 3, 0, 0, 0]`, $M=3$, `nums2 = [2, 5, 6]`, $N=3$.
 *   Init pointers: `i = 2 (3)`, `j = 2 (6)`, `k = 5`.
@@ -460,42 +297,6 @@ std::pair<int, int> subarraySum(const std::vector<int>& arr, long long targetSum
 }
 ```
 
-### Java Solution
-```java
-public class Solution {
-    public static int[] subarraySum(int[] arr, long targetSum) {
-        int start = 0;
-        long currentSum = 0;
-        for (int end = 0; end < arr.length; end++) {
-            currentSum += arr[end];
-            while (currentSum > targetSum && start < end) {
-                currentSum -= arr[start];
-                start++;
-            }
-            if (currentSum == targetSum) {
-                return new int[]{start + 1, end + 1};
-            }
-        }
-        return new int[]{-1, -1};
-    }
-}
-```
-
-### Python 3 Solution
-```python
-def subarray_sum(arr, target_sum):
-    start = 0
-    current_sum = 0
-    for end in range(len(arr)):
-        current_sum += arr[end]
-        while current_sum > target_sum and start < end:
-            current_sum -= arr[start]
-            start += 1
-        if current_sum == target_sum:
-            return [start + 1, end + 1]
-    return [-1, -1]
-```
-
 ### Dry Run
 Input: `[1, 2, 3, 7, 5]`, Target $= 12$.
 
@@ -542,39 +343,6 @@ int findKthSmallest(const std::vector<int>& arr, int k) {
     }
     return maxHeap.top();
 }
-```
-
-### Java Solution
-```java
-import java.util.PriorityQueue;
-import java.util.Collections;
-
-public class Solution {
-    public static int findKthSmallest(int[] arr, int k) {
-        PriorityQueue<Integer> maxHeap = new PriorityQueue<>(Collections.reverseOrder());
-        for (int num : arr) {
-            maxHeap.add(num);
-            if (maxHeap.size() > k) {
-                maxHeap.poll();
-            }
-        }
-        return maxHeap.peek();
-    }
-}
-```
-
-### Python 3 Solution
-```python
-import heapq
-
-def find_kth_smallest(arr, k):
-    # Max heap using negated numbers in Python's default min heap
-    max_heap = []
-    for num in arr:
-        heapq.heappush(max_heap, -num)
-        if len(max_heap) > k:
-            heapq.heappop(max_heap)
-    return -max_heap[0]
 ```
 
 ### Dry Run
@@ -633,44 +401,6 @@ int minSubArrayLen(int s, const std::vector<int>& nums) {
 }
 ```
 
-### Java Solution
-```java
-public class Solution {
-    public static int minSubArrayLen(int s, int[] nums) {
-        int left = 0;
-        int sum = 0;
-        int minLen = Integer.MAX_VALUE;
-        
-        for (int right = 0; right < nums.length; right++) {
-            sum += nums[right];
-            while (sum >= s) {
-                minLen = Math.min(minLen, right - left + 1);
-                sum -= nums[left];
-                left++;
-            }
-        }
-        return (minLen == Integer.MAX_VALUE) ? 0 : minLen;
-    }
-}
-```
-
-### Python 3 Solution
-```python
-def min_sub_array_len(s, nums):
-    left = 0
-    current_sum = 0
-    min_len = float('inf')
-    
-    for right in range(len(nums)):
-        current_sum += nums[right]
-        while current_sum >= s:
-            min_len = min(min_len, right - left + 1)
-            current_sum -= nums[left]
-            left += 1
-            
-    return 0 if min_len == float('inf') else min_len
-```
-
 ### Dry Run
 Input: `nums = [2, 3, 1, 2, 4, 3]`, $S = 7$.
 *   `right = 0`: sum $= 2 < 7$
@@ -721,40 +451,6 @@ int findMaxSum(const std::vector<int>& arr) {
     }
     return std::max(incl, excl);
 }
-```
-
-### Java Solution
-```java
-public class Solution {
-    public static int findMaxSum(int[] arr) {
-        if (arr == null || arr.length == 0) return 0;
-        int incl = arr[0];
-        int excl = 0;
-        
-        for (int i = 1; i < arr.length; i++) {
-            int temp = Math.max(incl, excl);
-            incl = excl + arr[i];
-            excl = temp;
-        }
-        return Math.max(incl, excl);
-    }
-}
-```
-
-### Python 3 Solution
-```python
-def find_max_sum(arr):
-    if not arr:
-        return 0
-    incl = arr[0]
-    excl = 0
-    
-    for i in range(1, len(arr)):
-        temp = max(incl, excl)
-        incl = excl + arr[i]
-        excl = temp
-        
-    return max(incl, excl)
 ```
 
 ### Dry Run
@@ -819,47 +515,6 @@ int countSubarraysXOR(const std::vector<int>& arr, int m) {
 }
 ```
 
-### Java Solution
-```java
-import java.util.HashMap;
-
-public class Solution {
-    public static int countSubarraysXOR(int[] arr, int m) {
-        HashMap<Integer, Integer> visitedXOR = new HashMap<>();
-        int count = 0;
-        int xr = 0;
-        visitedXOR.put(0, 1);
-        
-        for (int num : arr) {
-            xr = xr ^ num;
-            int target = xr ^ m;
-            if (visitedXOR.containsKey(target)) {
-                count += visitedXOR.get(target);
-            }
-            visitedXOR.put(xr, visitedXOR.getOrDefault(xr, 0) + 1);
-        }
-        return count;
-    }
-}
-```
-
-### Python 3 Solution
-```python
-def count_subarrays_xor(arr, m):
-    visited_xor = {0: 1}
-    count = 0
-    xr = 0
-    
-    for num in arr:
-        xr = xr ^ num
-        target = xr ^ m
-        if target in visited_xor:
-            count += visited_xor[target]
-        visited_xor[xr] = visited_xor.get(xr, 0) + 1
-        
-    return count
-```
-
 ### Dry Run
 Input: `[4, 2, 2, 6, 4]`, $M = 6$.
 *   `visited_xor = {0: 1}`
@@ -908,29 +563,6 @@ int findDuplicateXOR(const std::vector<int>& arr) {
 }
 ```
 
-### Java Solution
-```java
-public class Solution {
-    public static int findDuplicateXOR(int[] arr) {
-        int res = 0;
-        for (int val : arr) res ^= val;
-        for (int i = 1; i < arr.length; i++) res ^= i;
-        return res;
-    }
-}
-```
-
-### Python 3 Solution
-```python
-def find_duplicate_xor(arr):
-    res = 0
-    for val in arr:
-        res ^= val
-    for i in range(1, len(arr)):
-        res ^= i
-    return res
-```
-
 ### Dry Run
 Input: `[1, 3, 2, 1]`, $N = 4$.
 *   `XOR(arr) = 1 ^ 3 ^ 2 ^ 1`
@@ -977,36 +609,6 @@ int majorityElement(const std::vector<int>& nums) {
     }
     return candidate;
 }
-```
-
-### Java Solution
-```java
-public class Solution {
-    public static int majorityElement(int[] nums) {
-        int candidate = nums[0];
-        int count = 0;
-        
-        for (int num : nums) {
-            if (count == 0) {
-                candidate = num;
-            }
-            count += (num == candidate) ? 1 : -1;
-        }
-        return candidate;
-    }
-}
-```
-
-### Python 3 Solution
-```python
-def majority_element(nums):
-    candidate = nums[0]
-    count = 0
-    for num in nums:
-        if count == 0:
-            candidate = num
-        count += 1 if num == candidate else -1
-    return candidate
 ```
 
 ### Dry Run
@@ -1075,63 +677,6 @@ int trap(const std::vector<int>& height) {
     }
     return trapped_water;
 }
-```
-
-### Java Solution
-```java
-public class Solution {
-    public static int trap(int[] height) {
-        if (height == null || height.length == 0) return 0;
-        int left = 0, right = height.length - 1;
-        int leftMax = 0, rightMax = 0;
-        int trappedWater = 0;
-        
-        while (left < right) {
-            if (height[left] < height[right]) {
-                if (height[left] >= leftMax) {
-                    leftMax = height[left];
-                } else {
-                    trappedWater += leftMax - height[left];
-                }
-                left++;
-            } else {
-                if (height[right] >= rightMax) {
-                    rightMax = height[right];
-                } else {
-                    trappedWater += rightMax - height[right];
-                }
-                right--;
-            }
-        }
-        return trappedWater;
-    }
-}
-```
-
-### Python 3 Solution
-```python
-def trap(height):
-    if not height:
-        return 0
-    left, right = 0, len(height) - 1
-    left_max, right_max = 0, 0
-    trapped_water = 0
-    
-    while left < right:
-        if height[left] < height[right]:
-            if height[left] >= left_max:
-                left_max = height[left]
-            else:
-                trapped_water += left_max - height[left]
-            left += 1
-        else:
-            if height[right] >= right_max:
-                right_max = height[right]
-            else:
-                trapped_water += right_max - height[right]
-            right -= 1
-            
-    return trapped_water
 ```
 
 ### Dry Run

@@ -39,76 +39,72 @@ Step-by-Step Traversal Order (Depth-First Search):
 
 ---
 
-## 3. Python Templates
+## 3. C++14 Templates
 
 ### Template A: Basic Linear Recursion (Factorial)
-```python
-def linear_recursion_factorial(n: int) -> int:
-    # 1. Base case: termination condition to prevent infinite recursion
-    if n <= 1:
-        return 1
-        
-    # 2. Recursive step: reduce the problem size and call self
-    subproblem_result = linear_recursion_factorial(n - 1)
+```cpp
+int linearRecursionFactorial(int n) {
+    // 1. Base case
+    if (n <= 1) return 1;
     
-    # 3. Combine step: use the result of subproblem to build solution
-    return n * subproblem_result
+    // 2. Recursive step and 3. Combine step
+    return n * linearRecursionFactorial(n - 1);
+}
 ```
 
 ### Template B: Divide & Conquer Tree Recursion (Merge Sort)
-```python
-def divide_and_conquer_merge_sort(arr: list[int]) -> list[int]:
-    # Base case: arrays of size 0 or 1 are already sorted
-    if len(arr) <= 1:
-        return arr
-        
-    # Divide step: split the array into halves
-    middle_idx = len(arr) // 2
-    left_half = arr[:middle_idx]
-    right_half = arr[middle_idx:]
-    
-    # Conquer step: recursively sort both halves
-    sorted_left = divide_and_conquer_merge_sort(left_half)
-    sorted_right = divide_and_conquer_merge_sort(right_half)
-    
-    # Combine step: merge the sorted halves
-    return merge(sorted_left, sorted_right)
+```cpp
+#include <vector>
 
-def merge(left: list[int], right: list[int]) -> list[int]:
-    merged_list = []
-    i = j = 0
-    while i < len(left) and j < len(right):
-        if left[i] <= right[j]:
-            merged_list.append(left[i])
-            i += 1
-        else:
-            merged_list.append(right[j])
-            j += 1
-    merged_list.extend(left[i:])
-    merged_list.extend(right[j:])
-    return merged_list
+void merge(std::vector<int>& arr, int left, int mid, int right) {
+    int n1 = mid - left + 1;
+    int n2 = right - mid;
+    std::vector<int> L(n1), R(n2);
+    
+    for (int i = 0; i < n1; i++) L[i] = arr[left + i];
+    for (int j = 0; j < n2; j++) R[j] = arr[mid + 1 + j];
+    
+    int i = 0, j = 0, k = left;
+    while (i < n1 && j < n2) {
+        if (L[i] <= R[j]) {
+            arr[k++] = L[i++];
+        } else {
+            arr[k++] = R[j++];
+        }
+    }
+    while (i < n1) arr[k++] = L[i++];
+    while (j < n2) arr[k++] = R[j++];
+}
+
+void mergeSort(std::vector<int>& arr, int left, int right) {
+    if (left >= right) return;
+    int mid = left + (right - left) / 2;
+    mergeSort(arr, left, mid);
+    mergeSort(arr, mid + 1, right);
+    merge(arr, left, mid, right);
+}
 ```
 
 ### Template C: Recursion with Memoization (Top-Down Dynamic Programming)
-```python
-def fibonacci_memoized(n: int, memo_table: dict = None) -> int:
-    if memo_table is None:
-        memo_table = {}
-        
-    # Check if value is already computed
-    if n in memo_table:
-        return memo_table[n]
-        
-    # Base cases
-    if n == 0:
-        return 0
-    if n == 1:
-        return 1
-        
-    # Recursive computation and storage
-    memo_table[n] = fibonacci_memoized(n - 1, memo_table) + fibonacci_memoized(n - 2, memo_table)
-    return memo_table[n]
+```cpp
+#include <unordered_map>
+
+int fibonacciMemoized(int n, std::unordered_map<int, int>& memo_table) {
+    // Check if value is already computed
+    if (memo_table.count(n)) {
+        return memo_table[n];
+    }
+    
+    // Base cases
+    if (n == 0) return 0;
+    if (n == 1) return 1;
+    
+    // Recursive computation and storage
+    memo_table[n] = fibonacciMemoized(n - 1, memo_table) + fibonacciMemoized(n - 2, memo_table);
+    return memo_table[n];
+}
 ```
+
 
 ---
 

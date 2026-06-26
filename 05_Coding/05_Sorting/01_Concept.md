@@ -41,71 +41,85 @@ Merge Subroutine Trace [1, 4] and [2, 3]:
 
 ---
 
-## 3. Python Templates
+## 3. C++14 Templates
 
 ### Template A: Custom Object Sorting (Intervals by End Time)
-```python
-class Interval:
-    def __init__(self, start: int, end: int):
-        self.start = start
-        self.end = end
+```cpp
+#include <vector>
+#include <algorithm>
 
-def sort_intervals_by_end(intervals: list[Interval]) -> list[Interval]:
-    # Sorts in-place using key function
-    intervals.sort(key=lambda item: item.end)
-    return intervals
+struct Interval {
+    int start;
+    int end;
+};
+
+void sortIntervalsByEnd(std::vector<Interval>& intervals) {
+    std::sort(intervals.begin(), intervals.end(), [](const Interval& a, const Interval& b) {
+        return a.end < b.end;
+    });
+}
 ```
 
 ### Template B: Divide & Conquer Sorting (Merge Sort)
-```python
-def merge_sort(arr: list[int]) -> list[int]:
-    if len(arr) <= 1:
-        return arr
-        
-    mid = len(arr) // 2
-    left_sorted = merge_sort(arr[:mid])
-    right_sorted = merge_sort(arr[mid:])
+```cpp
+#include <vector>
+
+void merge(std::vector<int>& arr, int left, int mid, int right) {
+    int n1 = mid - left + 1;
+    int n2 = right - mid;
+    std::vector<int> L(n1), R(n2);
     
-    # Merge sorted subsegments
-    merged = []
-    i = j = 0
-    while i < len(left_sorted) and j < len(right_sorted):
-        if left_sorted[i] <= right_sorted[j]:
-            merged.append(left_sorted[i])
-            i += 1
-        else:
-            merged.append(right_sorted[j])
-            j += 1
-            
-    merged.extend(left_sorted[i:])
-    merged.extend(right_sorted[j:])
-    return merged
+    for (int i = 0; i < n1; i++) L[i] = arr[left + i];
+    for (int j = 0; j < n2; j++) R[j] = arr[mid + 1 + j];
+    
+    int i = 0, j = 0, k = left;
+    while (i < n1 && j < n2) {
+        if (L[i] <= R[j]) {
+            arr[k++] = L[i++];
+        } else {
+            arr[k++] = R[j++];
+        }
+    }
+    while (i < n1) arr[k++] = L[i++];
+    while (j < n2) arr[k++] = R[j++];
+}
+
+void mergeSort(std::vector<int>& arr, int left, int right) {
+    if (left >= right) return;
+    int mid = left + (right - left) / 2;
+    mergeSort(arr, left, mid);
+    mergeSort(arr, mid + 1, right);
+    merge(arr, left, mid, right);
+}
 ```
 
 ### Template C: Linear Time Counting Sort (For bounded integers)
-```python
-def counting_sort(arr: list[int]) -> list[int]:
-    if not arr:
-        return arr
-        
-    min_val, max_val = min(arr), max(arr)
-    value_range = max_val - min_val + 1
+```cpp
+#include <vector>
+#include <algorithm>
+
+void countingSort(std::vector<int>& arr) {
+    if (arr.empty()) return;
     
-    # Initialize count array
-    count_array = [0] * value_range
-    for num in arr:
-        count_array[num - min_val] += 1
-        
-    # Reconstruct sorted array
-    sorted_idx = 0
-    for offset_val in range(value_range):
-        while count_array[offset_val] > 0:
-            arr[sorted_idx] = offset_val + min_val
-            sorted_idx += 1
-            count_array[offset_val] -= 1
-            
-    return arr
+    int min_val = *std::min_element(arr.begin(), arr.end());
+    int max_val = *std::max_element(arr.begin(), arr.end());
+    int range = max_val - min_val + 1;
+    
+    std::vector<int> count(range, 0);
+    for (int num : arr) {
+        count[num - min_val]++;
+    }
+    
+    int idx = 0;
+    for (int i = 0; i < range; i++) {
+        while (count[i] > 0) {
+            arr[idx++] = i + min_val;
+            count[i]--;
+        }
+    }
+}
 ```
+
 
 ---
 

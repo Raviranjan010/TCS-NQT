@@ -57,32 +57,6 @@ int main() {
 }
 ```
 
-#### 🐍 Python 3 Solution
-```python
-import sys
-
-def main():
-    input_data = sys.stdin.read().split()
-    if not input_data:
-        return
-    n = int(input_data[0])
-    arr = [int(x) for x in input_data[1:]]
-    
-    non_zero_idx = 0
-    for i in range(n):
-        if arr[i] != 0:
-            arr[i], arr[non_zero_idx] = arr[non_zero_idx], arr[i]
-            non_zero_idx += 1
-            
-    print(*arr)
-
-if __name__ == "__main__":
-    main()
-```
-
-- **Time Complexity:** $O(N)$ — Single pass through the array.
-- **Space Complexity:** $O(1)$ auxiliary space as we swap in-place.
-
 ---
 
 ### Problem 2: Sweet Seventeen (Base 17 to Decimal)
@@ -141,40 +115,6 @@ int main() {
 }
 ```
 
-#### 🐍 Python 3 Solution
-```python
-import sys
-
-def main():
-    s = sys.stdin.read().strip()
-    if not s:
-        return
-    decimal_val = 0
-    valid = True
-    for c in s:
-        if c.isdigit():
-            val = ord(c) - ord('0')
-        elif c.isalpha():
-            lower = c.lower()
-            if 'a' <= lower <= 'g':
-                val = ord(lower) - ord('a') + 10
-            else:
-                valid = False
-                break
-        else:
-            valid = False
-            break
-        decimal_val = decimal_val * 17 + val
-        
-    print(decimal_val if valid else "Invalid Input")
-
-if __name__ == "__main__":
-    main()
-```
-
-- **Time Complexity:** $O(L)$ where $L$ is the string length.
-- **Space Complexity:** $O(1)$.
-
 ---
 
 ### Problem 3: Keypad Deletion (Backspace Simulation)
@@ -203,30 +143,6 @@ int main() {
     return 0;
 }
 ```
-
-#### 🐍 Python 3 Solution
-```python
-import sys
-
-def main():
-    s = sys.stdin.read().strip()
-    if not s:
-        return
-    stack = []
-    for c in s:
-        if c == '#':
-            if stack:
-                stack.pop()
-        else:
-            stack.append(c)
-    print("".join(stack) if stack else "EMPTY")
-
-if __name__ == "__main__":
-    main()
-```
-
-- **Time Complexity:** $O(N)$ to iterate through string.
-- **Space Complexity:** $O(N)$ auxiliary space to build result.
 
 ---
 
@@ -287,52 +203,6 @@ int main() {
 }
 ```
 
-#### 🐍 Python 3 Solution
-```python
-import sys
-
-def is_prime(num):
-    if num < 2:
-        return False
-    for i in range(2, int(num**0.5) + 1):
-        if num % i == 0:
-            return False
-    return True
-
-def get_prime(index):
-    count = 0
-    num = 2
-    while True:
-        if is_prime(num):
-            count += 1
-            if count == index:
-                return num
-        num += 1
-
-def get_fib(index):
-    if index == 1 or index == 2:
-        return 1
-    a, b = 1, 1
-    for _ in range(3, index + 1):
-        a, b = b, a + b
-    return a
-
-def main():
-    line = sys.stdin.read().strip()
-    if line:
-        n = int(line)
-        if n % 2 != 0:
-            print(get_fib((n + 1) // 2))
-        else:
-            print(get_prime(n // 2))
-
-if __name__ == "__main__":
-    main()
-```
-
-- **Time Complexity:** $O(N \sqrt{M})$ where $M$ is the value of the $N$-th prime.
-- **Space Complexity:** $O(1)$.
-
 ---
 
 ### Problem 5: Automobile Wheel Equation
@@ -373,36 +243,6 @@ int main() {
 }
 ```
 
-#### 🐍 Python 3 Solution
-```python
-import sys
-
-def main():
-    input_data = sys.stdin.read().split()
-    if len(input_data) < 2:
-        return
-    v = int(input_data[0])
-    w = int(input_data[1])
-    
-    if w < 2 or w % 2 != 0 or v >= w or v < 1:
-        print("Invalid Input")
-        return
-        
-    y = (w - 2 * v) // 2
-    x = v - y
-    
-    if x >= 0 and y >= 0:
-        print(f"TW={x} FW={y}")
-    else:
-        print("Invalid Input")
-
-if __name__ == "__main__":
-    main()
-```
-
-- **Time Complexity:** $O(1)$ algebraic evaluation.
-- **Space Complexity:** $O(1)$.
-
 ---
 
 ### Problem 6: Jar of Candies
@@ -434,33 +274,6 @@ int main() {
 }
 ```
 
-#### 🐍 Python 3 Solution
-```python
-import sys
-
-def main():
-    line = sys.stdin.read().strip()
-    if not line:
-        return
-    k = int(line)
-    n, m = 10, 5
-    if k <= 0 or k > n:
-        print("INVALID INPUT")
-        print(f"NUMBER OF CANDIES LEFT : {n}")
-    else:
-        print(f"NUMBER OF CANDIES SOLD : {k}")
-        left = n - k
-        if left <= m:
-            left = n
-        print(f"NUMBER OF CANDIES LEFT : {left}")
-
-if __name__ == "__main__":
-    main()
-```
-
-- **Time Complexity:** $O(1)$ simulation.
-- **Space Complexity:** $O(1)$.
-
 ---
 
 ### Problem 7: Product of Non-Zero Digits
@@ -491,33 +304,6 @@ int main() {
     return 0;
 }
 ```
-
-#### 🐍 Python 3 Solution
-```python
-import sys
-
-def main():
-    line = sys.stdin.read().strip()
-    if not line:
-        return
-    n = int(line)
-    if n == 0:
-        print(0)
-        return
-    prod = 1
-    while n > 0:
-        digit = n % 10
-        if digit != 0:
-            prod *= digit
-        n //= 10
-    print(prod)
-
-if __name__ == "__main__":
-    main()
-```
-
-- **Time Complexity:** $O(\log_{10} N)$ digits processed.
-- **Space Complexity:** $O(1)$.
 
 ---
 
@@ -562,38 +348,6 @@ int main() {
 }
 ```
 
-#### 🐍 Python 3 Solution
-```python
-import sys
-
-def main():
-    input_data = sys.stdin.read().split()
-    if len(input_data) < 2:
-        return
-    start_day = input_data[0]
-    year = int(input_data[1])
-    
-    days = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"]
-    start_idx = days.index(start_day)
-    
-    is_leap = (year % 400 == 0) or (year % 4 == 0 and year % 100 != 0)
-    total_days = 366 if is_leap else 365
-    
-    sundays = 52
-    remaining = total_days - 364
-    for i in range(remaining):
-        if (start_idx + i) % 7 == 0:
-            sundays += 1
-            
-    print(sundays)
-
-if __name__ == "__main__":
-    main()
-```
-
-- **Time Complexity:** $O(1)$ constant calendar check.
-- **Space Complexity:** $O(1)$.
-
 ---
 
 ### Problem 9: Print Custom Character Pattern
@@ -627,29 +381,6 @@ int main() {
     return 0;
 }
 ```
-
-#### 🐍 Python 3 Solution
-```python
-import sys
-
-def main():
-    line = sys.stdin.read().strip()
-    if line:
-        n = int(line)
-        for i in range(n):
-            if i == 0 or i == n - 1:
-                print(*( ["*"] * n ))
-            else:
-                row = [" "] * n
-                row[0] = row[-1] = "*"
-                print(*row)
-
-if __name__ == "__main__":
-    main()
-```
-
-- **Time Complexity:** $O(N^2)$ to print the hollow square grid.
-- **Space Complexity:** $O(1)$.
 
 ---
 
@@ -690,31 +421,6 @@ int main() {
     return 0;
 }
 ```
-
-#### 🐍 Python 3 Solution
-```python
-import sys
-
-def main():
-    input_data = sys.stdin.read().split()
-    if not input_data:
-        return
-    n = int(input_data[0])
-    arr = [int(x) for x in input_data[1:]]
-    
-    max_so_far = max_ending_here = arr[0]
-    for i in range(1, n):
-        max_ending_here = max(arr[i], max_ending_here + arr[i])
-        max_so_far = max(max_so_far, max_ending_here)
-        
-    print(max_so_far)
-
-if __name__ == "__main__":
-    main()
-```
-
-- **Time Complexity:** $O(N)$ — Single scan through the array.
-- **Space Complexity:** $O(1)$ auxiliary space.
 
 ---
 

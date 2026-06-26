@@ -57,64 +57,78 @@ Step 6:
 
 ---
 
-## 3. Python Templates
+## 3. C++14 Templates
 
 ### Template A: Opposing Pointers (Two Sum on Sorted Array)
-```python
-def two_sum_sorted(nums: list[int], target: int) -> tuple[int, int]:
-    left_ptr = 0
-    right_ptr = len(nums) - 1
+```cpp
+#include <vector>
+#include <utility>
+
+std::pair<int, int> twoSumSorted(const std::vector<int>& nums, int target) {
+    int left_ptr = 0;
+    int right_ptr = nums.size() - 1;
     
-    while left_ptr < right_ptr:
-        current_sum = nums[left_ptr] + nums[right_ptr]
-        if current_sum == target:
-            return left_ptr, right_ptr
-        elif current_sum < target:
-            left_ptr += 1  # Need a larger sum
-        else:
-            right_ptr -= 1  # Need a smaller sum
-            
-    return -1, -1
+    while (left_ptr < right_ptr) {
+        int current_sum = nums[left_ptr] + nums[right_ptr];
+        if (current_sum == target) {
+            return {left_ptr, right_ptr};
+        } else if (current_sum < target) {
+            left_ptr++; // Need a larger sum
+        } else {
+            right_ptr--; // Need a smaller sum
+        }
+    }
+    return {-1, -1};
+}
 ```
 
 ### Template B: Fast & Slow Pointers (Cycle Detection)
-```python
-class ListNode:
-    def __init__(self, val=0, next=None):
-        self.val = val
-        self.next = next
+```cpp
+struct ListNode {
+    int val;
+    ListNode* next;
+    ListNode(int x) : val(x), next(nullptr) {}
+};
 
-def has_cycle(head: ListNode) -> bool:
-    slow_ptr = head
-    fast_ptr = head
+bool hasCycle(ListNode* head) {
+    ListNode* slow_ptr = head;
+    ListNode* fast_ptr = head;
     
-    while fast_ptr and fast_ptr.next:
-        slow_ptr = slow_ptr.next
-        fast_ptr = fast_ptr.next.next  # Moves twice as fast
+    while (fast_ptr != nullptr && fast_ptr->next != nullptr) {
+        slow_ptr = slow_ptr->next;
+        fast_ptr = fast_ptr->next->next; // Moves twice as fast
         
-        if slow_ptr == fast_ptr:
-            return True  # Fast pointer lapped the slow pointer
-            
-    return False
+        if (slow_ptr == fast_ptr) {
+            return true; // Fast pointer lapped the slow pointer
+        }
+    }
+    return false;
+}
 ```
 
 ### Template C: Three Pointers (Dutch National Flag / Sort 0s, 1s, 2s)
-```python
-def sort_colors(nums: list[int]) -> None:
-    low_ptr = 0
-    mid_ptr = 0
-    high_ptr = len(nums) - 1
+```cpp
+#include <vector>
+#include <utility>
+
+void sortColors(std::vector<int>& nums) {
+    int low_ptr = 0;
+    int mid_ptr = 0;
+    int high_ptr = nums.size() - 1;
     
-    while mid_ptr <= high_ptr:
-        if nums[mid_ptr] == 0:
-            nums[low_ptr], nums[mid_ptr] = nums[mid_ptr], nums[low_ptr]
-            low_ptr += 1
-            mid_ptr += 1
-        elif nums[mid_ptr] == 1:
-            mid_ptr += 1
-        else:  # nums[mid_ptr] == 2
-            nums[mid_ptr], nums[high_ptr] = nums[high_ptr], nums[mid_ptr]
-            high_ptr -= 1
+    while (mid_ptr <= high_ptr) {
+        if (nums[mid_ptr] == 0) {
+            std::swap(nums[low_ptr], nums[mid_ptr]);
+            low_ptr++;
+            mid_ptr++;
+        } else if (nums[mid_ptr] == 1) {
+            mid_ptr++;
+        } else { // nums[mid_ptr] == 2
+            std::swap(nums[mid_ptr], nums[high_ptr]);
+            high_ptr--;
+        }
+    }
+}
 ```
 
 ---

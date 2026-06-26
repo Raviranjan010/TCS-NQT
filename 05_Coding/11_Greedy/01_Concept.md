@@ -58,71 +58,98 @@ Final Selected Activities: A1 and A3 (Total = 2)
 
 ---
 
-## 3. Python Templates
+## 3. C++14 Templates
 
 ### Template A: Interval Scheduling (Activity Selection)
-```python
-def select_max_activities(start_times: list[int], end_times: list[int]) -> list[tuple[int, int]]:
-    # Pair intervals and sort by end times
-    activities = sorted(zip(start_times, end_times), key=lambda x: x[1])
+```cpp
+#include <vector>
+#include <algorithm>
+#include <utility>
+
+std::vector<std::pair<int, int>> selectMaxActivities(const std::vector<int>& start_times, 
+                                                     const std::vector<int>& end_times) {
+    std::vector<std::pair<int, int>> activities;
+    for (size_t i = 0; i < start_times.size(); i++) {
+        activities.push_back({start_times[i], end_times[i]});
+    }
     
-    selected_activities = []
-    last_end_time = -1
+    // Sort by end times
+    std::sort(activities.begin(), activities.end(), [](const std::pair<int, int>& a, const std::pair<int, int>& b) {
+        return a.second < b.second;
+    });
     
-    for start, end in activities:
-        if start >= last_end_time:
-            selected_activities.append((start, end))
-            last_end_time = end  # Update boundary
-            
-    return selected_activities
+    std::vector<std::pair<int, int>> selected_activities;
+    int last_end_time = -1;
+    
+    for (const auto& act : activities) {
+        if (act.first >= last_end_time) {
+            selected_activities.push_back(act);
+            last_end_time = act.second;
+        }
+    }
+    return selected_activities;
+}
 ```
 
 ### Template B: Fractional Knapsack
-```python
-def fractional_knapsack(weights: list[int], values: list[int], capacity: int) -> float:
-    # Pair items and calculate value/weight ratio
-    items = []
-    for i in range(len(weights)):
-        ratio = values[i] / weights[i]
-        items.append((ratio, weights[i], values[i]))
+```cpp
+#include <vector>
+#include <algorithm>
+
+struct Item {
+    double ratio;
+    int weight;
+    int value;
+};
+
+double fractionalKnapsack(const std::vector<int>& weights, const std::vector<int>& values, int capacity) {
+    std::vector<Item> items;
+    for (size_t i = 0; i < weights.size(); i++) {
+        items.push_back({(double)values[i] / weights[i], weights[i], values[i]});
+    }
     
-    # Sort items by value/weight ratio in descending order
-    items.sort(key=lambda x: x[0], reverse=True)
+    // Sort by ratio in descending order
+    std::sort(items.begin(), items.end(), [](const Item& a, const Item& b) {
+        return a.ratio > b.ratio;
+    });
     
-    total_value = 0.0
-    remaining_capacity = capacity
+    double total_value = 0.0;
+    int remaining_capacity = capacity;
     
-    for ratio, weight, value in items:
-        if remaining_capacity >= weight:
-            # Take the full item
-            total_value += value
-            remaining_capacity -= weight
-        else:
-            # Take the fraction of the item
-            total_value += ratio * remaining_capacity
-            break  # Knapsack is full
-            
-    return total_value
+    for (const auto& item : items) {
+        if (remaining_capacity >= item.weight) {
+            total_value += item.value;
+            remaining_capacity -= item.weight;
+        } else {
+            total_value += item.ratio * remaining_capacity;
+            break; // Knapsack is full
+        }
+    }
+    return total_value;
+}
 ```
 
 ### Template C: Minimum Coins (Greedy Change)
-```python
-def min_coins_greedy(coins: list[int], target_amount: int) -> int:
-    # Sort coins in descending order
-    sorted_coins = sorted(coins, reverse=True)
+```cpp
+#include <vector>
+#include <algorithm>
+
+int minCoinsGreedy(std::vector<int>& coins, int target_amount) {
+    // Sort in descending order
+    std::sort(coins.rbegin(), coins.rend());
     
-    coin_count = 0
-    remaining_amount = target_amount
+    int coin_count = 0;
+    int remaining_amount = target_amount;
     
-    for coin_value in sorted_coins:
-        if remaining_amount == 0:
-            break
-        # Take as many coins of the current value as possible
-        count = remaining_amount // coin_value
-        coin_count += count
-        remaining_amount -= count * coin_value
+    for (int coin_value : coins) {
+        if (remaining_amount == 0) break;
         
-    return coin_count if remaining_amount == 0 else -1
+        int count = remaining_amount / coin_value;
+        coin_count += count;
+        remaining_amount -= count * coin_value;
+    }
+    return remaining_amount == 0 ? coin_count : -1;
+}
 ```
 
 ---

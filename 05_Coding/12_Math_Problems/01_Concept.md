@@ -34,76 +34,87 @@ Step 4: Since b = 0, termination condition met.
 
 ---
 
-## 3. Python Templates
+## 3. C++14 Templates
 
 ### Template A: Primality Check & Sieve of Eratosthenes
-```python
-def is_prime_optimized(n: int) -> bool:
-    if n <= 1:
-        return False
-    if n <= 3:
-        return True
-    if n % 2 == 0 or n % 3 == 0:
-        return False
-        
-    # Check divisors up to square root of n (skipping multiples of 2 and 3)
-    divisor = 5
-    while divisor * divisor <= n:
-        if n % divisor == 0 or n % (divisor + 2) == 0:
-            return False
-        divisor += 6
-        
-    return True
+```cpp
+#include <vector>
 
-def sieve_of_eratosthenes(limit: int) -> list[int]:
-    is_prime = [True] * (limit + 1)
-    is_prime[0] = is_prime[1] = False
+bool isPrimeOptimized(int n) {
+    if (n <= 1) return false;
+    if (n <= 3) return true;
+    if (n % 2 == 0 || n % 3 == 0) return false;
     
-    prime_idx = 2
-    while prime_idx * prime_idx <= limit:
-        if is_prime[prime_idx]:
-            # Mark all multiples of prime_idx as composite starting from prime_idx^2
-            for multiple in range(prime_idx * prime_idx, limit + 1, prime_idx):
-                is_prime[multiple] = False
-        prime_idx += 1
-        
-    return [val for val, prime_flag in enumerate(is_prime) if prime_flag]
+    for (int divisor = 5; divisor * divisor <= n; divisor += 6) {
+        if (n % divisor == 0 || n % (divisor + 2) == 0) {
+            return false;
+        }
+    }
+    return true;
+}
+
+std::vector<int> sieveOfEratosthenes(int limit) {
+    std::vector<bool> is_prime(limit + 1, true);
+    if (limit >= 0) is_prime[0] = false;
+    if (limit >= 1) is_prime[1] = false;
+    
+    for (int prime_idx = 2; prime_idx * prime_idx <= limit; prime_idx++) {
+        if (is_prime[prime_idx]) {
+            for (int multiple = prime_idx * prime_idx; multiple <= limit; multiple += prime_idx) {
+                is_prime[multiple] = false;
+            }
+        }
+    }
+    
+    std::vector<int> primes;
+    for (int val = 2; val <= limit; val++) {
+        if (is_prime[val]) {
+            primes.push_back(val);
+        }
+    }
+    return primes;
+}
 ```
 
 ### Template B: Euclidean GCD & LCM
-```python
-def calculate_gcd(a: int, b: int) -> int:
-    while b != 0:
-        a, b = b, a % b
-    return a
+```cpp
+#include <algorithm>
 
-def calculate_lcm(a: int, b: int) -> int:
-    if a == 0 or b == 0:
-        return 0
-    # Relationship: a * b = gcd(a, b) * lcm(a, b)
-    # Divide first to prevent integer overflow
-    return abs(a) // calculate_gcd(a, b) * abs(b)
+int calculateGCD(int a, int b) {
+    while (b != 0) {
+        int temp = b;
+        b = a % b;
+        a = temp;
+    }
+    return a;
+}
+
+int calculateLCM(int a, int b) {
+    if (a == 0 || b == 0) return 0;
+    // Divide first to prevent integer overflow
+    return (std::abs(a) / calculateGCD(a, b)) * std::abs(b);
+}
 ```
 
 ### Template C: Fast Exponentiation / Power Modulo
-```python
-def modular_exponentiation(base: int, exponent: int, modulus: int) -> int:
-    if modulus == 1:
-        return 0
-        
-    result = 1
-    base = base % modulus
+```cpp
+long long modularExponentiation(long long base, long long exponent, long long modulus) {
+    if (modulus == 1) return 0;
     
-    while exponent > 0:
-        # If exponent is odd, multiply base with result
-        if exponent % 2 == 1:
-            result = (result * base) % modulus
-        # exponent must be even now
-        exponent = exponent // 2
-        base = (base * base) % modulus
-        
-    return result
+    long long result = 1;
+    base = base % modulus;
+    
+    while (exponent > 0) {
+        if (exponent % 2 == 1) {
+            result = (result * base) % modulus;
+        }
+        exponent = exponent / 2;
+        base = (base * base) % modulus;
+    }
+    return result;
+}
 ```
+
 
 ---
 

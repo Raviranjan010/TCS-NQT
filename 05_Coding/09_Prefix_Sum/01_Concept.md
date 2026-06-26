@@ -33,64 +33,73 @@ Step 2: Answer Query: Sum of subarray from index L = 1 to R = 3 (elements A[1] +
 
 ---
 
-## 3. Python Templates
+## 3. C++14 Templates
 
 ### Template A: 1D Prefix Sum (Range Sum Query)
-```python
-def build_prefix_sum(nums: list[int]) -> list[int]:
-    n = len(nums)
-    prefix = [0] * (n + 1)
-    
-    for i in range(n):
-        prefix[i + 1] = prefix[i] + nums[i]
-        
-    return prefix
+```cpp
+#include <vector>
 
-def query_range_sum(prefix: list[int], left: int, right: int) -> int:
-    # Sum of nums[left...right] (inclusive)
-    return prefix[right + 1] - prefix[left]
+std::vector<int> buildPrefixSum(const std::vector<int>& nums) {
+    int n = nums.size();
+    std::vector<int> prefix(n + 1, 0);
+    for (int i = 0; i < n; i++) {
+        prefix[i + 1] = prefix[i] + nums[i];
+    }
+    return prefix;
+}
+
+int queryRangeSum(const std::vector<int>& prefix, int left, int right) {
+    // Sum of nums[left...right] (inclusive)
+    return prefix[right + 1] - prefix[left];
+}
 ```
 
 ### Template B: 2D Prefix Sum (Matrix Range Sum)
-```python
-def build_2d_prefix_sum(matrix: list[list[int]]) -> list[list[int]]:
-    rows = len(matrix)
-    cols = len(matrix[0]) if rows > 0 else 0
-    prefix = [[0] * (cols + 1) for _ in range(rows + 1)]
-    
-    for r in range(rows):
-        for c in range(cols):
-            prefix[r + 1][c + 1] = (matrix[r][c] + 
-                                    prefix[r][c + 1] + 
-                                    prefix[r + 1][c] - 
-                                    prefix[r][c])
-    return prefix
+```cpp
+#include <vector>
 
-def query_2d_range_sum(prefix: list[list[int]], r1: int, c1: int, r2: int, c2: int) -> int:
-    return (prefix[r2 + 1][c2 + 1] - 
-            prefix[r1][c2 + 1] - 
-            prefix[r2 + 1][c1] + 
-            prefix[r1][c1])
+std::vector<std::vector<int>> build2DPrefixSum(const std::vector<std::vector<int>>& matrix) {
+    int rows = matrix.size();
+    if (rows == 0) return {};
+    int cols = matrix[0].size();
+    std::vector<std::vector<int>> prefix(rows + 1, std::vector<int>(cols + 1, 0));
+    
+    for (int r = 0; r < rows; r++) {
+        for (int c = 0; c < cols; c++) {
+            prefix[r + 1][c + 1] = matrix[r][c] + prefix[r][c + 1] + prefix[r + 1][c] - prefix[r][c];
+        }
+    }
+    return prefix;
+}
+
+int query2DRangeSum(const std::vector<std::vector<int>>& prefix, int r1, int c1, int r2, int c2) {
+    return prefix[r2 + 1][c2 + 1] - prefix[r1][c2 + 1] - prefix[r2 + 1][c1] + prefix[r1][c1];
+}
 ```
 
 ### Template C: Prefix Sum with Hashing (Subarray Sum Equals K)
-```python
-def count_subarray_sum_equals_k(nums: list[int], k: int) -> int:
-    prefix_counts = {0: 1}  # Initialize with base case: prefix sum 0 occurs once
-    current_prefix_sum = 0
-    match_count = 0
+```cpp
+#include <vector>
+#include <unordered_map>
+
+int countSubarraySumEqualsK(const std::vector<int>& nums, int k) {
+    std::unordered_map<int, int> prefix_counts;
+    prefix_counts[0] = 1; // Base case: prefix sum 0 occurs once
+    int current_prefix_sum = 0;
+    int match_count = 0;
     
-    for num in nums:
-        current_prefix_sum += num
-        # If (current_prefix_sum - k) is found, a valid subarray exists
-        target_prefix = current_prefix_sum - k
-        if target_prefix in prefix_counts:
-            match_count += prefix_counts[target_prefix]
-            
-        prefix_counts[current_prefix_sum] = prefix_counts.get(current_prefix_sum, 0) + 1
-        
-    return match_count
+    for (int num : nums) {
+        current_prefix_sum += num;
+        int target_prefix = current_prefix_sum - k;
+        if (prefix_counts.count(target_prefix)) {
+            match_count += prefix_counts[target_prefix];
+        }
+        prefix_counts[current_prefix_sum]++;
+    }
+    return match_count;
+}
 ```
+
 
 ---
 

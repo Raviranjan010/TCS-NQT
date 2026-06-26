@@ -38,66 +38,85 @@ Final Result: Max sum of subarray of size 3 is 9.
 
 ---
 
-## 3. Python Templates
+## 3. C++14 Templates
 
 ### Template A: Fixed-Size Window (Size K)
-```python
-def max_sum_subarray_fixed(nums: list[int], k: int) -> int:
-    if len(nums) < k:
-        return 0
-        
-    # Calculate sum of initial window
-    current_window_sum = sum(nums[:k])
-    max_sum = current_window_sum
+```cpp
+#include <vector>
+#include <numeric>
+#include <algorithm>
+
+int maxSumSubarrayFixed(const std::vector<int>& nums, int k) {
+    if (nums.size() < k) return 0;
     
-    # Slide the window across the array
-    for right_ptr in range(k, len(nums)):
-        # Add the incoming element and subtract the outgoing element
-        current_window_sum += nums[right_ptr] - nums[right_ptr - k]
-        max_sum = max(max_sum, current_window_sum)
-        
-    return max_sum
+    // Calculate sum of initial window
+    int current_window_sum = 0;
+    for (int i = 0; i < k; i++) {
+        current_window_sum += nums[i];
+    }
+    int max_sum = current_window_sum;
+    
+    // Slide the window across the array
+    for (int right_ptr = k; right_ptr < nums.size(); right_ptr++) {
+        // Add the incoming element and subtract the outgoing element
+        current_window_sum += nums[right_ptr] - nums[right_ptr - k];
+        max_sum = std::max(max_sum, current_window_sum);
+    }
+    return max_sum;
+}
 ```
 
 ### Template B: Variable-Size Window (Longest Window / Expansion)
-```python
-def longest_substring_no_repeats(s: str) -> int:
-    char_indices = {}
-    left_ptr = 0
-    max_length = 0
+```cpp
+#include <string>
+#include <unordered_map>
+#include <algorithm>
+
+int longestSubstringNoRepeats(const std::string& s) {
+    std::unordered_map<char, int> char_indices;
+    int left_ptr = 0;
+    int max_length = 0;
     
-    for right_ptr in range(len(s)):
-        incoming_char = s[right_ptr]
+    for (int right_ptr = 0; right_ptr < s.length(); right_ptr++) {
+        char incoming_char = s[right_ptr];
         
-        # If character is already in window, contract the window
-        if incoming_char in char_indices and char_indices[incoming_char] >= left_ptr:
-            left_ptr = char_indices[incoming_char] + 1
-            
-        char_indices[incoming_char] = right_ptr
-        # Calculate current window length
-        max_length = max(max_length, right_ptr - left_ptr + 1)
+        // If character is already in window, contract the window
+        if (char_indices.count(incoming_char) && char_indices[incoming_char] >= left_ptr) {
+            left_ptr = char_indices[incoming_char] + 1;
+        }
         
-    return max_length
+        char_indices[incoming_char] = right_ptr;
+        // Calculate current window length
+        max_length = std::max(max_length, right_ptr - left_ptr + 1);
+    }
+    return max_length;
+}
 ```
 
 ### Template C: Variable-Size Window (Shortest Window / Shrinking)
-```python
-def min_subarray_len(target: int, nums: list[int]) -> int:
-    left_ptr = 0
-    current_window_sum = 0
-    min_length = float('inf')
+```cpp
+#include <vector>
+#include <algorithm>
+
+int minSubarrayLen(int target, const std::vector<int>& nums) {
+    int left_ptr = 0;
+    int current_window_sum = 0;
+    int min_length = 1e9; // representing infinity
     
-    for right_ptr in range(len(nums)):
-        current_window_sum += nums[right_ptr]
+    for (int right_ptr = 0; right_ptr < nums.size(); right_ptr++) {
+        current_window_sum += nums[right_ptr];
         
-        # Shrink the window from the left as long as the condition is met
-        while current_window_sum >= target:
-            min_length = min(min_length, right_ptr - left_ptr + 1)
-            current_window_sum -= nums[left_ptr]
-            left_ptr += 1
-            
-    return min_length if min_length != float('inf') else 0
+        // Shrink the window from the left as long as the condition is met
+        while (current_window_sum >= target) {
+            min_length = std::min(min_length, right_ptr - left_ptr + 1);
+            current_window_sum -= nums[left_ptr];
+            left_ptr++;
+        }
+    }
+    return min_length == 1e9 ? 0 : min_length;
+}
 ```
+
 
 ---
 
