@@ -1,61 +1,64 @@
-# Time and Work — Complete Notes
+# Time & Work — Complete Notes
 
 ---
 
-## 1. The Efficiency-Based Approach
+## 1. The Rate-Efficiency Principle
 
-In Time and Work problems, the core relationship between the amount of work done, the rate of work (efficiency), and the time taken is:
+The fundamental relationship governing all work and flow systems is:
+$$	ext{Work } (W) = 	ext{Rate } (R) 	imes 	ext{Time } (T)$$
 
-$$\text{Work} = \text{Rate (Efficiency)} \times \text{Time}$$
+*   **Work ($W$):** By default, assumed to be $1$ (representing $100\%$ task completion).
+*   **Rate/Efficiency ($R$):** The fraction of work completed per unit time. If a person completes a task in $D$ days, their daily rate is $R = rac{1}{D}$.
+*   **Time ($T$):** The duration for which the work is performed.
 
-*   **Work ($W$):** The total task to be completed. We often assume total work to be $1$ unit (fraction method) or the LCM of the days taken (LCM method).
-*   **Efficiency ($E$):** Work done per unit time (e.g., work done in 1 day).
-*   **Time ($T$):** The duration taken to complete the work.
-
-### The LCM Method (Highly Recommended for TCS NQT)
-Instead of dealing with fractions like $\frac{1}{A} + \frac{1}{B}$, assume the total work is the LCM of the time taken by each individual.
-*   **Step 1:** Find the LCM of the individual times. Assume this is the "Total Units of Work."
-*   **Step 2:** Calculate individual efficiencies: $\text{Efficiency} = \frac{\text{Total Units of Work}}{\text{Individual Time}}$.
-*   **Step 3:** Add efficiencies of people working together to find combined efficiency.
-*   **Step 4:** Find combined time: $\text{Time} = \frac{\text{Total Units of Work}}{\text{Combined Efficiency}}$.
-
-*Example:* $A$ can do a piece of work in 10 days and $B$ in 15 days. In how many days can they complete it together?
-1.  $\text{Total Work} = \text{LCM}(10, 15) = 30\text{ units}$.
-2.  $\text{Efficiency of } A = \frac{30}{10} = 3\text{ units/day}$.
-    $\text{Efficiency of } B = \frac{30}{15} = 2\text{ units/day}$.
-3.  $\text{Combined Efficiency} = 3 + 2 = 5\text{ units/day}$.
-4.  $\text{Combined Time} = \frac{30}{5} = 6\text{ days}$.
+### Combined Rates
+If multiple people work together, their individual rates add up linearly:
+$$R_{	ext{total}} = R_A + R_B + R_C = rac{1}{D_A} + rac{1}{D_B} + rac{1}{D_C}$$
 
 ---
 
-## 2. Pipes and Cisterns
+## 2. The LCM Method (Avoid Fractions)
 
-Pipes and Cisterns are direct physical applications of Time and Work, where work represents filling or emptying a tank.
+Instead of using fractions, assume the **Total Work** is the Least Common Multiple (LCM) of the days taken by the individuals.
 
-*   **Inlet Pipe:** Fills the tank. Its efficiency is positive ($+E$).
-*   **Outlet Pipe (or Leak):** Empties the tank. Its efficiency is negative ($-E$).
-
-$$\text{Combined Rate} = E_{\text{inlet 1}} + E_{\text{inlet 2}} - E_{\text{outlet}}$$
-
-*   If the Combined Rate is **positive**, the tank will eventually fill.
-*   If the Combined Rate is **negative**, a full tank will eventually empty.
-
----
-
-## 3. Combined Work with Negative Work (Leaks)
-
-Negative work occurs when an agent destroys work or drains resources while others build/fill.
-
-*   *Scenario:* A tap can fill a tank in 8 hours. Because of a leak in the bottom of the tank, it takes 10 hours to fill the tank. If the tank is full, in how many hours will the leak empty it?
-1.  Let total capacity of the tank be $\text{LCM}(8, 10) = 40\text{ units}$.
-2.  $\text{Efficiency of Tap} = \frac{40}{8} = +5\text{ units/hour}$.
-3.  $\text{Combined Efficiency (Tap + Leak)} = \frac{40}{10} = +4\text{ units/hour}$.
-4.  $\text{Efficiency of Leak} = \text{Combined} - \text{Tap} = 4 - 5 = -1\text{ unit/hour}$.
-5.  $\text{Time taken by leak to empty full tank} = \frac{40}{|-1|} = 40\text{ hours}$.
+### The Algorithm
+Let A take 10 days and B take 15 days to complete a task.
+1.  **Assume Total Work:** LCM of 10 and 15 = 30 units.
+2.  **Find Daily Efficiencies:**
+    *   A's Efficiency = $30 / 10 = 3$ units per day.
+    *   B's Efficiency = $30 / 15 = 2$ units per day.
+3.  **Combine Efficiencies:**
+    *   Total Daily Efficiency = $3 + 2 = 5$ units per day.
+4.  **Find Time Taken Together:**
+    *   Time taken = $rac{	ext{Total Work}}{	ext{Total Efficiency}} = rac{30}{5} = 6$ days.
 
 ---
 
-## 4. Cross-References & Overlapping Topics
+## 3. Pipes & Cisterns & Negative Work
 
-*   **Inverse Proportionality:** When the work $W$ is constant, Efficiency ($E$) and Time ($T$) are inversely proportional ($E_1 \cdot T_1 = E_2 \cdot T_2$). If $A$'s efficiency is $1.5$ times $B$'s efficiency, the ratio of their times taken is $2:3$. See [Ratio & Proportion Notes — Direct & Inverse Section](../03_Ratio_Proportion/notes.md#2-direct-and-inverse-proportion) to review inverse proportions.
-*   **Weighted Rate (Mixture of Pipes):** Mixing the filling rates of multiple pipes to find the overall net rate of a cistern is similar to finding a weighted average of rates. See [Average Notes — Weighted Average Section](../04_Average/notes.md#1-weighted-average).
+Pipes and cisterns are identical to Time & Work, with one key distinction: **Negative Work**.
+
+*   **Inlet Pipes:** Perform positive work (add water to the tank). Rate is positive ($+R$).
+*   **Outlet Pipes / Leaks:** Perform negative work (remove water from the tank). Rate is negative ($-R$).
+
+### The Flow Equation
+If an inlet pipe fills a tank in $F$ hours and a leak empties it in $E$ hours (where $E > F$ to allow filling):
+$$	ext{Net Rate} = rac{1}{F} - rac{1}{E}$$
+$$	ext{Net Time to Fill} = rac{E 	imes F}{E - F} 	ext{ hours}$$
+
+---
+
+## 4. Work and Wages
+
+Wages are distributed among workers based on the actual work done by each individual.
+
+*   If workers work for the **same time duration**, their wages are shared in the ratio of their **efficiencies/rates**.
+*   If they work for **different durations**, wages are shared in the ratio of the **actual work completed** by each:
+    $$	ext{Wage Ratio} = (R_A 	imes T_A) : (R_B 	imes T_B) : (R_C 	imes T_C)$$
+
+---
+
+## 5. Cross-References & Overlapping Topics
+
+*   **Ratios & Proportions:** Time taken and efficiency are inversely proportional. See [Ratio & Proportion Notes](../03_Ratio_Proportion/notes.md#2-direct-and-inverse-proportion) to review inverse relationships.
+*   **Chain Rule:** Work is proportional to manpower and days: $rac{M_1 D_1 T_1}{W_1} = rac{M_2 D_2 T_2}{W_2}$.\n
