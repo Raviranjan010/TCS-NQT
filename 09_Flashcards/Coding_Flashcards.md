@@ -1,3 +1,153 @@
+Q: What is the time complexity of Kadane's algorithm?
+A: O(n) time, O(1) space — single pass, constant extra memory.
+
+Q: What is the bug if you initialize `maxSum = 0` in Kadane's and all elements are negative?
+A: You return 0 instead of the correct (least-negative) answer. Always initialize with `nums[0]`.
+
+Q: For prefix sum array `pre[]` where `pre[i+1] = pre[i] + nums[i]`, what formula gives the sum of elements from index l to r (0-indexed, inclusive)?
+A: `pre[r+1] - pre[l]`
+
+Q: In a sliding window of fixed size k, what single expression updates the window sum when the window moves one step right?
+A: `windowSum += nums[i] - nums[i - k]`  (add new right element, remove old left element)
+
+Q: What is the core idea of Boyer-Moore Voting Algorithm?
+A: Maintain a candidate and a counter. Increment for a match, decrement for a non-match. When counter hits 0, switch candidate. The majority element (>n/2) always survives.
+
+Q: What must you do BEFORE rotating an array by k positions to handle k ≥ n?
+A: Compute `k = k % n`. This is mandatory to prevent out-of-bounds and to avoid no-op rotations.
+
+Q: Why does the Dutch National Flag algorithm NOT increment `mid` when `nums[mid] == 2`?
+A: Because the element swapped from position `high` to `mid` has not been examined yet — it could be 0, 1, or 2 and needs to be processed in the next iteration.
+
+Q: What data type should you use for prefix sums in C++ when array values can be up to 10⁹ and n can be up to 10⁵?
+A: `long long` — since 10⁹ × 10⁵ = 10¹⁴, which far exceeds `INT_MAX` (~2.14×10⁹).
+
+Q: In the in-place sign-marking technique to find disappeared numbers, why must you use `std::abs(num)` when computing the index?
+A: Because previously-visited elements may have been negated. Without `std::abs`, the negative value would give an incorrect (or negative) array index causing out-of-bounds/segmentation fault.
+
+Q: For "Product of Array Except Self", why can't you use the total product divided by each element?
+A: Division fails when any element is 0 (division by zero). The left-pass × right-pass method avoids division entirely and handles zeros correctly.
+
+Q: What is the time complexity of `s = s + c;` inside a loop of size N in C++?
+A: O(N²) — because the addition operator creates a copy of the entire string each time. Use `s += c;` for O(N).
+
+Q: Why should we pass strings by reference (e.g. `const std::string&`) in function calls?
+A: Passing by value copies the entire string in memory taking O(N) time and space. Passing by reference is O(1) time.
+
+Q: In C++, what does the second parameter of `s.substr(pos, len)` represent?
+A: It represents the **length** of the substring, not the end position index.
+
+Q: What does `s.find("target")` return if the string `"target"` is not present?
+A: It returns `std::string::npos`.
+
+Q: How do you convert a digit character `'5'` to its integer value `5` in C++?
+A: Subtract the char `'0'`: `int val = c - '0';`.
+
+Q: How do you count binary substrings with equal consecutive 0s and 1s?
+A: Count consecutive block sizes, then sum the minimum of adjacent block counts (e.g., `sum(min(blocks[i], blocks[i-1]))`).
+
+Q: What data structure is used to validate balanced brackets like `{[()]}`?
+A: A Stack (`std::stack<char>`).
+
+Q: Why does using signed char as array index (`count[s[i]]`) sometimes crash programs in C++?
+A: Extended ASCII chars can evaluate to negative numbers, resulting in negative array indexing (segmentation fault). Cast index to `(unsigned char)s[i]`.
+
+Q: What is the average time complexity of `std::stoi`?
+A: O(L) where L is the length of the string.
+
+Q: How does sliding window find the longest unique substring?
+A: Maintain two pointers `left` and `right`. Track the last seen index of each char. If `s[right]` was seen inside the window, shift `left` to index after last seen.
+
+Q: What is the average and worst-case lookup complexity of `std::unordered_map`?
+A: Average: O(1). Worst-case: O(N) (happens when all elements collide into the same hash bucket).
+
+Q: Why does `std::unordered_map<std::pair<int, int>, int>` fail to compile?
+A: C++ standard library does not provide a default hash function for `std::pair`. Use `std::map` instead, which only requires the `<` operator.
+
+Q: What is the side effect of checking key presence using `if (map[key] == 0)`?
+A: It implicitly inserts `key` with a default value of 0 into the map if it was absent, consuming extra memory.
+
+Q: What does the `second` boolean value returned by `set.insert(x)` represent?
+A: It evaluates to `true` if `x` was successfully inserted (did not exist in the set), and `false` if `x` was already present.
+
+Q: Why do we seed the prefix sum map with `[0] = 1` before solving the Subarray Sum = K problem?
+A: To detect subarrays starting at index 0 whose sum is exactly equal to K (e.g. prefixSum − K = 0).
+
+Q: In the "longest subarray sum equals K" pattern, why do we only insert prefix sums if they are not already present in the map?
+A: To preserve the leftmost index of the prefix sum, which maximizes the calculated subarray length `i - leftmostIndex`.
+
+Q: What is the underlying data structure of C++ `std::map`?
+A: A self-balancing Binary Search Tree (specifically, a Red-Black Tree).
+
+Q: How do you sort a map by its values?
+A: Copy map elements into a `std::vector<std::pair<Key, Value>>` and sort the vector using a custom comparator.
+
+Q: What is the worst-case space complexity of a Hash Map containing N elements?
+A: O(N) — since it stores N key-value pairs.
+
+Q: How do you find the first non-repeating element in an array in O(N) time?
+A: Build a frequency map of elements, then traverse the array from left to right, returning the first element whose frequency in the map is 1.
+
+Q: What is the safe mid formula in binary search?
+A: `mid = lo + (hi - lo) / 2` — prevents integer overflow when lo and hi are both large.
+
+Q: For exact-match binary search, what loop condition and hi initialization are correct?
+A: `while (lo <= hi)`, `hi = n - 1` (closed interval on both ends).
+
+Q: For lower bound (first i where arr[i] ≥ x), what loop condition and hi initialization are correct?
+A: `while (lo < hi)`, `hi = n` (answer can be n if all elements < x).
+
+Q: How do you find the count of element x in a sorted array using binary search?
+A: `count = upperBound(arr, x) - lowerBound(arr, x)`. This is O(2 log n) = O(log n).
+
+Q: In `findPeakElement`, when `nums[mid] < nums[mid+1]`, where is the peak?
+A: In the right half (including mid+1). Set `lo = mid + 1`.
+
+Q: What is the maximum number of API calls made by First Bad Version binary search for n=10?
+A: ⌈log₂(10)⌉ = 4 calls.
+
+Q: In the answer-space binary search template, when `feasible(mid)` returns true, do you set `hi = mid` or `hi = mid - 1`?
+A: `hi = mid` — mid itself could be the answer; we must not exclude it.
+
+Q: What do `std::lower_bound` and `std::upper_bound` return in C++?
+A: They return iterators. To convert to a 0-based integer index, subtract the beginning iterator: `it - arr.begin()`.
+
+Q: What is the difference between linear search and sentinel linear search?
+A: Sentinel eliminates the `i < n` boundary check by placing a copy of target at arr[n]. Reduces number of comparisons per iteration from 2 to 1.
+
+Q: Why does binary search on a rotated sorted array still work in O(log n)?
+A: At each mid, one half is always sorted. We can determine in O(1) whether the target is in the sorted half. Eliminating one half per step maintains O(log n).
+
+Q: What algorithm does C++ `std::sort` use?
+A: It uses IntroSort — a hybrid algorithm of QuickSort, HeapSort, and InsertionSort. It guarantees O(N log N) worst-case time complexity.
+
+Q: Why does a custom comparator using `<=` crash `std::sort`?
+A: It violates the strict weak ordering requirement. When elements are equal, both `a <= b` and `b <= a` return true, causing `std::sort` to loop infinitely or access out-of-bounds memory. Always use `<` or `>`.
+
+Q: What is the worst-case space complexity of Merge Sort?
+A: O(N) — because it requires an auxiliary array of size N to merge sorted subarrays.
+
+Q: In what scenario is Insertion Sort highly efficient?
+A: When the array is already sorted or nearly sorted. It runs in O(N) time under this condition.
+
+Q: What is the difference between stable and unstable sorting?
+A: Stable sorting preserves the relative order of equal elements. Unstable sorting may rearrange them.
+
+Q: How can we find the Kth largest element in O(N) average time without sorting?
+A: Use `std::nth_element` (QuickSelect) in C++.
+
+Q: What is the minimum number of swaps required to sort an array of N distinct elements in the worst case?
+A: It can be calculated using graph cycles. If cycle sizes are `c_1, c_2, ...`, the minimum swaps is `sum(c_i - 1)`.
+
+Q: When should you use `std::stable_sort` instead of `std::sort`?
+A: When you need to preserve the relative order of equal elements (e.g. sorting by last name, then sorting by department).
+
+Q: In the Dutch National Flag algorithm, why is `mid` NOT incremented when `nums[mid] == 2`?
+A: The element swapped from `high` to `mid` is unexamined. We must evaluate it in the next loop iteration.
+
+Q: What is the time complexity of Counting Sort?
+A: O(N + K) where N is the number of elements and K is the range of values.
+
 Q: What is the time complexity of the standard Euclidean algorithm for GCD?
 A: $O(\log(\min(a, b)))$.
 
