@@ -268,6 +268,7 @@ II. Some tables being benches is a possibility.
 
 <details><summary>✅ Solution</summary>
 
+
 **Step-by-Step Solution:**
 1. Premise 1: $\text{Chairs} \subseteq \text{Tables}$ (Chairs cannot touch any other set).
 2. Premise 2: $\text{Tables} \cap \text{Desks} = \emptyset$.
