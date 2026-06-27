@@ -1,105 +1,98 @@
-# TCS NQT 2026 — Complete Preparation Master Dashboard
-**Exam Date: June 28, 2026 | Prepared for: Ravi Ranjan**
+# TCS NQT Complete Preparation
 
-Welcome to your comprehensive TCS NQT 2026 preparation workspace. This repository contains the complete set of study materials, cheat sheets, coding templates, and timed mock tests designed to maximize your score in the actual exam.
-
----
-
-## 🗺️ Index of Preparation Resources
-
-```mermaid
-graph TD
-    Start([Start Here]) --> R[README.md: Master Pattern & Rules]
-    R --> CS[00_MASTER_CHEATSHEET.md: 3-Min Revision Cheatsheet]
-    CS --> S1[01 & 02: Numerical & Reasoning Basics]
-    S1 --> S2[03: Advanced Quant & Reasoning & Cryptarithmetic]
-    S2 --> S3[04 & 05: Verbal Sentence Completion, Recall & Email]
-    S3 --> S4[06 & 07: Easy & Medium Coding in C++]
-    S4 --> S5[08: DSA C++ Patterns Cheatsheet]
-    S5 --> M1[09 & 10: Timed Aptitude & Verbal Mocks]
-    M1 --> Fin[11: June 27/28 Exam Day Strategy Guide]
-```
-
-Each file below covers a specific section of the TCS NQT 2026 syllabus with complete concepts, shortcuts, previous year questions (PYQs), and practice material:
-
-| Part | Resource File | Contents & Topics Covered |
-| :--- | :--- | :--- |
-| **00** | [00_MASTER_CHEATSHEET.md](file:///d:/Temp/TCS-NQT/00_MASTER_CHEATSHEET.md) | 3-Minute Revision Dashboard: all formulas, derivations, shortcuts, and boilerplate codes. |
-| **01** | [01_Numerical_Ability.md](file:///d:/Temp/TCS-NQT/01_Numerical_Ability.md) | Quantitative Aptitude: speed math, formulas, tricks, & solved PYQs. |
-| **02** | [02_Reasoning_Ability.md](file:///d:/Temp/TCS-NQT/02_Reasoning_Ability.md) | Logical Reasoning: seating arrangements, blood relations, diagrams, & logic trees. |
-| **03** | [03_Advanced_Quant_Reasoning.md](file:///d:/Temp/TCS-NQT/03_Advanced_Quant_Reasoning.md) | High-Difficulty Section: AP/GP, functions, coordinate geometry, & Cryptarithmetic. |
-| **04** | [04_Verbal_Ability_Part1.md](file:///d:/Temp/TCS-NQT/04_Verbal_Ability_Part1.md) | Sentence Completion (20Q / 25s each), Cloze tests, and crucial grammar rules. |
-| **05** | [05_Verbal_Ability_Part2.md](file:///d:/Temp/TCS-NQT/05_Verbal_Ability_Part2.md) | Passage Recall (30s read/90s write) and Email Writing (9-min) templates & guides. |
-| **06** | [06_Coding_Easy.md](file:///d:/Temp/TCS-NQT/06_Coding_Easy.md) | Easy Coding (35 min): Array, string, & math patterns solved in C++. |
-| **07** | [07_Coding_Medium.md](file:///d:/Temp/TCS-NQT/07_Coding_Medium.md) | Medium Coding (55 min): Dynamic Programming, Greedy, and Matrix traversal in C++. |
-| **08** | [08_DSA_Patterns_Cheatsheet.md](file:///d:/Temp/TCS-NQT/08_DSA_Patterns_Cheatsheet.md) | Reusable code templates in C++ for fast implementation under pressure. |
-| **09** | [09_Mock_Test_Quant_Reasoning.md](file:///d:/Temp/TCS-NQT/09_Mock_Test_Quant_Reasoning.md) | Timed 40-Question Mock Test (Numerical + Reasoning) with detailed step-by-step answers. |
-| **10** | [10_Mock_Test_Verbal.md](file:///d:/Temp/TCS-NQT/10_Mock_Test_Verbal.md) | Timed Verbal Ability Mock Test (20 Sentence Completion, Passage Recall, & Emails). |
-| **Bonus** | [11_Exam_Day_Strategy.md](file:///d:/Temp/TCS-NQT/11_Exam_Day_Strategy.md) | Night Revision Sheet & Exam Day Strategy (June 27/28 plan). |
+> **One repository. Every topic. Zero fluff.**  
+> Built for candidates targeting Ninja, Digital, and Prime bands in TCS NQT — with real worked examples, timed practice, pattern-specific tricks, and Mermaid diagrams you can actually use.
 
 ---
 
-## 📊 TCS NQT 2026 Actual Exam Pattern
+## What This Repository Contains
 
-The test is fully adaptive or sequential (no navigation back to previous questions once submitted). Below is the exact sectional breakdown:
-
-```mermaid
-graph LR
-    subgraph Section 1: Aptitude
-    A["Numerical<br>(20Q / 25m)"] --> B["Reasoning<br>(20Q / 25m)"] --> C["Advanced<br>(14Q / 25m)"]
-    end
-    subgraph Section 2: Verbal
-    C --> D["Verbal Ability<br>(25Q / 26m)"]
-    end
-    subgraph Section 3: Coding
-    D --> E["Easy Coding<br>(1Q / 35m)"] --> F["Break<br>(1m)"] --> G["Medium Coding<br>(1Q / 55m)"]
-    end
-```
-
-```
-Section                          | Questions | Time Allocation
----------------------------------|-----------|----------------
-Numerical Ability                |    20     | 25 min
-Reasoning Ability                |    20     | 25 min
-Advanced Quant & Reasoning       |    14     | 25 min
-Verbal Ability                   |    25     | 26 min
-  ├─ Sentence Completion         |    20     | 25 sec per question
-  ├─ Instruction Passage         |     1     | 25 sec
-  ├─ Passage Recall              |   4+4     | 30s read + 90s write (x2)
-  ├─ Instruction Passage         |     1     | 15 sec
-  └─ Email Writing               |     1     | 9 min (540 sec)
-Advanced Coding Easy             |     1     | 35 min
-[BREAK]                          |     -     | 1 min
-Advanced Coding Medium           |     1     | 55 min
----------------------------------|-----------|----------------
-TOTAL                            |    81     | 192 min (~3.2 hours)
-```
+| Section | What's Inside |
+|---------|--------------|
+| [00_Getting_Started/](./00_Getting_Started/) | Exam pattern, marks distribution, Prime strategy, time management, common mistakes, FAQs |
+| [01_Quantitative_Ability/](./01_Quantitative_Ability/) | 11 topics × 18 files each — notes, formulas, shortcuts, tricks, worked examples, practice sets, PYQs |
+| [02_Reasoning/](./02_Reasoning/) | 11 topics × 18 files — same structure as Quant |
+| [03_Verbal/](./03_Verbal/) | 9 topics × 18 files — RC strategy, grammar, vocabulary, para jumbles |
+| [04_Coding/](./04_Coding/) | 11 topics × 18 files — problem patterns, full solution code, LeetCode links |
+| [05_Email_Paragraph_Writing/](./05_Email_Paragraph_Writing/) | Email writing formats, paragraph structures, sample responses |
+| [06_Previous_Year_Questions/](./06_Previous_Year_Questions/) | Compiled PYQs with full solutions, difficulty tags, time estimates |
+| [07_Mock_Tests/](./07_Mock_Tests/) | Full-length timed mock tests mirroring TCS NQT structure |
+| [08_Cheat_Sheets/](./08_Cheat_Sheets/) | Section-wide cheat sheets for last-day revision |
+| [09_Flashcards/](./09_Flashcards/) | Q&A flashcard decks per topic |
+| [10_Last_Day_Revision/](./10_Last_Day_Revision/) | Ultra-condensed revision — everything critical on one page per section |
+| [11_Interview/](./11_Interview/) | HR + Technical interview prep for TCS |
+| [12_Placement_Resources/](./12_Placement_Resources/) | Resume templates, offer letter info, joining formalities |
+| [assets/](./assets/) | Diagrams, mindmaps, flowcharts, banners |
 
 ---
 
-## ⚠️ Critical Rules & Strategy Guides
+## How to Navigate This Repo
 
-### 🔢 Fill-in-the-Blank (FIB) Questions
-- Many numerical questions are non-MCQ. You must enter a number.
-- **Rule**: Enter **whole numbers only** (or exact decimals if specified). 
-- **CRITICAL**: Do **NOT** include any symbols like `%`, `₹`, `km`, `cm`, `rs`, `degree`, or spaces. E.g., if the answer is $45\%$, enter `45`.
+### If your exam is in 1–2 days:
+1. Start with → [10_Last_Day_Revision/](./10_Last_Day_Revision/)
+2. Then open → `cheatsheet.md` in your weakest Quant topic
+3. Then open → `tricks.md` in your weakest Reasoning topic
+4. Read → [00_Getting_Started/Time_Management.md](./00_Getting_Started/Time_Management.md)
+5. Read → [EXAM_STRATEGY.md](./EXAM_STRATEGY.md)
 
-### 💻 Coding Environment Checklist
-- **Evaluation**: The compiler uses 2 public and 5 private test cases. Marks are awarded **only for passing private test cases**.
-- **Submission**: You **MUST** click both `"Compile Code"` AND `"Save Code"` (or `"Submit Code"` depending on the interface). If you don't click Save/Submit, your code is evaluated as blank!
-- **Languages Allowed**: C (4.9.2), C++ (4.9.2), Java (1.8), Python (3.8). We recommend Python or C++ due to execution speed and library support.
-- **Rules**: 
-  - Never hardcode the input. 
-  - Ensure correct package/class declarations in Java (usually public class `Main`).
-  - Read input exactly as requested (use `sys.stdin.read` or `input()` correctly).
+### If your exam is in 1–2 weeks:
+Follow the [ROADMAP.md](./ROADMAP.md) → then the [STUDY_PLAN.md](./STUDY_PLAN.md)
 
-### 📝 Passage Recall Constraints
-- The screen shows a paragraph for **exactly 30 seconds** and then disappears.
-- You have **90 seconds** to write the summary.
-- **Rule**: Write in your **own words**. Do not attempt to memorize and write word-for-word, as plagiarism engines flag exact matches. Focus on capturing the core keywords (names, numbers, causes, effects) and reconstruct them using correct grammar.
+### For each topic folder, use files in this order:
+```
+README.md → notes.md → formula.md → shortcuts.md → tricks.md
+→ visualization.md → examples.md → practice_basic.md
+→ practice_medium.md → practice_advanced.md → important_questions.md
+→ pyq.md → revision.md → mindmap.md → cheatsheet.md → quiz.md
+```
+(`coding_application.md` and `mistakes.md` are best read after you've done practice)
 
-### 📧 Email Writing Rules
-- **Time Limit**: 9 minutes.
-- **Word Count**: **Minimum 100 words** (aim for 100-140 words to be safe).
-- **Rule**: You will be given a set of bulleted words/phrases (outline). You **MUST** use all the provided outline words in the exact sequence given.
-- **Grammar**: Write only in complete sentences. Do not use colloquial language, slang, or SMS-style abbreviations. Ensure a professional email structure: Subject Line, Salutation, Body, and Sign-off.
+---
+
+## File Naming Convention
+
+Every leaf topic folder has exactly **18 files** following this standard:
+
+| File | Purpose |
+|------|---------|
+| `README.md` | 3-line overview, TCS frequency tag, difficulty |
+| `notes.md` | Full concept with TCS-specific patterns |
+| `formula.md` | All formulas + derivation + quick table |
+| `shortcuts.md` | Genuinely time-saving calculation shortcuts |
+| `tricks.md` | Option elimination, pattern-spotting, TCS traps |
+| `visualization.md` | 2+ Mermaid diagrams |
+| `examples.md` | 5 fully worked examples |
+| `practice_basic.md` | 15 questions + answers |
+| `practice_medium.md` | 15 questions + full step-by-step |
+| `practice_advanced.md` | 10 Prime-level questions + alternate method |
+| `important_questions.md` | Top 20 most-repeated TCS-style questions |
+| `pyq.md` | PYQ-style questions with difficulty + faster method |
+| `coding_application.md` | How this concept shows up in Coding section |
+| `mistakes.md` | 8–10 topic-specific traps |
+| `revision.md` | 1-page scannable summary |
+| `mindmap.md` | Mermaid mindmap of entire topic |
+| `cheatsheet.md` | Ultra-condensed formulas + shortcuts |
+| `quiz.md` | 10 rapid-fire Q&A + 5 true/false |
+
+---
+
+## Quick Start — The 3 Most Important Files to Read First
+
+1. [00_Getting_Started/Exam_Pattern.md](./00_Getting_Started/Exam_Pattern.md) — understand what you're walking into
+2. [00_Getting_Started/Prime_Strategy.md](./00_Getting_Started/Prime_Strategy.md) — set your band target and time allocation
+3. [STUDY_PLAN.md](./STUDY_PLAN.md) — build your personal schedule
+
+---
+
+## Content Rules (For Contributors)
+
+See [CONTRIBUTING.md](./CONTRIBUTING.md) for the full content rules.  
+In short: no placeholders, no duplicate questions across practice files, every answer must be fully worked, and [VERIFY] any uncertain facts rather than inventing them.
+
+---
+
+## See Also
+
+- [ROADMAP.md](./ROADMAP.md) — recommended order to go through the repo
+- [STUDY_PLAN.md](./STUDY_PLAN.md) — multi-day schedule (1 day to 2 weeks)
+- [EXAM_STRATEGY.md](./EXAM_STRATEGY.md) — in-exam tactics

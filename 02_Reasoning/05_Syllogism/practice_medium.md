@@ -1,0 +1,1 @@
+﻿# Syllogism - Practice - Medium

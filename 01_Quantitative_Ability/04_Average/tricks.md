@@ -1,0 +1,1 @@
+﻿# Average - Tricks and Traps

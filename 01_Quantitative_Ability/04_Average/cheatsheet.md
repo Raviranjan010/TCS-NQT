@@ -1,0 +1,1 @@
+﻿# Average - Cheat Sheet

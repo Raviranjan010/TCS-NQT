@@ -1,0 +1,1 @@
+﻿# Average - Quick Revision

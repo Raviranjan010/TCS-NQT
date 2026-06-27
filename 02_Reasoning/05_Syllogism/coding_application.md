@@ -1,0 +1,1 @@
+﻿# Syllogism - Coding Application
