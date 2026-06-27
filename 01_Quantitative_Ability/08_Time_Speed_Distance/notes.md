@@ -1,79 +1,81 @@
-# Time, Speed, and Distance — Complete Notes
+# Time, Speed & Distance — Complete Notes
+
+## 1. The Core Relationship
+
+$$\text{Speed} = \frac{\text{Distance}}{\text{Time}}$$
+
+All TSD problems are variations of this fundamental triangle relationship:
+- Distance = Speed × Time
+- Time = Distance / Speed
+- Speed = Distance / Time
+
+**Unit Conversions (critical):**
+- km/h → m/s: multiply by **5/18**
+- m/s → km/h: multiply by **18/5**
+- Example: 72 km/h = 72 × (5/18) = 20 m/s
 
 ---
 
-## 1. Relative Speed
+## 2. Relative Speed
 
-Relative speed is the speed of an object with respect to another moving object. 
+When two objects move:
 
-### Case 1: Moving in the Same Direction
-When two objects are moving in the same direction at speeds $v_1$ and $v_2$ (where $v_1 > v_2$), the relative speed is the **difference** between their speeds:
+### Same Direction
+$$\text{Relative Speed} = |S_1 - S_2|$$
+The faster object "gains" on the slower one at this rate.
 
-$$v_{\text{rel}} = v_1 - v_2$$
+### Opposite Directions
+$$\text{Relative Speed} = S_1 + S_2$$
+The objects close the gap between them at the sum of their speeds.
 
-*   *Usage:* Chasing problems (police and thief), overtaking.
-
-### Case 2: Moving in Opposite Directions
-When two objects are moving in opposite directions at speeds $v_1$ and $v_2$, the relative speed is the **sum** of their speeds:
-
-$$v_{\text{rel}} = v_1 + v_2$$
-
-*   *Usage:* Meeting problems, trains moving toward each other.
+**TCS Application:** Time to meet = Gap / Relative Speed
 
 ---
 
-## 2. Train Problems
+## 3. Trains — Critical TCS Topic
 
-Train problems require setting up the basic formula $\text{Distance} = \text{Speed} \times \text{Time}$, but the distance variable depends on what the train is crossing.
+### Train Crossing a Stationary Object (Pole/Man)
+$$\text{Time} = \frac{\text{Length of Train}}{\text{Speed of Train}}$$
 
-### Scenario A: Crossing a Stationary Point Object (Pole, Standing Man, Tree)
-Since the length of the pole/man is negligible compared to the length of the train:
-*   $\text{Distance} = L_{\text{train}}$
-*   $\text{Speed} = v_{\text{train}}$
-*   $\text{Time taken to cross} = \frac{L_{\text{train}}}{v_{\text{train}}}$
+### Train Crossing a Platform/Bridge
+$$\text{Time} = \frac{\text{Length of Train + Length of Platform}}{\text{Speed of Train}}$$
 
-### Scenario B: Crossing a Stationary Object of Length (Platform, Bridge, Tunnel)
-*   $\text{Distance} = L_{\text{train}} + L_{\text{platform}}$
-*   $\text{Speed} = v_{\text{train}}$
-*   $\text{Time taken to cross} = \frac{L_{\text{train}} + L_{\text{platform}}}{v_{\text{train}}}$
-
-### Scenario C: Crossing Another Moving Train
-*   $\text{Distance} = L_{\text{train 1}} + L_{\text{train 2}}$
-*   $\text{Speed} = v_{\text{rel}}$ (dependent on direction of motion)
-*   $\text{Time taken to cross} = \frac{L_{\text{train 1}} + L_{\text{train 2}}}{v_{\text{rel}}}$
+### Two Trains Crossing Each Other
+**Same direction:** Time = (L1 + L2) / (S1 - S2)
+**Opposite direction:** Time = (L1 + L2) / (S1 + S2)
 
 ---
 
-## 3. Boats and Streams
+## 4. Boats & Streams
 
-When an object travels in water, the velocity of the water stream affects its net speed.
+Let Boat speed in still water = B, Stream speed = S
 
-Let:
-*   $u$ = Speed of the boat in still water (km/h)
-*   $v$ = Speed of the stream (km/h)
+| Direction | Effective Speed |
+|-----------|----------------|
+| Downstream (with current) | B + S |
+| Upstream (against current) | B - S |
 
-### Downstream Speed ($d$)
-When the boat moves in the direction of the stream:
-
-$$d = u + v$$
-
-### Upstream Speed ($u_s$)
-When the boat moves against the direction of the stream:
-
-$$u_s = u - v$$
-
-*   *Note:* The boat can only move upstream if $u > v$; otherwise, the stream will wash it backward.
-
-### Formulas to Find Still Water & Stream Speeds
-If you are given the downstream speed $d$ and upstream speed $u_s$:
-
-$$\text{Speed of boat in still water } (u) = \frac{d + u_s}{2}$$
-
-$$\text{Speed of stream } (v) = \frac{d - u_s}{2}$$
+**Deriving B and S:**
+$$B = \frac{\text{Downstream} + \text{Upstream}}{2}$$
+$$S = \frac{\text{Downstream} - \text{Upstream}}{2}$$
 
 ---
 
-## 4. Cross-References & Overlapping Topics
+## 5. Average Speed — The Harmonic Mean Trap
 
-*   **Average Speed & The Harmonic Mean:** If a round trip covers the same distance at different speeds, do not average the speeds arithmetically. See [Average Notes — Average Speed Section](../04_Average/notes.md#2-average-speed--harmonic-mean-trap) for the Harmonic Mean speed trap.
-*   **Speed-Time Inverse Relationship:** Since $\text{Distance} = \text{Speed} \times \text{Time}$, if the distance is kept constant, Speed and Time are inversely proportional ($S_1 T_1 = S_2 T_2$). Refer to [Ratio & Proportion Notes — Direct & Inverse Section](../03_Ratio_Proportion/notes.md#2-direct-and-inverse-proportion) to see speed-time ratio tricks.
+**NEVER average speeds directly when distances are equal.**
+
+$$\text{Average Speed} = \frac{2 S_1 S_2}{S_1 + S_2}$$
+
+This is the harmonic mean formula. The arithmetic mean always overestimates average speed when distances are equal.
+
+**TCS Trap:** If A travels from X to Y at speed S1 and returns at S2, average speed = 2S1S2/(S1+S2).
+
+---
+
+## 6. TCS-Specific Patterns
+
+1. **Train + Platform problems** — always check if platform length is given or to be found
+2. **Meeting time** — two people walking toward each other
+3. **Boats with current** — find still-water speed from upstream/downstream times
+4. **Speed change mid-journey** — split into two parts
