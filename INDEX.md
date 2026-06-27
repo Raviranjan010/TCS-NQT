@@ -41,7 +41,7 @@ Welcome to the master index page for the TCS NQT Complete Preparation Repository
 *   [07 Active Passive](file:///d:/Temp/TCS-NQT/03_Verbal/07_Active_Passive/README.md) — *Topic Overview and Study Roadmap.*
 *   [08 Direct Indirect](file:///d:/Temp/TCS-NQT/03_Verbal/08_Direct_Indirect/README.md) — *Topic Overview and Study Roadmap.*
 *   [09 Vocabulary](file:///d:/Temp/TCS-NQT/03_Verbal/09_Vocabulary/README.md) — *Topic Overview and Study Roadmap.*
-*   [Vocabulary](file:///d:/Temp/TCS-NQT/03_Verbal/Vocabulary/README.md) — *Topic Overview and Study Roadmap.*
+
 
 ## 04 Coding
 
