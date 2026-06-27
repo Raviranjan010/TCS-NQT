@@ -112,6 +112,18 @@ A: If a journey is split into three equal distances traveled at $v_1$, $v_2$, an
 Q: In Average, what is the rule or definition for 'Deviation method'?
 A: $$\text{New Man Weight} = \text{Replaced Weight} + (\text{Total Men} \times \text{Increase})$$
 
+Q: In Average, what is the rule or definition for 'Consecutive Numbers / AP Series'?
+A: The average is the exact middle term.
+
+Q: In Average, what is the rule or definition for 'First $n$ Natural Numbers'?
+A: $$\text{Average} = \frac{n + 1}{2}$$
+
+Q: In Average, what is the rule or definition for 'First $n$ Odd Numbers'?
+A: $$\text{Average} = n$$
+
+Q: In Average, what is the rule or definition for 'First $n$ Even Numbers'?
+A: $$\text{Average} = n + 1$$
+
 Q: In Average, what is the rule or definition for 'Alligations & Mixtures'?
 A: Finding the ratio of mixtures is the inverse of a weighted average problem. For details, refer to [Ratio & Proportion Notes — Mixture & Alligation Section](../01_Quantitative_Ability/03_Ratio_Proportion/notes.md#4-mixture--alligation-basics).
 

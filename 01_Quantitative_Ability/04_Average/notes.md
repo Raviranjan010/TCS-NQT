@@ -70,7 +70,21 @@ The average weight of 10 men is increased by 1.5 kg when one of the men, who wei
 
 ---
 
-## 4. Cross-References & Overlapping Topics
+## 4. Averages of Number Series
+
+TCS NQT often features quick conceptual questions on consecutive number series:
+*   **Consecutive Numbers / AP Series:** The average is the exact middle term.
+    $$\text{Average} = \frac{\text{First Term} + \text{Last Term}}{2}$$
+*   **First $n$ Natural Numbers:**
+    $$\text{Average} = \frac{n + 1}{2}$$
+*   **First $n$ Odd Numbers:**
+    $$\text{Average} = n$$
+*   **First $n$ Even Numbers:**
+    $$\text{Average} = n + 1$$
+
+---
+
+## 5. Cross-References & Overlapping Topics
 
 *   **Alligations & Mixtures:** Finding the ratio of mixtures is the inverse of a weighted average problem. For details, refer to [Ratio & Proportion Notes — Mixture & Alligation Section](../03_Ratio_Proportion/notes.md#4-mixture--alligation-basics).
 *   **Speed-Time Relations:** Average speed is an application of inverse proportionality. See [Ratio & Proportion Notes — Direct & Inverse section](../03_Ratio_Proportion/notes.md#2-direct-and-inverse-proportion) to review how inverse relationships function.
