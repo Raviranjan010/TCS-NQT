@@ -32,7 +32,7 @@ Drawing a family tree is the most reliable way to solve blood relation puzzles. 
 *   **Sibling Relationship:** Represented by a single horizontal line ($-$).
 *   **Generation Gap (Vertical Relationship):** Represented by a vertical line ($|$), with the older generation on top and the younger generation below.
 
-*Refer to [visualization.md](file:///Users/rajsumit/Desktop/TCS-NQT/02_Reasoning/02_Blood_Relation/visualization.md) for actual rendered family trees using these rules.*
+*Refer to [visualization.md](visualization.md) for actual rendered family trees using these rules.*
 
 ---
 

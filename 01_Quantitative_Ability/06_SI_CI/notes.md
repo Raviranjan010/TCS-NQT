@@ -78,6 +78,6 @@ $$P = \frac{x}{\left(1 + \frac{r}{100}\right)^1} + \frac{x}{\left(1 + \frac{r}{1
 
 ## 4. Cross-References & Overlapping Topics
 
-*   **Successive Percentage Increases:** Compound Interest is mathematically identical to successive percentage increases. See [Percentage Notes — Successive Percentage Change Section](file:///Users/rajsumit/Desktop/TCS-NQT/01_Quantitative_Ability/02_Percentage/notes.md#3-successive-percentage-change) to see how the compounding factor is built from successive rates.
+*   **Successive Percentage Increases:** Compound Interest is mathematically identical to successive percentage increases. See [Percentage Notes — Successive Percentage Change Section](../02_Percentage/notes.md#3-successive-percentage-change) to see how the compounding factor is built from successive rates.
 *   **Geometric Progression:** CI amount equations represent terms of a Geometric Progression where the common ratio is $\left(1 + \frac{R}{100}\right)$.
-*   **Weighted Averages in Investments:** If a principal is split and invested in different accounts at rates $r_1\%$ and $r_2\%$, the net interest rate is solved using Alligations. Refer to [Ratio & Proportion Notes — Mixture & Alligation Section](file:///Users/rajsumit/Desktop/TCS-NQT/01_Quantitative_Ability/03_Ratio_Proportion/notes.md#4-mixture--alligation-basics).
+*   **Weighted Averages in Investments:** If a principal is split and invested in different accounts at rates $r_1\%$ and $r_2\%$, the net interest rate is solved using Alligations. Refer to [Ratio & Proportion Notes — Mixture & Alligation Section](../03_Ratio_Proportion/notes.md#4-mixture--alligation-basics).

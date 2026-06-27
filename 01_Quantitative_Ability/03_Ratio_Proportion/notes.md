@@ -40,7 +40,7 @@ When one quantity increases, the other decreases in the same ratio.
 
 $$Y = \frac{k}{X} \implies X \times Y = k \implies X_1 Y_1 = X_2 Y_2$$
 
-*   *Application:* Speed and time are inversely proportional when the distance is constant ($S_1 T_1 = S_2 T_2$). See [Average Notes — Average Speed section](file:///Users/rajsumit/Desktop/TCS-NQT/01_Quantitative_Ability/04_Average/notes.md#2-average-speed--harmonic-mean-trap) for applications in traveling.
+*   *Application:* Speed and time are inversely proportional when the distance is constant ($S_1 T_1 = S_2 T_2$). See [Average Notes — Average Speed section](../04_Average/notes.md#2-average-speed--harmonic-mean-trap) for applications in traveling.
 
 ---
 
@@ -99,6 +99,6 @@ $$\text{Ratio of Cheaper to Dearer} = (D - M) : (M - C)$$
 
 Ratios and mixtures are used to simplify complex equations in other topics:
 
-*   **Weighted Average Connection:** The alligation equation is simply a algebraic rearrangement of the weighted average equation. See [Average Notes — Weighted Average section](file:///Users/rajsumit/Desktop/TCS-NQT/01_Quantitative_Ability/04_Average/notes.md#1-weighted-average) to see how this relation is derived.
-*   **Dishonest Dealers (Profit & Loss):** False-weight problems can be solved in seconds by writing down the ratio of True Weight to False Weight. See [Profit & Loss Notes — False Weight section](file:///Users/rajsumit/Desktop/TCS-NQT/01_Quantitative_Ability/05_Profit_Loss/notes.md#3-false-weight-problems-dishonest-dealers) to see how ratios convert complex percentage gains into simple multiplication factors.
-*   **Interest Mixtures (SI & CI):** When a sum of money is divided and lent at two different rates of interest, the overall rate of interest earned is solved using Alligation. See [SI & CI Notes](file:///Users/rajsumit/Desktop/TCS-NQT/01_Quantitative_Ability/06_SI_CI/notes.md).
+*   **Weighted Average Connection:** The alligation equation is simply a algebraic rearrangement of the weighted average equation. See [Average Notes — Weighted Average section](../04_Average/notes.md#1-weighted-average) to see how this relation is derived.
+*   **Dishonest Dealers (Profit & Loss):** False-weight problems can be solved in seconds by writing down the ratio of True Weight to False Weight. See [Profit & Loss Notes — False Weight section](../05_Profit_Loss/notes.md#3-false-weight-problems-dishonest-dealers) to see how ratios convert complex percentage gains into simple multiplication factors.
+*   **Interest Mixtures (SI & CI):** When a sum of money is divided and lent at two different rates of interest, the overall rate of interest earned is solved using Alligation. See [SI & CI Notes](../06_SI_CI/notes.md).

@@ -15,7 +15,7 @@ If we only have two groups, the weighted average is:
 $$A_{\text{weighted}} = \frac{n_1 A_1 + n_2 A_2}{n_1 + n_2}$$
 Rearranging this equation gives:
 $$n_1(A_{\text{weighted}} - A_1) = n_2(A_2 - A_{\text{weighted}}) \implies \frac{n_1}{n_2} = \frac{A_2 - A_{\text{weighted}}}{A_{\text{weighted}} - A_1}$$
-This is the mathematical proof of the **Alligation Rule** in [Ratio & Proportion Notes — Mixture & Alligation Section](file:///Users/rajsumit/Desktop/TCS-NQT/01_Quantitative_Ability/03_Ratio_Proportion/notes.md#4-mixture--alligation-basics).
+This is the mathematical proof of the **Alligation Rule** in [Ratio & Proportion Notes — Mixture & Alligation Section](../03_Ratio_Proportion/notes.md#4-mixture--alligation-basics).
 
 ---
 
@@ -72,5 +72,5 @@ The average weight of 10 men is increased by 1.5 kg when one of the men, who wei
 
 ## 4. Cross-References & Overlapping Topics
 
-*   **Alligations & Mixtures:** Finding the ratio of mixtures is the inverse of a weighted average problem. For details, refer to [Ratio & Proportion Notes — Mixture & Alligation Section](file:///Users/rajsumit/Desktop/TCS-NQT/01_Quantitative_Ability/03_Ratio_Proportion/notes.md#4-mixture--alligation-basics).
-*   **Speed-Time Relations:** Average speed is an application of inverse proportionality. See [Ratio & Proportion Notes — Direct & Inverse section](file:///Users/rajsumit/Desktop/TCS-NQT/01_Quantitative_Ability/03_Ratio_Proportion/notes.md#2-direct-and-inverse-proportion) to review how inverse relationships function.
+*   **Alligations & Mixtures:** Finding the ratio of mixtures is the inverse of a weighted average problem. For details, refer to [Ratio & Proportion Notes — Mixture & Alligation Section](../03_Ratio_Proportion/notes.md#4-mixture--alligation-basics).
+*   **Speed-Time Relations:** Average speed is an application of inverse proportionality. See [Ratio & Proportion Notes — Direct & Inverse section](../03_Ratio_Proportion/notes.md#2-direct-and-inverse-proportion) to review how inverse relationships function.

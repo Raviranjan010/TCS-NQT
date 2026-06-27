@@ -38,8 +38,8 @@
 *   **Step 1:** Find the LCM of the individual times. Assume this is the "Total Units of Work."
 
 ## Time, Speed & Distance Formulas (🔴 High)
-*   **Average Speed & The Harmonic Mean:** If a round trip covers the same distance at different speeds, do not average the speeds arithmetically. See [Average Notes — Average Speed Section](file:///Users/rajsumit/Desktop/TCS-NQT/01_Quantitative_Ability/04_Average/notes.md#2-average-speed--harmonic-mean-trap) for the Harmonic Mean speed trap.
-*   **Speed-Time Inverse Relationship:** Since $\text{Distance} = \text{Speed} \times \text{Time}$, if the distance is kept constant, Speed and Time are inversely proportional ($S_1 T_1 = S_2 T_2$). Refer to [Ratio & Proportion Notes — Direct & Inverse Section](file:///Users/rajsumit/Desktop/TCS-NQT/01_Quantitative_Ability/03_Ratio_Proportion/notes.md#2-direct-and-inverse-proportion) to see speed-time ratio tricks.
+*   **Average Speed & The Harmonic Mean:** If a round trip covers the same distance at different speeds, do not average the speeds arithmetically. See [Average Notes — Average Speed Section](../04_Average/notes.md#2-average-speed--harmonic-mean-trap) for the Harmonic Mean speed trap.
+*   **Speed-Time Inverse Relationship:** Since $\text{Distance} = \text{Speed} \times \text{Time}$, if the distance is kept constant, Speed and Time are inversely proportional ($S_1 T_1 = S_2 T_2$). Refer to [Ratio & Proportion Notes — Direct & Inverse Section](../03_Ratio_Proportion/notes.md#2-direct-and-inverse-proportion) to see speed-time ratio tricks.
 
 ## Simple & Compound Interest Formulas (🟡 Medium)
 *   **Linear Growth:** SI grows linearly over time (Arithmetic Progression). Each year adds a fixed percentage increase of the *initial* principal.
@@ -61,7 +61,7 @@
     *   $^nC_r = ^nC_{n-r}$ (Choosing $r$ objects is identical to choosing the $n-r$ objects to leave behind).
     *   $^nC_0 = ^nC_n = 1$
     *   $^nC_1 = n$
-*   **Probability calculations:** Permutations and combinations are the primary tools used to determine the sizes of the event space $N(E)$ and sample space $N(S)$. See [Probability Notes](file:///Users/rajsumit/Desktop/TCS-NQT/01_Quantitative_Ability/10_Probability/notes.md) to see how combinations are used to solve marble, card, and committee probability questions.
+*   **Probability calculations:** Permutations and combinations are the primary tools used to determine the sizes of the event space $N(E)$ and sample space $N(S)$. See [Probability Notes](../10_Probability/notes.md) to see how combinations are used to solve marble, card, and committee probability questions.
 
 ## Probability Formulas (🟢 Low)
 *   **Colors:** 26 Red (Hearts, Diamonds) and 26 Black (Spades, Clubs).

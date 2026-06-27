@@ -73,4 +73,4 @@ A standard deck contains 52 cards divided into 4 suits (Spades ♠, Hearts ♥, 
 
 ## 4. Cross-References & Overlapping Topics
 
-*   **Sample Space Selections:** For complex selections (e.g., drawing 3 cards from a deck, or selecting 4 balls from a bag), combinations must be used to calculate $N(S)$ and $N(E)$. Refer to [Permutations and Combinations Notes — Combinations Section](file:///Users/rajsumit/Desktop/TCS-NQT/01_Quantitative_Ability/09_Permutation_Combination/notes.md#permutations-vs-combinations-npr) to review selection calculations.
+*   **Sample Space Selections:** For complex selections (e.g., drawing 3 cards from a deck, or selecting 4 balls from a bag), combinations must be used to calculate $N(S)$ and $N(E)$. Refer to [Permutations and Combinations Notes — Combinations Section](../09_Permutation_Combination/notes.md#permutations-vs-combinations-npr) to review selection calculations.

@@ -75,5 +75,5 @@ $$\text{Speed of stream } (v) = \frac{d - u_s}{2}$$
 
 ## 4. Cross-References & Overlapping Topics
 
-*   **Average Speed & The Harmonic Mean:** If a round trip covers the same distance at different speeds, do not average the speeds arithmetically. See [Average Notes — Average Speed Section](file:///Users/rajsumit/Desktop/TCS-NQT/01_Quantitative_Ability/04_Average/notes.md#2-average-speed--harmonic-mean-trap) for the Harmonic Mean speed trap.
-*   **Speed-Time Inverse Relationship:** Since $\text{Distance} = \text{Speed} \times \text{Time}$, if the distance is kept constant, Speed and Time are inversely proportional ($S_1 T_1 = S_2 T_2$). Refer to [Ratio & Proportion Notes — Direct & Inverse Section](file:///Users/rajsumit/Desktop/TCS-NQT/01_Quantitative_Ability/03_Ratio_Proportion/notes.md#2-direct-and-inverse-proportion) to see speed-time ratio tricks.
+*   **Average Speed & The Harmonic Mean:** If a round trip covers the same distance at different speeds, do not average the speeds arithmetically. See [Average Notes — Average Speed Section](../04_Average/notes.md#2-average-speed--harmonic-mean-trap) for the Harmonic Mean speed trap.
+*   **Speed-Time Inverse Relationship:** Since $\text{Distance} = \text{Speed} \times \text{Time}$, if the distance is kept constant, Speed and Time are inversely proportional ($S_1 T_1 = S_2 T_2$). Refer to [Ratio & Proportion Notes — Direct & Inverse Section](../03_Ratio_Proportion/notes.md#2-direct-and-inverse-proportion) to see speed-time ratio tricks.

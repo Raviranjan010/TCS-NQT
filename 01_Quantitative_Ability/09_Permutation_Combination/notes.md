@@ -67,4 +67,4 @@ $$\text{Circular Permutations} = \frac{(n-1)!}{2}$$
 
 ## 4. Cross-References & Overlapping Topics
 
-*   **Probability calculations:** Permutations and combinations are the primary tools used to determine the sizes of the event space $N(E)$ and sample space $N(S)$. See [Probability Notes](file:///Users/rajsumit/Desktop/TCS-NQT/01_Quantitative_Ability/10_Probability/notes.md) to see how combinations are used to solve marble, card, and committee probability questions.
+*   **Probability calculations:** Permutations and combinations are the primary tools used to determine the sizes of the event space $N(E)$ and sample space $N(S)$. See [Probability Notes](../10_Probability/notes.md) to see how combinations are used to solve marble, card, and committee probability questions.

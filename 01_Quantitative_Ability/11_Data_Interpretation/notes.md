@@ -60,6 +60,6 @@ Since DI is highly time-constrained in the TCS NQT, exact calculations should be
 
 ## 4. Cross-References & Overlapping Topics
 
-*   **Percentage Calculations:** A strong command of percentage growth, base values, and fraction conversions is crucial. See [Percentage Notes](file:///Users/rajsumit/Desktop/TCS-NQT/01_Quantitative_Ability/02_Percentage/notes.md).
-*   **Average Calculations:** Computing averages across columns/tables is simplified by using the deviation method. See [Average Notes — Change of Average Section](file:///Users/rajsumit/Desktop/TCS-NQT/01_Quantitative_Ability/04_Average/notes.md#3-change-of-average-problems-deviation-method).
-*   **Ratio Comparisons:** Cross-multiplying fractions to quickly determine largest/smallest shares is derived from ratio properties. See [Ratio & Proportion Notes](file:///Users/rajsumit/Desktop/TCS-NQT/01_Quantitative_Ability/03_Ratio_Proportion/notes.md).
+*   **Percentage Calculations:** A strong command of percentage growth, base values, and fraction conversions is crucial. See [Percentage Notes](../02_Percentage/notes.md).
+*   **Average Calculations:** Computing averages across columns/tables is simplified by using the deviation method. See [Average Notes — Change of Average Section](../04_Average/notes.md#3-change-of-average-problems-deviation-method).
+*   **Ratio Comparisons:** Cross-multiplying fractions to quickly determine largest/smallest shares is derived from ratio properties. See [Ratio & Proportion Notes](../03_Ratio_Proportion/notes.md).
