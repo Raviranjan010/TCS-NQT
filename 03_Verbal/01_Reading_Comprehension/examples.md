@@ -48,7 +48,7 @@ Which of the following is cited as a potential drawback of edge computing?
 
 The rapid transition to remote work has altered not only organizational operations but also the subtle fabric of social capital within corporate settings. In traditional offices, spontaneous encounters at water coolers or communal lounges fostered organic relationships. These informal networks served as silent facilitators of inter-departmental collaboration, building trust and empathy across disparate teams.
 
-In contrast, the digital workspace is highly structured and transactional. Virtual meetings are scheduled with specific agendas, leaving little room for unstructured banter. While individual productivity has often remained stable or even increased, long-term corporate cohesion is showing signs of strain. Employees report feeling disconnected from their company's core culture, and mentoring programs have suffered as junior staff miss the silent benefit of observing senior colleagues negotiate and problem-solve in real time.
+In contrast, the digital workspace is highly structured and transactional. Virtual meetings are scheduled with specific agendas, leaving little room for unstructured banter. While individual productivity has often remained stable or even increased, long-term corporate cohesion is showing signs of strain. Employees report feeling disconnected from their company's core culture, and mentoring programs have suffered as junior staff miss the silent benefit of observing senior colleagues negotiate and problem-solve in real time. Consequently, organizations risk losing the tacit knowledge and emotional ties that drive long-term innovation and employee retention.
 
 ---
 
@@ -90,7 +90,7 @@ According to the passage, how does the digital workspace differ from the traditi
 
 For centuries, biology textbooks asserted that all life on Earth was fundamentally dependent on solar energy captured via photosynthesis. This paradigm was shattered in 1977 with the discovery of complex ecosystems thriving around hydrothermal vents on the ocean floor, thousands of meters below the reach of sunlight. 
 
-In these abyssal depths, volcanic activity heats seawater and infuses it with minerals and hydrogen sulfide. Instead of relying on solar energy, specialized bacteria utilize a process called chemosynthesis, converting these toxic chemical compounds into organic energy. These bacteria form the foundation of a bizarre food web that supports giant tube worms, blind crabs, and unique species of fish. Astrobiologists are particularly fascinated by these ecosystems, viewing them as terrestrial models for potential alien life in the sub-surface oceans of icy moons like Europa and Enceladus.
+In these abyssal depths, volcanic activity heats seawater and infuses it with minerals and hydrogen sulfide. Instead of relying on solar energy, specialized bacteria utilize a process called chemosynthesis, converting these toxic chemical compounds into organic energy. These bacteria form the foundation of a bizarre food web that supports giant tube worms, blind crabs, and unique species of fish. Astrobiologists are particularly fascinated by these ecosystems, viewing them as terrestrial models for potential alien life in the sub-surface oceans of icy moons like Europa and Enceladus. These extreme habitats challenge our understanding of biological limits and expand the parameters of where life might exist in the universe.
 
 ---
 
@@ -132,7 +132,7 @@ Which chemical compound is converted by bacteria into organic energy around hydr
 
 Decentralized Finance, or DeFi, represents a structural shift in global finance by removing intermediary institutions like commercial banks and brokerages from financial transactions. Powered by blockchain technology, DeFi platforms utilize "smart contracts"—automated self-executing agreements written in code—to facilitate lending, borrowing, and trading directly between individuals.
 
-This peer-to-peer architecture promises greater financial inclusivity, lower transaction fees, and rapid settlement times. Anyone with an internet connection can access services that were previously gatekept by bureaucratic banking protocols. However, the system is not without significant perils. Because DeFi operates outside traditional regulatory frameworks, consumers have no recourse in the event of code exploits, hacks, or market manipulation. The lack of central oversight makes it a volatile environment where users must bear the entire burden of security risk.
+This peer-to-peer architecture promises greater financial inclusivity, lower transaction fees, and rapid settlement times. Anyone with an internet connection can access services that were previously gatekept by bureaucratic banking protocols. However, the system is not without significant perils. Because DeFi operates outside traditional regulatory frameworks, consumers have no recourse in the event of code exploits, hacks, or market manipulation. The lack of central oversight makes it a volatile environment where users must bear the entire burden of security risk. As a result, participation requires a high degree of technical literacy, leaving novice investors highly vulnerable to sudden and irreversible financial losses.
 
 ---
 
@@ -174,7 +174,7 @@ What technology is used by DeFi platforms to automate financial transactions?
 
 As urban centers expand, civil engineers are increasingly turning to biomimicry—the practice of copying designs from nature—to construct more sustainable and resilient structures. Rather than fighting natural forces with rigid materials, biomimetic design seeks to emulate the flexible, adaptive systems developed by millions of years of biological evolution.
 
-A prime example is the design of ventilation systems inspired by termite mounds. In Zimbabwe, the Eastgate Centre office complex regulates its interior temperature without energy-intensive air conditioning by mimicking the passive cooling chimneys found in termite nests. Similarly, engineers are developing self-healing concrete mixed with bacterial spores that produce limestone when exposed to rainwater, sealing cracks as they form. These innovations suggest that the future of infrastructure lies not in conquering the environment, but in learning from its oldest inhabitants.
+A prime example is the design of ventilation systems inspired by termite mounds. In Zimbabwe, the Eastgate Centre office complex regulates its interior temperature without energy-intensive air conditioning by mimicking the passive cooling chimneys found in termite nests. Similarly, engineers are developing self-healing concrete mixed with bacterial spores that produce limestone when exposed to rainwater, sealing cracks as they form. These innovations suggest that the future of infrastructure lies not in conquering the environment, but in learning from its oldest inhabitants. By adopting these natural blueprints, modern construction can drastically reduce its carbon footprint and energy consumption.
 
 ---
 

@@ -1,4 +1,4 @@
-$root = "d:\Temp\TCS-NQT-Complete-Preparation"
+$root = $PSScriptRoot
 $sections = @(
     "01_Quantitative_Ability",
     "02_Reasoning",

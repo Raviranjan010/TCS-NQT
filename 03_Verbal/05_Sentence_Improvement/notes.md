@@ -6,9 +6,9 @@
 
 A modifier is a word or phrase that describes another part of the sentence. A **dangling modifier** occurs when the subject being modified is not clearly stated, or is placed too far from the modifier.
 
-*   *Incorrect:* Walking down the street, the library came into view.
-    *   *Analysis:* The phrase "Walking down the street" modifies the subject. As written, it implies the *library* was walking down the street.
-*   *Correct / Improvement:* Walking down the street, **I saw** the library. / As **I was walking** down the street, the library came into view.
+*   **Incorrect:** <u>Walking down the street</u>, the library came into view.
+    *   *Analysis:* The underlined modifier is misplaced. As written, it implies the *library* was walking down the street.
+*   **Correct / Improvement:** **As I was walking down the street**, the library came into view. / Walking down the street, **I saw** the library.
 
 ---
 
@@ -16,9 +16,9 @@ A modifier is a word or phrase that describes another part of the sentence. A **
 
 Words, phrases, or clauses in a list must use the same grammatical form.
 
-*   *Incorrect:* He likes swimming, hiking, and **to run**.
-    *   *Analysis:* The list contains two gerunds (*swimming*, *hiking*) and one infinitive (*to run*). They must be parallel.
-*   *Correct / Improvement:* He likes swimming, hiking, and **running**.
+*   **Incorrect:** He likes <u>swimming, hiking, and to run</u>.
+    *   *Analysis:* The underlined list contains two gerunds (*swimming*, *hiking*) and one infinitive (*to run*). They must be parallel.
+*   **Correct / Improvement:** He likes **swimming, hiking, and running**.
 
 ---
 
@@ -26,8 +26,12 @@ Words, phrases, or clauses in a list must use the same grammatical form.
 
 Avoid sentences that repeat the same concept using different words. The shortest, grammatically correct option is usually the best choice in sentence improvement.
 
-*   *Incorrect:* The manager returned **back** to the office. / He gave a **brief summary** of the project. (Note: summaries are by definition brief).
-*   *Correct / Improvement:* The manager returned to the office. / He gave a summary of the project.
+*   **Incorrect:** The manager <u>returned back to</u> the office.
+    *   *Analysis:* The word "returned" already means to go back. Thus, adding "back" is redundant.
+    *   *Correct / Improvement:* The manager **returned to** the office.
+*   **Incorrect:** He gave a <u>brief summary</u> of the project.
+    *   *Analysis:* A summary is by definition brief. Adding "brief" is wordy and redundant.
+    *   *Correct / Improvement:* He gave a **summary** of the project.
 
 ---
 
@@ -35,6 +39,6 @@ Avoid sentences that repeat the same concept using different words. The shortest
 
 Pronouns must agree in number and gender with the nouns they replace (the antecedents).
 
-*   *Incorrect:* Every student must submit **their** assignment.
-    *   *Analysis:* "Every student" is singular; "their" is plural. (Though common in colloquial English, standard written grammar tests require agreement).
-*   *Correct / Improvement:* Every student must submit **his or her** assignment. / **All students** must submit **their** assignments.
+*   **Incorrect:** Every student must submit <u>their assignment</u>.
+    *   *Analysis:* "Every student" is singular; the pronoun "their" is plural. They must agree in number.
+*   **Correct / Improvement:** Every student must submit **his or her assignment**. / **All students** must submit **their assignments**.
