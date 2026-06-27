@@ -1,65 +1,111 @@
 # Data Interpretation — Complete Notes
 
----
+## 1. Why DI Matters in TCS NQT
 
-## 1. Overview of DI Chart Types
-
-Data Interpretation (DI) tests your ability to extract quantitative information from visual formats and perform rapid calculations. The four primary formats are:
-
-### A. Data Tables
-The most structured and detailed format. Tables present precise raw values.
-*   *TCS Trap:* Large tables with unnecessary columns/rows to distract you. Read the question first to identify exactly which rows/columns are required.
-
-### B. Bar Charts
-Represent discrete data values using rectangular bars. 
-*   *Horizontal vs. Vertical:* Vertical bar charts track changes over time; horizontal charts compare categories.
-*   *Stacked/Grouped Bars:* Represent sub-components of a total. Pay attention to whether the bar height represents absolute values or percentage distributions.
-
-### C. Line Graphs
-Excellent for showing continuous trends over time.
-*   *Slope analysis:* A steeper upward slope indicates a faster rate of growth.
-
-### D. Pie Charts
-Show the proportional composition of a whole.
-*   *Degree to Percentage conversion:* Since a circle is $360^\circ$ and represents $100\%$:
-    $$\text{Value in \%} = \frac{\text{Degrees}}{360^\circ} \times 100\% = \frac{\text{Degrees}}{3.6}$$
-    $$\text{Value in Degrees} = \text{Percentage} \times 3.6$$
+Data Interpretation accounts for a significant portion of the Quantitative section.
+Questions are grouped: one data set (table, chart, or graph) with 4-5 questions.
+Getting the reading right means answering 4-5 questions correctly from one effort.
 
 ---
 
-## 2. Core Calculations in DI
+## 2. Types of DI Charts
 
-Almost all DI questions reduce to one of three calculation types:
+### Type 1: Tables
+- Rows = categories (e.g., departments, years, cities)
+- Columns = metrics (e.g., sales, profit, employees)
+- **Reading strategy:** First scan row/column headers, identify what each cell represents.
 
-### A. Percentage Change (Growth Rate)
-Comparing values between two periods (initial and final):
+### Type 2: Bar Graphs
+- X-axis: categories; Y-axis: values
+- Each bar's height = value for that category
+- **Reading strategy:** Note scale (each division = how much?), read bar tops accurately.
 
-$$\text{Percentage Change} = \frac{\text{Final Value} - \text{Initial Value}}{\text{Initial Value}} \times 100\%$$
+### Type 3: Pie Charts
+- Sectors represent percentage of total
+- Central angle = 3.6 × percentage (360° = 100%)
+- **Reading strategy:** Always check the total given with the chart.
 
-*   *TCS Trick (Average Annual Growth Rate - AAGR):* Sum the individual annual growth rates and divide by the number of years.
+### Type 4: Line Graphs
+- X-axis: time periods; Y-axis: values
+- Trends (increase/decrease) and slopes matter
+- **Reading strategy:** Look at both end values and intermediate peaks.
 
-### B. Ratio and Comparison
-Expressing one category as a fraction of another ($A:B$ or $\frac{A}{B}$).
-*   *Speed comparison tip:* To find the largest fraction among $\frac{a}{b}, \frac{c}{d}, \frac{e}{f}$ without dividing, use cross-multiplication: if $a \times d > b \times c$, then $\frac{a}{b} > \frac{c}{d}$.
-
-### C. Averages
-Calculating the mean value of a category over several years.
-*   Use the deviation method or rounded values to calculate the sum quickly.
-
----
-
-## 3. Speed Math & Estimation Techniques
-
-Since DI is highly time-constrained in the TCS NQT, exact calculations should be avoided unless the options are extremely close.
-
-1.  **Rounding Off & Approximation:** Convert numbers to simple forms. E.g., $\frac{2345}{5812} \approx \frac{2300}{5800} = \frac{23}{58} \approx \frac{24}{60} = 40\%$.
-2.  **Fraction Conversions:** Use the memorized fractions from Percentage. E.g., if you need to calculate $12.48\%$ of $800$, recognize that $12.5\% = \frac{1}{8}$. Thus, $\frac{1}{8} \times 800 = 100$ (actual answer is slightly less: $99.84$).
-3.  **Unit Digit / Last Digit Elimination:** If the calculation is addition or subtraction, add only the unit digits of the values to match the correct option.
+### Type 5: Combined / Mixed DI
+- Two charts side by side (e.g., bar graph + table)
+- Questions may require data from both
+- **Reading strategy:** Identify which chart answers each question before calculating.
 
 ---
 
-## 4. Cross-References & Overlapping Topics
+## 3. Standard Question Types in DI
 
-*   **Percentage Calculations:** A strong command of percentage growth, base values, and fraction conversions is crucial. See [Percentage Notes](../02_Percentage/notes.md).
-*   **Average Calculations:** Computing averages across columns/tables is simplified by using the deviation method. See [Average Notes — Change of Average Section](../04_Average/notes.md#3-change-of-average-problems-deviation-method).
-*   **Ratio Comparisons:** Cross-multiplying fractions to quickly determine largest/smallest shares is derived from ratio properties. See [Ratio & Proportion Notes](../03_Ratio_Proportion/notes.md).
+| Question Phrasing | What to Calculate |
+|-------------------|-------------------|
+| "What is the ratio of..." | Divide two values from the data |
+| "What is the % change from X to Y?" | (New-Old)/Old × 100 |
+| "What is the average of..." | Sum / Count |
+| "By how much did X exceed Y?" | Subtract the two values |
+| "Which year had the highest growth?" | Compare year-on-year differences |
+| "What % is X of Y?" | (X/Y) × 100 |
+
+---
+
+## 4. Reading Strategies
+
+### Strategy 1: Read the Title First
+Always understand what the chart is measuring before looking at values.
+
+### Strategy 2: Note Units
+Is the Y-axis in thousands, millions, or plain numbers? Forgetting units is the #1 mistake.
+
+### Strategy 3: Answer the Question Before Choosing an Option
+Calculate your answer first, then match to options. Don't reverse-engineer from options.
+
+### Strategy 4: Approximate When Possible
+If the options are spread out (e.g., 10%, 20%, 30%), approximate the calculation.
+If options are close (e.g., 32%, 34%, 36%), compute precisely.
+
+---
+
+## 5. Percentage Calculations in DI
+
+Percentage change: (New - Old) / Old × 100
+
+Percentage of total: (Part / Total) × 100
+
+Ratio to percentage: If A:B = 3:7, then A = 30% and B = 70% of total.
+
+---
+
+## 6. TCS-Specific DI Patterns
+
+1. **Year-wise comparison:** Sales/profit by year — find maximum, minimum, average
+2. **Department comparison:** Employee count, revenue by department
+3. **Multi-year growth:** Year with highest % increase
+4. **Pie chart + given total:** Find actual values from percentages
+5. **Two-variable table:** Rows = products, columns = regions, find totals and ratios
+
+
+---
+
+## 7. Time Management for DI in TCS NQT
+
+DI sets have 4-5 questions based on one dataset. Strategy:
+- Spend 2 minutes reading the data carefully
+- Answer 4-5 questions in 4-5 minutes (1 min each)
+- Total: ~6-7 minutes per DI set
+
+If a calculation is complex (multi-step), skip and come back — other questions in the set may be easier.
+
+---
+
+## 8. Cross-referencing Multiple Data Sources
+
+In combined DI (two charts):
+1. First identify which chart has the data for each question
+2. Extract from Chart 1, then cross-reference with Chart 2
+3. Common combined DI: table (quantities) + pie (percentages)
+
+Example: Table gives company revenues, pie gives profit margins.
+Question: "What is the absolute profit of Company X?"
+- Get revenue from table, margin from pie, multiply.
